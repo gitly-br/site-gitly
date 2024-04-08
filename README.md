@@ -1,2 +1,2 @@
 # gitly-project
-Frontend
+Repositório para desenvolvimento do projeto da Gitly (Frontend)
