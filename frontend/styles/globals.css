@@ -2,3 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  /* Settings Title */
+  --font-title: 'Montserrat', sans-serif;
+  --title-color: #FFFFFF;
+  --size-title: 60px;
+  --font-weight-title: 700;
+
+  /* Settings text */
+  --font-text: 'Montserrat', sans-serif;
+  --text-color: #DDDDDD;
+  --size-text: 20px;
+  --font-weight-text: 400;
+
+  /* Colors */
+  --green-color: #11562F;
+
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+} */
