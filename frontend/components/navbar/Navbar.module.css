@@ -1,0 +1,24 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Translucent background */
+    padding: 10px;
+  }
+  
+  .logo {
+    flex: 1;
+  }
+  
+  .links {
+    flex: 3;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .button {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
