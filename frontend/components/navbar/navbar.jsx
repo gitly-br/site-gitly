@@ -1,23 +1,29 @@
 import Link from 'next/link';
-import styles from './Navbar.module.css';
+import styles from './styles.module.scss';
+import Image from 'next/image';
+
+//assets
+import logo from "../../assets/gitly.svg"
 
 const Navbar = () => {
   return (
     <div className={styles.navbar}>
       <div className={styles.logo}>
         <Link href="/">
-          <a>LOGO</a>
+          <Image src={logo} alt="Logo Gitly" />
         </Link>
       </div>
       <div className={styles.links}>
-        <Link href="/link1"><a>Home</a></Link>
-        <Link href="/link2"><a>Our purpose</a></Link>
-        <Link href="/link3"><a>Partners</a></Link>
-        <Link href="/link4"><a>Media</a></Link>
-        <Link href="/link5"><a>Contact us</a></Link>
+        <Link href="/link1">Home</Link>
+        <Link href="/link2">Our purpose</Link>
+        <Link href="/link3">Partners</Link>
+        <Link href="/link4">Media</Link>
+        <Link href="/link5">Contact us</Link>
       </div>
       <div className={styles.button}>
-        <button>Start your project</button>
+        <div className={styles.action}>
+          <button>Start your project</button>
+        </div>
       </div>
     </div>
   );
