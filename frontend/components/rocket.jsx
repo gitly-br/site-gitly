@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
+import Contact from '../components/contact'; // Importando o componente Contact
 
 const DynamicSpline = dynamic(() => import('@splinetool/react-spline'), { ssr: false });
 
-export default function App() {
+export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -11,15 +12,27 @@ export default function App() {
       setMousePosition({ x: event.clientX, y: event.clientY });
     };
 
-    window.addEventListener('mousemove', updateMousePosition);
+    const wrapper = document.getElementById('wrapper');
+
+    wrapper.addEventListener('mousemove', updateMousePosition);
 
     return () => {
-      window.removeEventListener('mousemove', updateMousePosition);
+      wrapper.removeEventListener('mousemove', updateMousePosition);
     };
   }, []);
 
+  const rocketStyle = {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+    background: `url('url_da_imagem_do_foguete') center center / cover no-repeat`, // Substitua 'url_da_imagem_do_foguete' pela URL da imagem do foguete
+  };
+
   return (
-    <div>
+    <div id="wrapper" style={{ position: 'relative' }}>
+      <div style={rocketStyle}></div>
       <DynamicSpline
         scene="https://prod.spline.design/yAkmlGVHSluwfBKa/scene.splinecode"
         camera={{
@@ -28,6 +41,7 @@ export default function App() {
           fov: 75,
         }}
       />
+      <Contact /> {/* Renderizando o componente Contact */}
     </div>
   );
 }
