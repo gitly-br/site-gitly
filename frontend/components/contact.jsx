@@ -42,7 +42,7 @@ export default function Home() {
           fov: 75,
         }}
       />
-      <div className="bg-[#202020] text-white lg:w-5/12 px-10 py-10 rounded-[32px]" style={{ zIndex: 1, position: 'absolute', right: '100px', top: '50%', transform: 'translateY(-50%)' }}> 
+      <div className="bg-[#202020] text-white lg:w-5/12 px-10 py-10 rounded-[32px]" style={{ zIndex: 1, position: 'absolute', right: '180px', top: '50%', transform: 'translateY(-50%)' }}> 
         <div className="">
           <h1 className="text-[36px] pb-3">Get in touch today</h1>
           <p className="text-[20px] pb-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, eum facere natus enim adipisci delectus alias et nihil ex ipsa ratione, eaque distinctio qui deleniti perspiciatis, temporibus dolores amet vel!</p>
@@ -53,21 +53,21 @@ export default function Home() {
               <div className="flex flex-wrap text-[20px] gap-3 pb-4 justify-between">
                 <div className="flex flex-col">
                   <label htmlFor="name">Name *</label>
-                  <input type="text" id="name" name="name" className="w-full rounded-lg bg-[#3E3E3E] border border-white py-1" />
+                  <input type="text" id="name" name="name" className="w-full rounded-lg bg-[#3E3E3E] border border-white py-1 px-5" />
                 </div>
                 <div className="flex flex-col">
                   <label htmlFor="email">Email *</label>
-                  <input type="email" id="email" name="email" className="w-full rounded-lg bg-[#3E3E3E] border border-white py-1" />
+                  <input type="email" id="email" name="email" className="w-full rounded-lg bg-[#3E3E3E] border border-white py-1 px-5" />
                 </div>
               </div>
               <div className="flex flex-wrap gap-3 text-[20px] pb-4 justify-between">
                 <div className="flex flex-col">
                   <label htmlFor="phone">Phone *</label>
-                  <input type="tel" id="phone" name="phone" className="w-full rounded-lg bg-[#3E3E3E] border border-white py-1" />
+                  <input type="tel" id="phone" name="phone" className="w-full rounded-lg bg-[#3E3E3E] border border-white py-1 px-5" />
                 </div>
                 <div className="flex flex-col">
                   <label htmlFor="company">Company *</label>
-                  <input type="text" id="company" name="company" className="w-full rounded-lg bg-[#3E3E3E] border border-white py-1" />
+                  <input type="text" id="company" name="company" className="w-full rounded-lg bg-[#3E3E3E] border border-white py-1 px-5" />
                 </div>
               </div>
               <div className="text-[20px] flex flex-col pb-4">
