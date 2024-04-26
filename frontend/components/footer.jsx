@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import facebook from "../public/Facebook.svg";
 import instagram from "../public/Instagram.svg";
-import linkedin from "../public/Linkedin.svg";
+import linkedin from "../public/Instagram.svg";
 import Image from "next/image";
 
 export default function Footer() {
