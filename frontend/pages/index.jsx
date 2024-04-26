@@ -5,9 +5,13 @@ import Action from '@/components/call-to-action/action';
 export default function Home() {
     return (
         <div>
+            <Rocket />
+            {/* <Contact /> */}
             <Navbar></Navbar>
             <Contact />
             <Action />
+            <Footer />
+
         </div>
     );
     }
