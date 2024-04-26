@@ -28,8 +28,7 @@ export default function Home() {
     left: 0,
     width: '100%',
     height: '100%',
-    background: `url('url_da_imagem_do_foguete') center center / cover no-repeat`, // Substitua 'url_da_imagem_do_foguete' pela URL da imagem do foguete
-    zIndex: -1, // Definindo um z-index menor para que o foguete fique atrás dos outros elementos
+    zIndex: -1, 
   };
 
   return (
@@ -43,7 +42,7 @@ export default function Home() {
           fov: 75,
         }}
       />
-      <div className="bg-[#202020] text-white lg:w-5/12 px-10 py-10 rounded-[32px]" style={{ zIndex: 1, position: 'absolute', right: '100px', top: '50%', transform: 'translateY(-50%)' }}> {/* Definindo estilos para posicionar à direita e centralizar verticalmente */}
+      <div className="bg-[#202020] text-white lg:w-5/12 px-10 py-10 rounded-[32px]" style={{ zIndex: 1, position: 'absolute', right: '100px', top: '50%', transform: 'translateY(-50%)' }}> 
         <div className="">
           <h1 className="text-[36px] pb-3">Get in touch today</h1>
           <p className="text-[20px] pb-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, eum facere natus enim adipisci delectus alias et nihil ex ipsa ratione, eaque distinctio qui deleniti perspiciatis, temporibus dolores amet vel!</p>
