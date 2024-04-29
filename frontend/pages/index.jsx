@@ -5,12 +5,13 @@ import Footer from '../components/footer';
 
 export default function Home() {
     return (
-        <div>
+        <div className='bg-black lg:bg-black'>
             <Navbar></Navbar>
-            <Contact />
-            <Action />
+            <div className='pt-36 pb-24 xl:pb-24 xl:pt-24 bg-black'>
+                <Contact />
+            </div>
+            {/* <Action /> */}
             <Footer />
-
         </div>
     );
     }
