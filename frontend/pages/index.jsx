@@ -11,7 +11,7 @@ export default function Home() {
             <div className='pt-40 px-5 xl:px-0 pb-36 xl:pb-36 xl:pt-28 bg-[#000015]'>
                 <Contact />
             </div>
-            <Action />
+            {/* <Action /> */}
             <Footer />
         </div>
     );

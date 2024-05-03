@@ -52,11 +52,22 @@ const Contact = () => {
       ...formData,
       [name]: value
     });
+    console.log('Telefone:', value); // Acesse o valor atualizado diretamente de 'value'
   };
+  
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+  
+    // Verifica se algum campo está vazio
+    if (!formData.name || !formData.email || !formData.phone || !formData.company || !formData.message) {
+      // Exibe uma notificação de aviso
+      toast.warning('Por favor, preencha todos os campos.');
+      console.log(formData.name, formData.email, formData.phone, formData.company, formData.message)
+      return;
+    }
+  
+    // Se todos os campos estiverem preenchidos, continua com o envio do e-mail
     const templateParams = {
       from_name: formData.name,
       company: formData.company,
@@ -64,7 +75,7 @@ const Contact = () => {
       phone: formData.phone,
       email: formData.email,
     };
-
+  
     emailjs.sendForm('gitly_service_public_key', 'template_78yoxqc', e.target, 'Tw8ngKBs_rBEXpZQ-')
       .then((result) => {
         console.log('E-mail enviado com sucesso!', result.text);
@@ -83,7 +94,7 @@ const Contact = () => {
         // Exibe uma notificação de erro
         toast.error('Erro ao enviar a mensagem.');
       });
-  };
+  };  
 
   return (
     <div id="wrapper" style={{ position: 'relative' }}>
@@ -141,17 +152,19 @@ const Contact = () => {
                     type="tel"
                     id="phone"
                     name="phone"
-                    pattern="[0-9()-]*"
+                    pattern="[0-9 ()-]*"
+                    value={formData.phone} // Adicionado value
+                    onChange={handleChange} // Adicionado onChange
                     onKeyPress={(e) => {
-                        // Impede a entrada de letras
-                        const pattern = /[0-9()-]/;
-                        const inputChar = String.fromCharCode(e.charCode);
-                        if (!pattern.test(inputChar)) {
-                            e.preventDefault();
-                        }
+                      // Impede a entrada de letras
+                      const pattern = /[0-9 ()-]/;
+                      const inputChar = String.fromCharCode(e.charCode);
+                      if (!pattern.test(inputChar)) {
+                        e.preventDefault();
+                      }
                     }}
                     className="w-full rounded-lg bg-[#3E3E3E] border border-white py-[0.32em] px-5"
-                />
+                  />
                 </div>
                 <div className="flex flex-col w-full 2xl:w-[18.75em]">
                   <label htmlFor="company" className='pb-[0.35em]'>Company *</label>
@@ -172,7 +185,7 @@ const Contact = () => {
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  className="rounded-lg w-full bg-[#3E3E3E] border border-white py-12"
+                  className="rounded-lg w-full bg-[#3E3E3E] border border-white py-12 px-5"
                 />
               </div>
               <button className="text-[16px] bg-[#11562F] py-3 mx-48" type="submit">
@@ -182,7 +195,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
-      <ToastContainer /> {/* Adiciona o ToastContainer para exibir as mensagens */}
+      <ToastContainer /> 
     </div>
   );
 };
