@@ -141,11 +141,17 @@ const Contact = () => {
                     type="tel"
                     id="phone"
                     name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
                     pattern="[0-9()-]*"
+                    onKeyPress={(e) => {
+                        // Impede a entrada de letras
+                        const pattern = /[0-9()-]/;
+                        const inputChar = String.fromCharCode(e.charCode);
+                        if (!pattern.test(inputChar)) {
+                            e.preventDefault();
+                        }
+                    }}
                     className="w-full rounded-lg bg-[#3E3E3E] border border-white py-[0.32em] px-5"
-                  />
+                />
                 </div>
                 <div className="flex flex-col w-full 2xl:w-[18.75em]">
                   <label htmlFor="company" className='pb-[0.35em]'>Company *</label>
