@@ -5,9 +5,9 @@ import Footer from '../components/footer';
 
 export default function Home() {
     return (
-        <div className='bg-black lg:bg-black'>
+        <div className='bg-[#000015] lg:bg-[#000015]'>
             <Navbar></Navbar>
-            <div className='pt-36 pb-24 xl:pb-24 xl:pt-24 bg-black'>
+            <div className='pt-40 px-5 xl:px-0 pb-36 xl:pb-36 xl:pt-28 bg-[#000015]'>
                 <Contact />
             </div>
             {/* <Action /> */}
