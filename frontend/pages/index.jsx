@@ -6,6 +6,7 @@ import Products from '../components/products';
 import Partners from '../components/partners';
 import Projects from '@/components/projects';
 
+import Hero from '@/components/hero/hero';
 
 export default function Home() {
     return (
@@ -19,6 +20,4 @@ export default function Home() {
             <Footer />
         </div>
     );
-    }
-
-
+}
