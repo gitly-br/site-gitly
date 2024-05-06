@@ -4,6 +4,7 @@ import project1 from "../assets/project1.svg";
 import project2 from "../assets/project2.svg";
 import project3 from "../assets/project3.svg";
 import project4 from "../assets/project4.svg";
+import ButtonGreenView from './button/buttonGreenView';
 
 const Projects = () => {
   return (

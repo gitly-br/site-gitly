@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import styles from './styles.module.scss';
 import Image from 'next/image';
+import ButtonGreenStart from '../button/buttonGreenStart';
 
 //assets
 import logo from "../../assets/gitly.svg"
@@ -22,7 +23,7 @@ const Navbar = () => {
       </div>
       <div className={styles.button}>
         <div className={styles.action}>
-          <button>Start your project</button>
+          <ButtonGreenStart />
         </div>
       </div>
     </div>

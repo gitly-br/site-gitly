@@ -5,19 +5,21 @@ import Footer from '../components/footer';
 import Products from '../components/products';
 import Partners from '../components/partners';
 import Projects from '@/components/projects';
+import Ourclients from '@/components/ourclients';
 
 import Hero from '@/components/hero/hero';
 
 export default function Home() {
     return (
         <div>
-            {/* <Navbar></Navbar> */}
-            {/* <Contact /> */}
-            {/* <Action /> */}
-            <Products />
+            {/* <Navbar></Navbar>
+            <Contact />
+            <Action /> */}
+            <Ourclients></Ourclients>
+            {/* <Products />
             <Partners />
             <Projects />
-            <Footer />
+            <Footer /> */}
         </div>
     );
 }
