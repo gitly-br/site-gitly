@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
+import ButtonGreenSend from './button/buttonGreenSend';
 
 const DynamicSpline = dynamic(() => import('@splinetool/react-spline'), { ssr: false });
 
@@ -74,7 +75,9 @@ export default function Home() {
                 <label htmlFor="message">Your Message</label>
                 <textarea id="message" name="message" className="rounded-lg w-full bg-[#3E3E3E] border border-white py-6"></textarea>
               </div>
-              <button className="text-[16px] bg-[#11562F] py-3 mx-48" type="submit">Send Message</button>
+              <div className="flex justify-center items-center mt-6">
+                <ButtonGreenSend />
+              </div>
             </div>
           </form> 
         </div>
