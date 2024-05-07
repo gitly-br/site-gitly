@@ -7,18 +7,14 @@ import Partners from '../components/partners';
 import Projects from '@/components/projects';
 import Hero from '@/components/hero/hero';
 
-import Hero from '@/components/hero/hero';
 
 export default function Home() {
     return (
         <div>
-            {/* <Navbar></Navbar> */}
-            <Hero />
-            {/* <Contact /> */}
-            {/* <Action />
-            <Products />
+            <Navbar></Navbar>
+            <Products></Products>
             <Partners />
-            <Projects /> */}
+            <Projects />
             <Footer />
         </div>
     );
