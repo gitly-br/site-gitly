@@ -12,7 +12,7 @@ export default function Contactus() {
     return (
         <div>
             <Navbar></Navbar>
-            <Contact />
+            {/* <Contact /> */}
             <Action />
             <Footer />
         </div>

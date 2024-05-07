@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import styles from "./styles.module.scss"
-
 //assets
 import background from "../../assets/background-1.png"
 import computer from "../../assets/computer.png"
