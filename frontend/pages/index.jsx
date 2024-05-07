@@ -21,7 +21,7 @@ export default function Home() {
             </div> */}
             {/* <Action /> */}
             <ComponenteF partners={partners}/>
-            <Footer />
+            {/* <Footer /> */}
         </div>
     );
 }
