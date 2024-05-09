@@ -11,11 +11,12 @@ import Hero from '@/components/hero/hero';
 export default function Home() {
     return (
         <div>
-            <Navbar></Navbar>
-            <Products></Products>
+            {/* <Navbar></Navbar> */}
+            <Hero />
+            {/* <Products></Products>
             <Partners />
             <Projects />
-            <Footer />
+            <Footer /> */}
         </div>
     );
 }
