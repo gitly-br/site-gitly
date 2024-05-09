@@ -4,6 +4,7 @@ import project1 from "../assets/project1.svg";
 import project2 from "../assets/project2.svg";
 import project3 from "../assets/project3.svg";
 import project4 from "../assets/project4.svg";
+import ButtonGreenView from './button/buttonGreenView';
 
 const Projects = () => {
   return (
@@ -16,7 +17,12 @@ const Projects = () => {
         <Image src={project3} alt="Project 3" width={200} height={150} />
         <Image src={project4} alt="Project 4" width={200} height={150} />
       </div>
-      <button className="text-[16px] bg-[#11562F] py-3 mx-auto mt-8 block">Ver todos os projetos</button>
+
+      <div className="flex justify-center items-center mt-8">
+        <ButtonGreenView />
+      </div>
+
+
     </div>
   );
 };

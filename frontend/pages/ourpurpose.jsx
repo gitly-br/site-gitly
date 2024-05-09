@@ -5,21 +5,13 @@ import Footer from '../components/footer';
 import Products from '../components/products';
 import Partners from '../components/partners';
 import Projects from '@/components/projects';
+
 import Hero from '@/components/hero/hero';
 
-import ComponenteX from '../components/componente-X';
-
-
-export default function Home() {
+export default function Ourpupose() {
     return (
         <div>
-            {/* <Navbar></Navbar> */}
-            <Hero />
-            {/* <Products></Products>
-            <Partners />
-            <Projects />
-            <Footer /> */}
-        </div>
 
+        </div>
     );
 }

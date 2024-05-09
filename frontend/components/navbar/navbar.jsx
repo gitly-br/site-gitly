@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import styles from './styles.module.scss';
 import Image from 'next/image';
+import ButtonGreenStart from '../button/buttonGreenStart';
 
 //assets
 import logo from "../../assets/gitly.svg"
@@ -14,15 +15,15 @@ const Navbar = () => {
         </Link>
       </div>
       <div className={styles.links}>
-        <Link href="/link1">Home</Link>
+        <Link href="/">Home</Link>
         <Link href="/link2">Our purpose</Link>
         <Link href="/link3">Partners</Link>
         <Link href="/link4">Media</Link>
-        <Link href="/link5">Contact us</Link>
+        <Link href="/contactus">Contact us</Link>
       </div>
       <div className={styles.button}>
         <div className={styles.action}>
-          <button>Start your project</button>
+          <ButtonGreenStart />
         </div>
       </div>
     </div>

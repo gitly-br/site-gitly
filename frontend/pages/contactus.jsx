@@ -5,21 +5,18 @@ import Footer from '../components/footer';
 import Products from '../components/products';
 import Partners from '../components/partners';
 import Projects from '@/components/projects';
+
 import Hero from '@/components/hero/hero';
 
-import ComponenteX from '../components/componente-X';
-
-
-export default function Home() {
+export default function Contactus() {
     return (
         <div>
-            {/* <Navbar></Navbar> */}
-            <Hero />
-            {/* <Products></Products>
-            <Partners />
-            <Projects />
-            <Footer /> */}
+            <Navbar></Navbar>
+            <div className='pt-40 px-5 xl:px-0 pb-36 xl:pb-36 xl:pt-28 bg-[#000015]'>
+                <Contact />
+            </div>
+            <Action />
+            <Footer />
         </div>
-
     );
 }
