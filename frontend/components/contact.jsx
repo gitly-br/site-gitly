@@ -1,10 +1,25 @@
 import { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import ButtonGreenSend from './button/buttonGreenSend';
+import emailjs from 'emailjs-com';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const DynamicSpline = dynamic(() => import('@splinetool/react-spline'), { ssr: false });
 
-export default function Home() {
+const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    company: '',
+    message: ''
+  });
+
+  useEffect(() => {
+    emailjs.init('Tw8ngKBs_rBEXpZQ-');
+  }, []);
+
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -29,59 +44,162 @@ export default function Home() {
     left: 0,
     width: '100%',
     height: '100%',
-    zIndex: -1, 
+    zIndex: -1,
   };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+    console.log('Telefone:', value); // Acesse o valor atualizado diretamente de 'value'
+  };
+  
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  
+    // Verifica se algum campo está vazio
+    if (!formData.name || !formData.email || !formData.phone || !formData.company || !formData.message) {
+      // Exibe uma notificação de aviso
+      toast.warning('Por favor, preencha todos os campos.');
+      console.log(formData.name, formData.email, formData.phone, formData.company, formData.message)
+      return;
+    }
+  
+    // Se todos os campos estiverem preenchidos, continua com o envio do e-mail
+    const templateParams = {
+      from_name: formData.name,
+      company: formData.company,
+      message: formData.message,
+      phone: formData.phone,
+      email: formData.email,
+    };
+  
+    emailjs.sendForm('gitly_service_public_key', 'template_78yoxqc', e.target, 'Tw8ngKBs_rBEXpZQ-')
+      .then((result) => {
+        console.log('E-mail enviado com sucesso!', result.text);
+        // Limpa os campos de input
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          company: '',
+          message: ''
+        });
+        // Exibe uma notificação de sucesso
+        toast.success('Mensagem enviada com sucesso!');
+      }, (error) => {
+        console.error('Erro ao enviar o e-mail:', error);
+        // Exibe uma notificação de erro
+        toast.error('Erro ao enviar a mensagem.');
+      });
+  };  
 
   return (
     <div id="wrapper" style={{ position: 'relative' }}>
-      <div style={rocketStyle}></div>
-      <DynamicSpline
-        scene="https://prod.spline.design/yAkmlGVHSluwfBKa/scene.splinecode"
-        camera={{
-          position: { x: mousePosition.x / (typeof window !== 'undefined' ? window.innerWidth : 1) - 0.5, y: -mousePosition.y / (typeof window !== 'undefined' ? window.innerHeight : 1) + 0.5, z: 3 },
-          rotation: { x: 0, y: 0, z: 0 },
-          fov: 75,
-        }}
-      />
-      <div className="bg-[#202020] text-white lg:w-5/12 px-10 py-10 rounded-[32px]" style={{ zIndex: 1, position: 'absolute', right: '180px', top: '50%', transform: 'translateY(-50%)' }}> 
+      <div className='hidden bg-[#000015] lg:bg-[#000015] xl:block'><div style={rocketStyle}></div>
+        <DynamicSpline
+          scene="https://prod.spline.design/yAkmlGVHSluwfBKa/scene.splinecode"
+          camera={{
+            position: { x: mousePosition.x / (typeof window !== 'undefined' ? window.innerWidth : 1) - 0.5, y: -mousePosition.y / (typeof window !== 'undefined' ? window.innerHeight : 1) + 0.5, z: 3 },
+            rotation: { x: 0, y: 0, z: 0 },
+            fov: 75,
+          }}
+        />
+      </div>
+      <div className="bg-[#202020] text-white p-10 rounded-[32px] xl:w-5/12 xl:z-1 lg:absolute xl:right-[10%] xl:top-1/2 xl:translate-y-[-50%] xl:block">
         <div className="">
           <h1 className="text-[36px] pb-3">Get in touch today</h1>
-          <p className="text-[20px] pb-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, eum facere natus enim adipisci delectus alias et nihil ex ipsa ratione, eaque distinctio qui deleniti perspiciatis, temporibus dolores amet vel!</p>
+          <p className="text-[20px] pb-7">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,
+            eum facere natus enim adipisci delectus alias et nihil ex ipsa
+            ratione, eaque distinctio qui deleniti perspiciatis, temporibus
+            dolores amet vel!
+          </p>
         </div>
         <div>
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className="flex flex-col">
-              <div className="flex flex-wrap text-[20px] gap-3 pb-4 justify-between">
-                <div className="flex flex-col">
-                  <label htmlFor="name">Name *</label>
-                  <input type="text" id="name" name="name" className="w-full rounded-lg bg-[#3E3E3E] border border-white py-1 px-5" />
+              <div className="flex flex-wrap text-[20px] pb-4 justify-between">
+                <div className="flex flex-col w-full 2xl:w-[18.7em]">
+                  <label htmlFor="name" className='pb-[0.35em]'>Name *</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    className="w-full rounded-lg bg-[#3E3E3E] border border-white py-[0.32em] px-5"
+                  />
                 </div>
-                <div className="flex flex-col">
-                  <label htmlFor="email">Email *</label>
-                  <input type="email" id="email" name="email" className="w-full rounded-lg bg-[#3E3E3E] border border-white py-1 px-5" />
+                <div className="pt-4 2xl:pt-0 flex flex-col w-full 2xl:w-[18.7em]">
+                  <label htmlFor="email" className='pb-[0.35em]'>Email *</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    className="w-full rounded-lg bg-[#3E3E3E] border border-white py-[0.32em] px-5"
+                  />
                 </div>
               </div>
               <div className="flex flex-wrap gap-3 text-[20px] pb-4 justify-between">
-                <div className="flex flex-col">
-                  <label htmlFor="phone">Phone *</label>
-                  <input type="tel" id="phone" name="phone" className="w-full rounded-lg bg-[#3E3E3E] border border-white py-1 px-5" />
+                <div className="flex flex-col w-full 2xl:w-[18.75em]">
+                  <label htmlFor="phone" className='pb-[0.35em]'>Phone *</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    pattern="[0-9 ()-]*"
+                    value={formData.phone} // Adicionado value
+                    onChange={handleChange} // Adicionado onChange
+                    onKeyPress={(e) => {
+                      // Impede a entrada de letras
+                      const pattern = /[0-9 ()-]/;
+                      const inputChar = String.fromCharCode(e.charCode);
+                      if (!pattern.test(inputChar)) {
+                        e.preventDefault();
+                      }
+                    }}
+                    className="w-full rounded-lg bg-[#3E3E3E] border border-white py-[0.32em] px-5"
+                  />
                 </div>
-                <div className="flex flex-col">
-                  <label htmlFor="company">Company *</label>
-                  <input type="text" id="company" name="company" className="w-full rounded-lg bg-[#3E3E3E] border border-white py-1 px-5" />
+                <div className="flex flex-col w-full 2xl:w-[18.75em]">
+                  <label htmlFor="company" className='pb-[0.35em]'>Company *</label>
+                  <input
+                    type="text"
+                    id="company"
+                    name="company"
+                    value={formData.company}
+                    onChange={handleChange}
+                    className="w-full rounded-lg bg-[#3E3E3E] border border-white py-[0.32em] px-5"
+                  />
                 </div>
               </div>
               <div className="text-[20px] flex flex-col pb-4">
-                <label htmlFor="message">Your Message</label>
-                <textarea id="message" name="message" className="rounded-lg w-full bg-[#3E3E3E] border border-white py-6"></textarea>
+                <label htmlFor="message" className='pb-[0.35em]'>Your Message</label>
+                <input
+                  id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  className="rounded-lg w-full bg-[#3E3E3E] border border-white py-12 px-5"
+                />
               </div>
               <div className="flex justify-center items-center mt-6">
                 <ButtonGreenSend />
               </div>
+
             </div>
-          </form> 
+          </form>
         </div>
       </div>
+      <ToastContainer /> 
     </div>
   );
-}
+};
+
+export default Contact;

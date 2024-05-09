@@ -7,6 +7,8 @@ import Partners from '../components/partners';
 import Projects from '@/components/projects';
 import Hero from '@/components/hero/hero';
 
+import ComponenteX from '../components/componente-X';
+
 
 export default function Home() {
     return (
@@ -18,5 +20,6 @@ export default function Home() {
             <Projects />
             <Footer /> */}
         </div>
+
     );
 }
