@@ -3,11 +3,11 @@ import Image from "next/image";
 
 export default function ButtonGreenGet() {
     return (
-        <div>
-          <button>
-            <Image src={primaryButton} alt="Botao" className = 'w-[12.75rem]'/>
+      <>
+          <button class = ''>
+            <Image src={primaryButton} alt="Botao" />
           </button>
-        </div>
+      </>
     );
 }
 

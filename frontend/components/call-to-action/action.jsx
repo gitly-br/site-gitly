@@ -13,9 +13,9 @@ function MeuComponente() {
                 <div className={styles.text}>
                     <h1>Talk  to one of our specialists and start your project today.</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipiscing elit dolor semper at ac tempus enim laoreet massa non.</p>
-                <div className="justify-start mr-20">
+                    {/* <button>Get a free quote</button> */}
                     <ButtonGreenGet />
-                </div>
+
                 </div>
                 <div className={styles.image}>
                     <Image src={computer} alt="Computer"/>
