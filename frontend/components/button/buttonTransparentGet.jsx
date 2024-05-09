@@ -7,7 +7,7 @@ export default function ButtonTransparentGet() {
       <Link href = '/endpoint'>
         <div>
           <button>
-            <Image src={primaryButton} alt="Botao" className='w-12.75rem h-3.375rem' />
+            <Image src={primaryButton} alt="Botao" className='w-[12.75rem] h-[3.375rem]'/>
           </button>
         </div>
       </Link>

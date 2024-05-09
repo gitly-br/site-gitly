@@ -6,6 +6,7 @@ export default function ButtonGreenStart() {
         <div>
           <button>
             <Image src={primaryButton} alt="Botao" style={{ width: "204px", height: "54px" }} />
+
           </button>
         </div>
     );

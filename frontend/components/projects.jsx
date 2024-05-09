@@ -17,7 +17,12 @@ const Projects = () => {
         <Image src={project3} alt="Project 3" width={200} height={150} />
         <Image src={project4} alt="Project 4" width={200} height={150} />
       </div>
-      <button className="text-[16px] bg-[#11562F] py-3 mx-auto mt-8 block">Ver todos os projetos</button>
+
+      <div className="flex justify-center items-center mt-8">
+        <ButtonGreenView />
+      </div>
+
+
     </div>
   );
 };

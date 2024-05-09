@@ -15,11 +15,11 @@ const Navbar = () => {
         </Link>
       </div>
       <div className={styles.links}>
-        <Link href="/link1">Home</Link>
+        <Link href="/">Home</Link>
         <Link href="/link2">Our purpose</Link>
         <Link href="/link3">Partners</Link>
         <Link href="/link4">Media</Link>
-        <Link href="/link5">Contact us</Link>
+        <Link href="/contactus">Contact us</Link>
       </div>
       <div className={styles.button}>
         <div className={styles.action}>
