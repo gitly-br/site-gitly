@@ -3,6 +3,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 import logo from "../../assets/gitly.svg";
 
+import ButtonGreenStart from '../button/buttonGreenStart';
+
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -15,6 +18,8 @@ const Navbar = () => {
               <Image src={logo} alt="Logo Gitly" width={50} height={50} />
             
           </Link>
+
+
         </div>
         <div className="md:flex hidden flex-1 justify-around text-white font-light">
           <Link href="/link1">Home</Link>
