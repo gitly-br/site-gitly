@@ -7,6 +7,7 @@ import Partners from '../components/partners';
 import Projects from '@/components/projects';
 import Ourclients from '@/components/ourclients';
 import Hero from '@/components/hero/hero';
+import Journey from '@/components/componente-journey';
 
 import ComponenteX from '../components/componente-X';
 
@@ -14,13 +15,14 @@ import ComponenteX from '../components/componente-X';
 export default function Home() {
     return (
         <div>
-            <Navbar></Navbar>
+            <Journey />
+            {/* <Navbar></Navbar>
             <Hero />
             <Products></Products>
             <Partners />
             <Projects />
             <Ourclients></Ourclients>
-            <Footer /> 
+            <Footer />  */}
         </div>
 
     );
