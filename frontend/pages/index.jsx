@@ -14,12 +14,12 @@ import ComponenteX from '../components/componente-X';
 export default function Home() {
     return (
         <div>
-            {/* <Navbar></Navbar> */}
+            <Navbar></Navbar>
             <Hero />
-            {/* <Products></Products>
+            <Products></Products>
             <Partners />
             <Projects />
-            <Footer /> */}
+            <Footer />
         </div>
 
     );

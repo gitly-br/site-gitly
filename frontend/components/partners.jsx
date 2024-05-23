@@ -5,7 +5,7 @@ import zapt from "../assets/zapt.svg";
 
 const Partners = () => {
   return (
-    <div className="bg-[#001D09] text-white container mx-auto py-10 px-14 text-center">
+    <div className="container mx-auto py-10 px-14 text-center" style={{ background: 'linear-gradient(to right, #021b09, black)', color: 'white' }}>
       <p className="text-xl mb-8">We are proud to be partners of</p>
       <div className="flex flex-col md:flex-row md:justify-center md:space-x-10 items-center">
         <Image src={zapt} alt="Partner 1" width={80} height={150} className="mb-10" />
