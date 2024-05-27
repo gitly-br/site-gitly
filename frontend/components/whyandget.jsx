@@ -12,17 +12,6 @@ import ButtonGreenGet from "./button/buttonGreenGet";
 
 const Whyandget = () => {
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    autoplaySpeed: 3000,
-    speed: 500,
-    slidesToShow: 1,
-    autoplay:true,
-    autoplaySpeed:3000,
-    slidesToScroll: 1,
-  };
-
   return (
     <div>
       <div className="px-10 py-24 justify-center sm:grid grid-cols-2 gap-10 sm:p-24 text-white bg-black">
@@ -56,25 +45,22 @@ const Whyandget = () => {
             </div>
           </div>
         </div>
-        <Slider {...settings}>
         <div className="mt-10">
           <Image src={galeria} alt="Galeria"/>
         </div>
-        </Slider>
       </div>
 
       <div className="relative text-white">
-        <Image src={fundoRoxo} alt="Fundo Roxo" className="h-44 sm:h-full sm:w-full"/>
-          <div className="absolute text-center inset-0 items-center sm:flex justify-center">
-            <h1 className="sm:text-3xl font-bold">
+        <Image src={fundoRoxo} alt="Fundo Roxo" className="h-60 sm:h-full sm:w-full" />
+        <div className="absolute inset-0 flex flex-col sm:flex-row items-center justify-center text-center">
+          <h1 className="p-2 sm:p-0 mt-10 sm:mt-0 text-lg sm:text-3xl font-bold">
             Get a free quote and start your project today
-            </h1>
-            <div className="mt-20 ml-5">
-              <ButtonGreenGet></ButtonGreenGet>
-            </div>
+          </h1>
+          <div className="mt-5 sm:mt-20 sm:ml-5">
+            <ButtonGreenGet></ButtonGreenGet>
           </div>
-
         </div>
+      </div>
 
 
 
