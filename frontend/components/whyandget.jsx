@@ -4,13 +4,28 @@ import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 import leftArrow from "../public/arrow-left.svg";
 import rightArrow from "../public/arrow-right.svg";
-import React, { useState } from "react";
 import trofeu from '../assets/trofeu.svg'
 import galeria from '../assets/galeria.png'
+import imagem2 from '../assets/imagem2.svg'
+import imagem3 from '../assets/imagem3.svg'
 import fundoRoxo from '../assets/fundoRoxo.png'
 import ButtonGreenGet from "./button/buttonGreenGet";
+import React, { useState, useEffect } from 'react';
+
 
 const Whyandget = () => {
+  const images = [galeria, imagem2, imagem3];
+  const [currentImage, setCurrentImage] = useState(images[0]);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentImage(currentImage => {
+        const i = images.indexOf(currentImage);
+        return images[(i + 1) % images.length];
+      });
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <div>
@@ -46,7 +61,7 @@ const Whyandget = () => {
           </div>
         </div>
         <div className="mt-10">
-          <Image src={galeria} alt="Galeria"/>
+        <Image src={currentImage} alt="Galeria"/>
         </div>
       </div>
 
