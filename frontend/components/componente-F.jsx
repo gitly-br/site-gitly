@@ -39,8 +39,9 @@ const SamplePrevArrow = (props) => {
   );
 };
 
+
 const ComponenteF = ({ partners }) => {
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentSlide, setCurrentSlide] = useState(Math.floor(partners.length / 2)); // Define o slide do meio como inicial
 
   const goToSlide = (index) => {
     setCurrentSlide(index);
@@ -48,61 +49,69 @@ const ComponenteF = ({ partners }) => {
 
   return (
     <div className="text-white bg-black poppins-font truncate font-thin px-5 lg:px-20 xl:px-64" style={{ background: `linear-gradient(to right, #021b09, black)` }} data-carousel="slide">
-      <div className="flex justify-center">
-        <h1 className="text-[3em] font-semibold">Our customers</h1>
-      </div>
-      <Slider
-        className="flex p-5 overflow-x-hidden"
-        slidesToShow={3}
-        slidesToScroll={1}
-        infinite={true}
-        autoplay={true}
-        autoplaySpeed={3000}
-        initialSlide={currentSlide}
-        nextArrow={<SampleNextArrow />}
-        prevArrow={<SamplePrevArrow />}
-        arrows={false}
-        
-        responsive={[
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 2,
-            },
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 1,
-            },
-          },
-        ]}
-        afterChange={goToSlide}
-      >
-        {partners.map((partner, index) => (
-          <div key={index} className="w-[300px]">
-            <div key={index} className={`w-[300px] transition-transform transform mx-5 ${index === currentSlide ? 'selected' : ''}`} onClick={() => goToSlide(index)}>
-            <div className={`w-80 h-fit py-4 flex-col justify-items-center gap-3 pr-20 flex justify-center items-center ${index === currentSlide ? 'selected-container' : ''}`}>
-                <div className="w-full h-[200px] relative flex justify-center items-center">
-                <Image
-                    src={partner.logo}
-                    alt={`Logo do ${partner.name}`}
-                    width={index === currentSlide ? 350 : 200}
-                    height={index === currentSlide ? 350 : 200}
-                    objectFit="cover"
-                />
+      <div className="flex flex-col items-center">
+        <h1 className="text-[3em] font-semibold mb-5">Our customers</h1>
+        <div className="w-full flex justify-center items-center">
+          <Slider
+            className="flex overflow-x-hidden"
+            slidesToShow={3}
+            slidesToScroll={1}
+            infinite={true}
+            autoplay={true}
+            autoplaySpeed={3000}
+            initialSlide={currentSlide}
+            nextArrow={<SampleNextArrow />}
+            prevArrow={<SamplePrevArrow />}
+            arrows={false}
+            centerMode={true}
+            centerPadding="20px"
+            responsive={[
+              {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 2,
+                  centerPadding: "30px"
+                },
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  slidesToShow: 1,
+                  centerPadding: "20px"
+                },
+              },
+            ]}
+            afterChange={goToSlide}
+          >
+            {partners.map((partner, index) => (
+              <div key={index} className="w-[200px] px-14">
+                <div key={index} className={`w-[200px] transition-transform transform mx-5 ${index === currentSlide ? 'selected' : ''}`} onClick={() => goToSlide(index)}>
+                  <div className={`w-80 h-fit py-4 flex-col justify-items-center gap-3 pr-20 flex justify-center items-center ${index === currentSlide ? 'selected-container' : ''}`}>
+                    <div className="w-full h-[200px] relative flex justify-center items-center">
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <Image
+                          src={partner.logo}
+                          alt={`Logo do ${partner.name}`}
+                          width={index === currentSlide ? 350 : 200}
+                          height={index === currentSlide ? 350 : 200}
+                          objectFit="cover"
+                        />
+                      </div>
+                    </div>
+                  </div>
                 </div>
-            </div>
-            </div>
-          </div>
-        ))}
-      </Slider>
+              </div>
+            ))}
+          </Slider>
+        </div>
+      </div>
       <div>
         <div className="flex justify-center text-wrap text-white lg:px-40 px-10 text-[1.5em]">
           <p>{partners[currentSlide].description}</p>
         </div>
         <div className="flex justify-center pt-10 text-[1.6em] font-semibold text-[#3AA06B]">
           <a href={partners[currentSlide].link} target="_blank" rel="noopener noreferrer" style={{ color: "#3AA06B", textDecoration: "underline", fontWeight: "bold" }}>Read more</a>
+          <Image src={arrowRead} className="pl-1" alt="Read more" width={20} height={20} />
         </div>
       </div>
     </div>

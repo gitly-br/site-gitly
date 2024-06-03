@@ -4,7 +4,7 @@ import products from "../assets/products.svg";
 
 const Home = () => {
   return (
-    <div className="bg-[#001D09] container mx-auto flex flex-col py-10 px-14 md:flex-row items-center justify-between">
+    <div className="container mx-auto flex flex-col py-10 px-14 md:flex-row items-center justify-between" style={{ background: 'linear-gradient(to right, #021b09, black)' }}>
       <div className="w-full md:w-1/4 flex flex-col items-left text-white">
         <h2 className="text-3xl font-bold mb-4">Products</h2>
         <p className="text-lg mb-8">The visual guide will provide a view to the customer of what their website or project</p>
