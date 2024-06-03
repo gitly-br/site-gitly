@@ -15,6 +15,7 @@ export default function Home() {
     return (
         <div>
             <Navbar></Navbar>
+            {/* <Contact /> */}
             <Hero />
             <Products></Products>
             <Partners />
