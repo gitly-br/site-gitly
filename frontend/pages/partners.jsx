@@ -7,11 +7,14 @@ import Partners from '../components/partners';
 import Projects from '@/components/projects';
 
 import Hero from '@/components/hero/hero';
+import HeroPartners from '@/components/heroPartrners';
 
-export default function Partners() {
+export default function PartnersPage() {
     return (
         <div>
-
+            <Navbar></Navbar>
+            <HeroPartners />
+            <Footer />             
         </div>
     );
 }
