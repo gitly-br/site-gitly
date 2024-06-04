@@ -6,12 +6,15 @@ import Partners from '../components/partners';
 import Projects from '@/components/projects';
 import Hero from '@/components/hero/hero';
 import Whyandget from '@/components/whyandget';
+import HeroSection from '@/components/herosection';
 
 export default function Ourpupose() {
     return (
         <div>
             {/* <Navbar></Navbar> */}
+            <HeroSection />
             <Whyandget></Whyandget>
+            <Footer />
         </div>
     );
 }

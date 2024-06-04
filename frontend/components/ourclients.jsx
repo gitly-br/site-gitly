@@ -1,10 +1,7 @@
 import Image from "next/image";
 import Pessoa from '../assets/pessoa.png'
-import React from "react";
-import Slider from "react-slick";
 
 export function Ourclients() {
-
     return (
         <div class = 'py-12 px-8 bg-black'>
             <div>
