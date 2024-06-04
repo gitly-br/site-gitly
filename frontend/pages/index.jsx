@@ -7,20 +7,21 @@ import Partners from '../components/partners';
 import Projects from '@/components/projects';
 import Ourclients from '@/components/ourclients';
 import Hero from '@/components/hero/hero';
-
+import OurLastWork from '@/components/componente-D';
 import ComponenteX from '../components/componente-X';
 
 
 export default function Home() {
     return (
         <div>
-            <Navbar></Navbar>
+            <OurLastWork />
+            {/* <Navbar></Navbar> */}
             {/* <Contact /> */}
-            <Hero />
+            {/* <Hero />
             <Products></Products>
             <Partners />
             <Projects />
-            <Footer />
+            <Footer /> */}
         </div>
 
     );
