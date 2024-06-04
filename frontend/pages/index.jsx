@@ -7,8 +7,7 @@ import Partners from '../components/partners';
 import Projects from '@/components/projects';
 import Ourclients from '@/components/ourclients';
 import Hero from '@/components/hero/hero';
-
-import ComponenteX from '../components/componente-X';
+import Browse from '@/components/browse';
 
 
 export default function Home() {
@@ -17,6 +16,7 @@ export default function Home() {
             <Navbar></Navbar>
             {/* <Contact /> */}
             <Hero />
+            <Browse />
             <Products></Products>
             <Partners />
             <Projects />
