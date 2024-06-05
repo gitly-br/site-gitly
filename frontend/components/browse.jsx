@@ -76,10 +76,11 @@ const Browse = () => {
                 />
             </button>
         </div>
-        <div className="mb-10 sm:mb-0">
+        <div className="mb-10 sm:mb-0 flex justify-center sm:block">
             <Image src={Cards} alt="Imagem" className="hidden sm:block" />
             <Image src={Cardsresponsivo} alt="Imagem" className="sm:hidden block" />
         </div>
+
 
 
       </div>
