@@ -12,9 +12,13 @@ const OurLastWork = () => {
             <p className='text-lg md:text-xl lg:text-2xl text-center mb-5'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
         </div>
         <div className='flex gap-10 justify-center flex-wrap md:flex-nowrap pai'>
-            <div className='flex-none'>
-                <Image src={container3} alt="container3" /> 
+        <div className='relative flex-none'>
+            <Image className='w-full h-full object-cover' src={container3} alt="container3" />
+            <div className='absolute inset-0 flex flex-col items-center justify-center text-center text-white mx-36 textoimage'>
+                <h1 className='text-lg font-bold mb-2'>White Label Mall Application</h1>
+                <p className='text-sm'>Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalaracc lacus vel facilisis.</p>
             </div>
+        </div>
             <div className='flex flex-col gap-7'>
                 <div className='flex filho'>
                     <div className='bg-[#202020] rounded-xl flex flex-col text-wrap text-start px-10 py-20'>
@@ -37,6 +41,9 @@ const OurLastWork = () => {
             </div>
         </div>
         <style jsx>{`
+            .textoimage {
+                margin-top: 330px;
+            }
             @media (max-width: 1618px) {
                 .pai {
                     flex-direction: column !important;
@@ -59,6 +66,14 @@ const OurLastWork = () => {
                 }
                 .image {
                     margin-top: 20px;
+                }
+            }
+
+            @media (max-width: 576px) {
+                .textoimage {
+                    margin-top: 130px;
+                    margin-left: 0px;
+                    margin-right: 0px;
                 }
             }
         `}</style>

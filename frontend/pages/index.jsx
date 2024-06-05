@@ -14,7 +14,7 @@ import ComponenteX from '../components/componente-X';
 export default function Home() {
     return (
         <div>
-            <OurLastWork />
+            <Ourclients />
             {/* <Navbar></Navbar> */}
             {/* <Contact /> */}
             {/* <Hero />
