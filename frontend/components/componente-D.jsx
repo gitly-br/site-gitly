@@ -21,7 +21,7 @@ const OurLastWork = () => {
                         <h1 className='font-semibold text-xl mb-3'>Multiple users</h1>
                         <p className='text-[#9795B5]'>Lorem ipsum dolor sit amet consecte tur adipiscing elit semper.</p>
                     </div>
-                    <div>
+                    <div className='flex justify-center image'>
                         <Image src={container2} alt="container2" />
                     </div>
                 </div>
@@ -30,7 +30,7 @@ const OurLastWork = () => {
                         <h1 className='font-semibold text-xl mb-3'>Multiple users</h1>
                         <p className='text-[#9795B5]'>Lorem ipsum dolor sit amet consecte tur adipiscing elit semper.</p>
                     </div>
-                    <div>
+                    <div className='flex justify-center image'>
                         <Image src={container1} alt="container1" />
                     </div>
                 </div>
@@ -40,21 +40,25 @@ const OurLastWork = () => {
             @media (max-width: 1618px) {
                 .pai {
                     flex-direction: column !important;
+                    align-items: center !important;
                 }
 
                 .paizao {
                     justify-content: center;
                     align-items: center;
-                    
                 }
             }
 
             @media (max-width: 1068px) {
                 .filho {
                     flex-direction: column !important;
+                    align-items: center !important;
                 }
-                .paizao{
+                .paizao {
                     padding: 0 20px;
+                }
+                .image {
+                    margin-top: 20px;
                 }
             }
         `}</style>
