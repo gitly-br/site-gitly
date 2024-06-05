@@ -7,7 +7,7 @@ import Partners from '../components/partners';
 import Projects from '@/components/projects';
 import Ourclients from '@/components/ourclients';
 import Hero from '@/components/hero/hero';
-
+import Talktoone from '@/components/talktoone';
 import ComponenteX from '../components/componente-X';
 
 
@@ -20,6 +20,7 @@ export default function Home() {
             <Products></Products>
             <Partners />
             <Projects />
+            <Talktoone></Talktoone>
             <Footer />
         </div>
 
