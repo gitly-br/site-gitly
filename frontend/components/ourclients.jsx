@@ -24,7 +24,7 @@ export function Ourclients() {
                     infinite: true,
                     dots: true,
                     autoplay: true,
-                    autoplaySpeed: 3000, // Ajuste do valor para 3000 milissegundos
+                    autoplaySpeed: 3000,
                     arrows: false // Remove as setas de navegação
                 }
             },
@@ -98,6 +98,28 @@ export function Ourclients() {
                     </div>
                 </div>
             </Slider>
+            <style jsx global>{`
+                .slick-dots {
+                    bottom: -30px !important; /* Ajuste a posição vertical dos dots, se necessário */
+                    left: 0; /* Alinhamento à esquerda */
+                    text-align: left; /* Alinhamento à esquerda */
+                    width: auto; /* Ajusta a largura para caber os dots à esquerda */
+                }
+
+                .slick-dots li {
+                    margin: 0; /* Remove margem para alinhar os dots corretamente */
+                }
+
+                .slick-dots li button:before {
+                    color: white !important; /* Cor dos dots */
+                    opacity: 0.75 !important; /* Opacidade dos dots */
+                }
+
+                .slick-dots li.slick-active button:before {
+                    color: white !important; /* Cor dos dots ativos */
+                    opacity: 1 !important; /* Opacidade dos dots ativos */
+                }
+            `}</style>
         </div>
     );
 }
