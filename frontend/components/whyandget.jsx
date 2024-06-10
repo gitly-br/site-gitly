@@ -36,7 +36,7 @@ const Whyandget = () => {
               Why We Do What We Do
             </h1>
             <p className= 'text-center text-xl sm:text-left mt-10 sm:text-lg'>
-            By creating a visual guide along the way, the designer or developer <br></br>can get input from the other people involved in the website such as <br></br>the customer, their manager, and other members of the team. 
+            By creating a visual guide along the way, the designer or developer can get input from the other people involved in the website such as the customer, their manager, and other members of the team. 
             </p>
           </div>
           <div className="mx-auto justify-center content-center text-center sm:text-left mt-10 sm:grid sm:grid-cols-2 sm:gap-5 sm:mt-16">
@@ -46,7 +46,7 @@ const Whyandget = () => {
                 Reason One
               </h2>
               <p className= 'mt-5 text-xl sm:text-lg'>
-              Web design partially overlaps <br></br>web engineering in the broader<br></br> scope of web development
+              Web design partially overlaps web engineering in the broader scope of web development
               </p>
             </div>
             <div className="mt-10 sm:mt-0">
@@ -55,7 +55,7 @@ const Whyandget = () => {
                 Reason Two
               </h2>
               <p className= 'mt-5 sm:text-lg text-xl'>
-                Paper prototypes should be <br></br>considered when the following <br></br>is true
+                Paper prototypes should be considered when the following is true
                 </p>
             </div>
           </div>
