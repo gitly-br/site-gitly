@@ -1,37 +1,48 @@
 import Image from "next/image";
-import Card from '../assets/card.svg'
-import Cards from '../assets/cards.svg'
-import Cardsresponsivo from '../assets/cardsResponsivo.svg'
-import Cards2responsivo from '../assets/cards2Responsivo.svg'
-import Cards3responsivo from '../assets/cards3Responsivo.svg'
-import Cards4responsivo from '../assets/cards4Responsivo.svg'
+import Card from '../assets/card.svg';
+import Cards from '../assets/cards.svg';
+import Cardsresponsivo from '../assets/cardsResponsivo.svg';
+import Cards2responsivo from '../assets/cards2Responsivo.svg';
+import Cards3responsivo from '../assets/cards3Responsivo.svg';
+import Cards4responsivo from '../assets/cards4Responsivo.svg';
 
-import Cards2 from '../assets/cards2.svg'
-import Cards3 from '../assets/cards3.svg'
-import Cards4 from '../assets/cards4.svg'
-import Grupo3 from '../assets/grupo3.svg'
-import Grupo2 from '../assets/grupo2.svg'
-import Grupo1 from '../assets/grupo1.svg'
-import Grupo4 from '../assets/grupo4.svg'
-import Grupo5 from '../assets/grupo5.svg'
-import Grupo2hover from '../assets/grupo2hover.svg'
-import Grupo3hover from '../assets/grupo3hover.svg'
-import Grupo4hover from '../assets/grupo4hover.svg'
-import Grupo5hover from '../assets/grupo5hover.svg'
-import Grupo6hover from '../assets/grupo6hover.svg'
+import Cards2 from '../assets/cards2.svg';
+import Cards3 from '../assets/cards3.svg';
+import Cards4 from '../assets/cards4.svg';
+import Grupo3 from '../assets/grupo3.svg';
+import Grupo2 from '../assets/grupo2.svg';
+import Grupo1 from '../assets/grupo1.svg';
+import Grupo4 from '../assets/grupo4.svg';
+import Grupo5 from '../assets/grupo5.svg';
+import Grupo2hover from '../assets/grupo2hover.svg';
+import Grupo3hover from '../assets/grupo3hover.svg';
+import Grupo4hover from '../assets/grupo4hover.svg';
+import Grupo5hover from '../assets/grupo5hover.svg';
+import Grupo6hover from '../assets/grupo6hover.svg';
 import React, { useState } from "react";
+import Ballleft from '../assets/ballleft.svg';
+import Ballright from '../assets/ballright.svg';
 
 const Browse = () => {
     const [hoveredButton, setHoveredButton] = useState(null);
     const [clickedButton, setClickedButton] = useState(1); 
 
     return (
-        <div className="flex flex-col items-center justify-center p-10 sm:p-16 sm:grid sm:grid-cols-3 sm:gap-20 bg-black text-white">
-            <div className="sm:col-span-1 mb-20 sm:mb-0">
+        <div className="relative flex flex-col items-center justify-center p-10 sm:p-16 sm:grid sm:grid-cols-3 sm:gap-20 bg-white text-white" style={{ background: 'linear-gradient(to right, #021b09, black)', color: 'white' }}>
+            <div className="absolute inset-0 -z-10">
+                <div className="absolute top-0 left-0 w-1/2 h-full bg-no-repeat bg-left">
+                    <Image src={Ballleft} alt="ballleft" />
+                </div>
+                <div className="absolute top-0 right-0 w-1/2 h-full bg-no-repeat bg-right">
+                    <Image src={Ballright} alt="ballright" />
+                </div>
+            </div>
+
+            <div className="sm:col-span-1 mb-20 sm:mb-0 relative z-20">
                 <Image src={Card} alt="Imagem" className='w-full h-full' />
             </div>
 
-            <div className="sm:col-span-2 bg-green-200">
+            <div className="sm:col-span-2 bg-green-200 relative z-20">
                 <h1 className='text-3xl mb-4 font-bold'>Browse our set of services</h1>
                 <p className='mb-4'>Lorem ipsum dolor sit amet consectetur adipiscing elit semper<br /> dalar elementum tempus hac tellus libero accumsan. </p>
 
@@ -103,7 +114,6 @@ const Browse = () => {
                     {clickedButton === 4 && <Image src={Cards4responsivo} alt="Imagem" className="sm:hidden block" />}
                     {clickedButton === 5 && <Image src={Cards4} alt="Imagem" className="hidden sm:block" />}
                     {clickedButton === 5 && <Image src={Cards4responsivo} alt="Imagem" className="sm:hidden block" />}
-
                 </div>
             </div>
         </div>
