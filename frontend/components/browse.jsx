@@ -26,18 +26,8 @@ import Ballright from '../assets/ballright.svg';
 const Browse = () => {
     const [hoveredButton, setHoveredButton] = useState(null);
     const [clickedButton, setClickedButton] = useState(1); 
-
     return (
         <div className="relative flex flex-col items-center justify-center p-10 sm:p-16 sm:grid sm:grid-cols-3 sm:gap-20 bg-white text-white" style={{ background: 'linear-gradient(to right, #021b09, black)', color: 'white' }}>
-            <div className="absolute inset-0 -z-10">
-                <div className="absolute top-0 left-0 w-1/2 h-full bg-no-repeat bg-left">
-                    <Image src={Ballleft} alt="ballleft" />
-                </div>
-                <div className="absolute top-0 right-0 w-1/2 h-full bg-no-repeat bg-right">
-                    <Image src={Ballright} alt="ballright" />
-                </div>
-            </div>
-
             <div className="sm:col-span-1 mb-20 sm:mb-0 relative z-20">
                 <Image src={Card} alt="Imagem" className='w-full h-full' />
             </div>
