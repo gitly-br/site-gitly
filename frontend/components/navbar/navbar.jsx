@@ -22,11 +22,11 @@ const Navbar = () => {
 
         </div>
         <div className="md:flex hidden flex-1 justify-around text-white font-light">
-          <Link href="/link1">Home</Link>
-          <Link href="/link2">Our purpose</Link>
-          <Link href="/link3">Partners</Link>
-          <Link href="/link4">Media</Link>
-          <Link href="/link5">Contact us</Link>
+          <Link href="/">Home</Link>
+          <Link href="/ourpurpose">Our purpose</Link>
+          <Link href="/partners">Partners</Link>
+          <Link href="/media">Media</Link>
+          <Link href="/contactus">Contact us</Link>
         </div>
         <div className="flex-1 flex justify-end">
           <button className="bg-green-500 text-white p-2 rounded md:block hidden">
@@ -39,11 +39,11 @@ const Navbar = () => {
       </div>
       {isOpen && (
         <div className="flex flex-col items-center md:hidden bg-black bg-opacity-80">
-          <Link href="/link1"><p className="text-white py-2">Home</p></Link>
-          <Link href="/link2"><p className="text-white py-2">Our purpose</p></Link>
-          <Link href="/link3"><p className="text-white py-2">Partners</p></Link>
-          <Link href="/link4"><p className="text-white py-2">Media</p></Link>
-          <Link href="/link5"><p className="text-white py-2">Contact us</p></Link>
+          <Link href="/"><p className="text-white py-2">Home</p></Link>
+          <Link href="/ourpurpose"><p className="text-white py-2">Our purpose</p></Link>
+          <Link href="/partners"><p className="text-white py-2">Partners</p></Link>
+          <Link href="/media"><p className="text-white py-2">Media</p></Link>
+          <Link href="/contactus"><p className="text-white py-2">Contact us</p></Link>
           <button className="bg-green-500 text-white p-2 rounded my-2">
             Start your project
           </button>

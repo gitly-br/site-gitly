@@ -15,12 +15,12 @@ export default function Home() {
     return (
         <div>
             <Navbar></Navbar>
+            {/* <Contact /> */}
             <Hero />
             <Products></Products>
             <Partners />
             <Projects />
-            <Ourclients></Ourclients>
-            <Footer /> 
+            <Footer />
         </div>
 
     );
