@@ -21,7 +21,7 @@ const Adedicated = () => {
                 muted
                 className="absolute top-0 left-0 w-full h-full object-cover"
             >
-                <source src="/video.mp4" type="video/mp4" />
+                <source src="/video2.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
             <div className="relative col-span-1 flex justify-center items-center">
@@ -30,13 +30,13 @@ const Adedicated = () => {
                     onClick={handlePlay}
                     className="bg-transparent border-none"
                 >
-            <Image src={Play} alt="Play Video" className="w-full h-full"  />
+            <Image src={Play} alt="Play Video" style={{ width: '70%', height: 'auto' }} />
         </button>
                 )}
             </div>
             <div className="relative z-10 col-span-1 flex items-center">
                 <div>
-                    <h1 className="mb-5 sm:text-3xl font-bold">A dedicated team <br />to grow your company</h1>
+                    <h1 className="mb-5 sm:text-5xl font-bold">A dedicated team <br />to grow your company</h1>
                     <p>
                         Amet minim mollit non deserunt ullamco est sit aliqua dolor<br />
                         do amet sint. Velit officia consequat duis enim velit mollit.<br />
