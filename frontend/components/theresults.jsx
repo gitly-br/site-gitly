@@ -1,4 +1,3 @@
-import React from 'react';
 import Image from "next/image";
 import products from "../assets/products.svg";
 import Container1 from '../assets/container1.svg'
@@ -7,12 +6,21 @@ import Container3 from '../assets/container3.svg'
 import Container4 from '../assets/container4.svg'
 import Container5 from '../assets/container5.svg'
 import Container6 from '../assets/container6.svg'
+import ComponenteF from './componente-F';
 
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import leftArrow from "../public/arrow-left.svg";
+import rightArrow from "../public/arrow-right.svg";
+import React, { useState } from "react";
 
 
 const Theresults = () => {
   return (
     <div className='p-5 sm:p-10 flex flex-col items-center justify-center bg-black text-white'>
+      <ComponenteF></ComponenteF>
+
       <div className='text-center'>
         <h1 className='mb-4 sm:mb-0 text-2xl sm:text-3xl font-bold'>
           The results in numbers
