@@ -13,7 +13,7 @@ import Container6 from '../assets/container6.svg'
 const Theresults = () => {
   
   return (
-    <div className='p-5 sm:p-10 flex flex-col items-center justify-center bg-black text-white'>
+    <div className='p-5 sm:p-10 flex flex-col items-center justify-center  text-white'>
       <div className='text-center'>
         <h1 className='mb-4 sm:mb-0 text-2xl sm:text-3xl font-bold'>
           The results in numbers

@@ -15,8 +15,10 @@ const partners = [
 ];
 
     return (
-        <div>
+        <div style={{ background: `linear-gradient(to right, #021b09, black)` }}>
             <ComponenteF partners={partners} />
+            <div className=''> </div>
+            <Theresults></Theresults>
         </div>
     );
 }
