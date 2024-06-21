@@ -5,12 +5,13 @@ import Footer from '../components/footer';
 import Products from '../components/products';
 import Projects from '@/components/projects';
 
-import Hero from '@/components/hero/hero';
 
-export default function Partners() {
-    return (
-        <div>
+// import Hero from '@/components/hero/hero';
 
-        </div>
-    );
-}
+// export default function Partners() {
+//     return (
+//         <div>
+
+//         </div>
+//     );
+// }
