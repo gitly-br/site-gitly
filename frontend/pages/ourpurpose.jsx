@@ -1,15 +1,18 @@
 import React from 'react';
-import Navbar from '@/components/navbar/navbar';
+import Navbar from '@/components/navbar';
 import Footer from '../components/footer';
-import HeroPartners from '@/components/heroPartrners';
-
+import HeroSection from '@/components/herosection';
+import Journey from '@/components/journey';
+import WhyWeDo from '@/components/whywedo';
 
 export default function Ourpupose() {
     return (
         <div>
-            <Navbar></Navbar>
-            <HeroPartners />
-            <Footer /> 
+            <Navbar />
+            <HeroSection />
+            <Journey />
+            <WhyWeDo />
+            <Footer />
         </div>
     );
 }
