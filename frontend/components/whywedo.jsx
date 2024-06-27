@@ -13,7 +13,7 @@ import ButtonGreenGet from "./button/buttonGreenGet";
 import React, { useState, useEffect } from 'react';
 
 
-const Whyandget = () => {
+const WhyWeDo = () => {
   const images = [galeria, imagem2, imagem3];
   const [currentImage, setCurrentImage] = useState(images[0]);
 
@@ -83,4 +83,4 @@ const Whyandget = () => {
   );
 };
 
-export default Whyandget;
+export default WhyWeDo;
