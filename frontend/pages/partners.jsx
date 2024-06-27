@@ -8,6 +8,7 @@
 import Hero from '@/components/hero/hero';
 import HeroPartners from '@/components/heroPartrners';
 
+
 export default function PartnersPage() {
     return (
         <div>
