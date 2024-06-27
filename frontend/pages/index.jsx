@@ -7,22 +7,22 @@ import Partners from '../components/partners';
 import Projects from '@/components/projects';
 import Ourclients from '@/components/ourclients';
 import Hero from '@/components/hero/hero';
-import Journey from '@/components/componente-journey';
-
+import Talktoone from '@/components/talktoone';
 import ComponenteX from '../components/componente-X';
-
+import Interviews from '../components/interviews';
 
 export default function Home() {
     return (
         <div>
-            <Journey />
-            {/* <Navbar></Navbar>
-            <Hero />
+            {/* <Navbar></Navbar> */}
+            {/* <Contact /> */}
+            {/* <Hero />
             <Products></Products>
             <Partners />
             <Projects />
-            <Ourclients></Ourclients>
-            <Footer />  */}
+            <Talktoone></Talktoone>
+            <Footer />
+            <Interviews />
         </div>
 
     );

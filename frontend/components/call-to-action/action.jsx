@@ -17,7 +17,7 @@ function MeuComponente() {
                     <ButtonGreenGet />
 
                 </div>
-                <div className={styles.image}>
+                <div className="w-90">
                     <Image src={computer} alt="Computer"/>
                 </div>
             </div>

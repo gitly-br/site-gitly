@@ -18,20 +18,22 @@ const Projects = () => {
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
+
   const images = [project1, project2, project3, project4];
+
   if (isSmallScreen) {
     const settings = {
-      dots: false, // Removido para não mostrar os pontos de navegação
+      dots: false,
       infinite: true,
       speed: 500,
       slidesToShow: 1.4,
       slidesToScroll: 1,
-      swipeToSlide: true, // Adicionado para permitir a troca de slide deslizando o dedo
-      touchMove: true, // Adicionado para habilitar o movimento de toque
-      arrows: false, // Removido para ocultar as setas de navegação
+      swipeToSlide: true,
+      touchMove: true,
+      arrows: false,
     };
     return (
-      <div className="bg-[#001D09] text-white container mx-auto py-10 px-14 justify-center">
+      <div className="container mx-auto py-10 px-14 text-center" style={{ background: 'linear-gradient(to right, #021b09, black)', color: 'white' }}>
         <h2 className="text-3xl font-bold mb-4">Projects</h2>
         <p className="text-lg mb-8">Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar elementum tempus hac tellus libero accumsan.</p>
         <Slider {...settings}>
@@ -44,18 +46,20 @@ const Projects = () => {
         <button className="text-[16px] bg-[#11562F] py-3 mx-auto mt-8 block">Ver todos os projetos</button>
       </div>
     );
-  }
-  return (
-    <div className="bg-[#001D09] text-white container mx-auto py-10 px-14 justify-center">
-      <h2 className="text-3xl font-bold mb-4">Projects</h2>
-      <p className="text-lg mb-8">Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar elementum tempus hac tellus libero accumsan.</p>
-      <div className="flex justify-center items-center space-x-4">
-        {images.map((image, index) => (
-          <Image key={index} src={image} alt={`Project ${index + 1}`} width={200} height={150} />
-        ))}
+  } else {
+    return (
+      <div className="bg-[#001D09] text-white container mx-auto py-10 px-14 text-center">
+        <h2 className="text-3xl font-bold mb-4">Projects</h2>
+        <p className="text-lg mb-8">Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar elementum tempus hac tellus libero accumsan.</p>
+        <div className="flex justify-center items-center space-x-4">
+          {images.map((image, index) => (
+            <Image key={index} src={image} alt={`Project ${index + 1}`} width={200} height={150} />
+          ))}
+        </div>
+        <button className="text-[16px] bg-[#11562F] py-3 mx-auto mt-8 block">Ver todos os projetos</button>
       </div>
-      <button className="text-[16px] bg-[#11562F] py-3 mx-auto mt-8 block">Ver todos os projetos</button>
-    </div>
-  );
+    );
+  }
 };
+
 export default Projects;
