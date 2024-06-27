@@ -28,6 +28,7 @@ const Browse = () => {
     const [clickedButton, setClickedButton] = useState(1); 
     return (
         <div className="relative flex flex-col items-center justify-center p-10 sm:p-16 sm:grid sm:grid-cols-3 sm:gap-20 bg-white text-white" style={{ background: 'linear-gradient(to right, #021b09, black)', color: 'white' }}>
+
             <div className="sm:col-span-1 mb-20 sm:mb-0 relative z-20">
                 <Image src={Card} alt="Imagem" className='w-full h-full' />
             </div>
