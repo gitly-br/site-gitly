@@ -6,7 +6,7 @@ import product3 from "../assets/product3.svg";
 import product4 from "../assets/product4.svg";
 import productDeg from "../assets/product_deg.svg";
 
-const Home = () => {
+const Products = () => {
   const [hoveredProduct, setHoveredProduct] = useState(null);
 
   const handleMouseOver = (product) => {
@@ -41,4 +41,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Products;

@@ -4,7 +4,7 @@ import container1 from "../assets/container1.svg";
 import container2 from "../assets/container2.svg";
 import container3 from "../assets/container3.svg";
 
-const OurLastWork = () => {
+const LatestWork = () => {
   return (
     <div className="py-10 px-32 text-center flex flex-col bg-gradient-to-r from-[#021b09] to-black text-white paizao">
         <div>
@@ -81,4 +81,4 @@ const OurLastWork = () => {
   );
 };
 
-export default OurLastWork;
+export default LatestWork;

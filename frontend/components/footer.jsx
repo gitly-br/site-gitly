@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import facebook from "../public/Facebook.svg";
 import instagram from "../public/Instagram.svg";
-import linkedin from "../public/Instagram.svg";
+import linkedin from "../public/linkedin.svg";
 import Image from "next/image";
+import Link from 'next/link';
+import logo from "../assets/logo.svg";
 
 export default function Footer() {
   const [sidebar, setSidebar] = useState(false);
@@ -19,7 +21,9 @@ export default function Footer() {
     <footer className="bg-[#001D09] text-white px-14 mb-0 ">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between mb-4 pt-10">
         <div className="w-full md:w-1/5 flex flex-col items-left mb-8">
-          <h1 className="text-lg font-bold">Gitly</h1>
+          <Link href="/">
+              <Image src={logo} alt="Logo Gitly" width={50} height={50} />
+          </Link>
           <p className="text-sm">Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam mauris sed ma</p>
         </div>
 

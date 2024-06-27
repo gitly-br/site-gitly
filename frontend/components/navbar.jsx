@@ -1,9 +1,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import logo from "../../assets/gitly.svg";
-
-import ButtonGreenStart from '../button/buttonGreenStart';
+import logo from "../assets/logo.svg";
 
 
 const Navbar = () => {
