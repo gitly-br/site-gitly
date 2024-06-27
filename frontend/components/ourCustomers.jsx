@@ -6,6 +6,7 @@ import leftArrow from "../public/arrow-left.svg";
 import rightArrow from "../public/arrow-right.svg";
 import arrowRead from "../public/arrow-read.svg";
 import React, { useState } from "react";
+import arrowRead from "../assets/arrow-read.svg";
 
 // const partners = [
 //   { name: "Twich", logo: "/Twitch.svg", description: "Twitch is a live streaming platform for gamers and other lifestyle casters. The platform is owned by Amazon and has more than 15 million daily active users.", link: "https://www.twitch.tv/" },
@@ -110,9 +111,9 @@ const OurCustomers = ({ partners }) => {
         <div className="flex justify-center text-wrap text-white lg:px-40 px-10 text-[1.5em]">
           <p>{partners[currentSlide].description}</p>
         </div>
-        <div className="flex justify-center pt-10 text-[1.6em] font-semibold text-[#3AA06B]">
+        <div className="flex justify-center pt-10 text-[1.6em] font-semibold text-[#3AA06B] mb-14">
           <a href={partners[currentSlide].link} target="_blank" rel="noopener noreferrer" style={{ color: "#3AA06B", textDecoration: "underline", fontWeight: "bold" }}>Read more</a>
-          <Image src={arrowRead} className="pl-1" alt="Read more" width={20} height={20} />
+          <Image src={arrowRead} className="pl-1 pt-2" alt="Read more" width={25} height={25} />
         </div>
       </div>
     </div>
