@@ -1,7 +1,7 @@
 import React from "react";
 import ButtonGreenGet from "./button/buttonGreenGet";
 
-const talktoone = () => {
+const CallHome = () => {
   return (
     <div className="flex flex-col items-center justify-center p-10 sm:p-16 sm:grid sm:grid-cols-3 sm:gap-20 bg-[#121C16] text-white">
       <div className="mb-20 sm:mb-0 sm:col-span-1 flex flex-col items-center sm:items-start">
@@ -21,4 +21,4 @@ const talktoone = () => {
   );
 };
 
-export default talktoone;
+export default CallHome;

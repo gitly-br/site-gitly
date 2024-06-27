@@ -8,6 +8,7 @@ import Projects from "@/components/projects";
 import OurCustomers from "@/components/ourCustomers";
 import Midia from "@/components/midia";
 import Testimonial from "@/components/testimonial";
+import CallHome from "@/components/callHome";
 
 const partners = [
   { name: "Twitch", logo: "/Twitch.svg", description: "Twitch is a live streaming platform for gamers and other lifestyle casters. The platform is owned by Amazon and has more than 15 million daily active users.", link: "https://www.twitch.tv/" },
@@ -29,6 +30,7 @@ export default function Home() {
             <OurCustomers partners={partners} />
             <Midia />
             <Testimonial />
+            <CallHome />
             <Footer />
         </div>
     );
