@@ -8,20 +8,22 @@ import Projects from '@/components/projects';
 import Ourclients from '@/components/ourclients';
 import Hero from '@/components/hero/hero';
 import OurLastWork from '@/components/componente-D';
+import Talktoone from '@/components/talktoone';
 import ComponenteX from '../components/componente-X';
-
+import Interviews from '../components/interviews';
 
 export default function Home() {
     return (
         <div>
-            <Ourclients />
             {/* <Navbar></Navbar> */}
             {/* <Contact /> */}
             {/* <Hero />
             <Products></Products>
             <Partners />
             <Projects />
-            <Footer /> */}
+            <Talktoone></Talktoone>
+            <Footer />
+            <Interviews />
         </div>
 
     );
