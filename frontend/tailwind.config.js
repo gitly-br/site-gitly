@@ -27,6 +27,10 @@ module.exports = {
         'title': 700,
         'text': 400,
       },
+      lineHeight: {
+        'title': '76px',
+        'text': '28px',
+      },
     },
   },
   plugins: [],

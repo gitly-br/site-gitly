@@ -2,10 +2,6 @@ import React from 'react';
 import Image from "next/image";
 import products from "../assets/products.svg";
 import Container1 from '../assets/container1.svg'
-import Container2 from '../assets/container2.svg'
-import Container3 from '../assets/container3.svg'
-import Container4 from '../assets/container4.svg'
-import Container5 from '../assets/container5.svg'
 import Container6 from '../assets/container6.svg'
 
 
