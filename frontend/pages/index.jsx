@@ -9,19 +9,20 @@ import Ourclients from '@/components/ourclients';
 import Hero from '@/components/hero/hero';
 import Talktoone from '@/components/talktoone';
 import ComponenteX from '../components/componente-X';
-
+import Interviews from '../components/interviews';
 
 export default function Home() {
     return (
         <div>
-            <Navbar></Navbar>
+            {/* <Navbar></Navbar> */}
             {/* <Contact /> */}
-            <Hero />
+            {/* <Hero />
             <Products></Products>
             <Partners />
             <Projects />
             <Talktoone></Talktoone>
             <Footer />
+            <Interviews />
         </div>
 
     );
