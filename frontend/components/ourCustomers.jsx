@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 import leftArrow from "../public/arrow-left.svg";
 import rightArrow from "../public/arrow-right.svg";
+import arrowRead from "../public/arrow-read.svg";
 import React, { useState } from "react";
 
 // const partners = [
@@ -40,7 +41,7 @@ const SamplePrevArrow = (props) => {
 };
 
 
-const ComponenteF = ({ partners }) => {
+const OurCustomers = ({ partners }) => {
   const [currentSlide, setCurrentSlide] = useState(Math.floor(partners.length / 2)); // Define o slide do meio como inicial
 
   const goToSlide = (index) => {
@@ -118,4 +119,4 @@ const ComponenteF = ({ partners }) => {
   );
 };
 
-export default ComponenteF;
+export default OurCustomers;

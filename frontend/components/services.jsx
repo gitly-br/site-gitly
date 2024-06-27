@@ -11,7 +11,7 @@ import React, { useState } from "react";
 
 
 
-const Browse = () => {
+const Services = () => {
     const [hoveredButton, setHoveredButton] = useState(null);
 
   return (
@@ -87,4 +87,4 @@ const Browse = () => {
   );
 };
 
-export default Browse;
+export default Services;

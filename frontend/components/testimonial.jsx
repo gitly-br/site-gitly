@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 import Pessoa from '../assets/pessoa.png';
 
-export function Ourclients() {
+export function Testimonial() {
     const settings = {
         dots: true,
         infinite: true,
@@ -124,4 +124,4 @@ export function Ourclients() {
     );
 }
 
-export default Ourclients;
+export default Testimonial;

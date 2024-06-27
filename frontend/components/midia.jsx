@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 import React from "react";
 
-const ComponenteX = () => {
+const Midia = () => {
     return (
         <div className="px-4 md:px-24 lg:px-48 py-10 md:py-20 lg:py-40" style={{ background: `linear-gradient(to right, #021b09, black)` }}>
             <div className="text-white flex flex-col">
@@ -75,4 +75,4 @@ const ComponenteX = () => {
     );
 };
 
-export default ComponenteX;
+export default Midia;
