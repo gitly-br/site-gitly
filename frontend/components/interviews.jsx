@@ -37,9 +37,9 @@ const Interviews = () => {
   return (
     <div className="py-10 lg:px-36 xl:px-80 md:px-0 text-center flex flex-col bg-black text-white paizao">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 md:px-10 lg:px-16 xl:px-20">
-        <h1 className='text-[3em] font-semibold mb-5'>Our latest interviews</h1>
-        <p className='text-lg md:text-xl lg:text-2xl text-center mb-5'>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar elementum tempus hac tellus libero accumsan.
+        <h1 className='text-3xl font-semibold mb-5 font-title'>A Gitly na Mídia</h1>
+        <p className='text-center mb-5 font-text'>
+        Descubra como a Gitly está na vanguarda da inovação tecnológica por meio de nossas entrevistas mais recentes. Nossos líderes compartilham insights sobre o desenvolvimento de soluções de IA e como essas tecnologias estão transformando o setor.
         </p>
       </div>
       <Slider {...settings} className='mt-8'>
@@ -48,11 +48,11 @@ const Interviews = () => {
             <div className='w-full flex justify-center mb-3'>
               <Image src={CBN} alt="Interviews" />
             </div>
-            <h1 className='font-semibold text-xl mb-3'>CBN São Paulo</h1>
-            <p className='mb-3'>
-              How Artificial intelligence can warn about rain, floods and the penetration of barriers in risky areas of cities.
+            <h1 className='font-semibold text-xl mb-3 font-title'>CBN São Paulo</h1>
+            <p className='mb-3 font-text'>
+            Em entrevista à CBN, nosso CEO explica como a inteligência artificial da Gitly pode prever chuvas, inundações e superação de barreiras em zonas de risco urbanas.
             </p>
-            <button className="action-button">Watch</button>
+            <button className="action-button font-text">Veja</button>
           </div>
         </div>
         <div className="px-2"> {/* Reduzindo a margem horizontal */}
@@ -61,10 +61,10 @@ const Interviews = () => {
               <Image src={Inter} alt="CBN" />
             </div>
             <h1 className='font-semibold text-xl mb-3'>Valor Econômico | Globo</h1>
-            <p className='mb-3'>
-              Artificial Intelligence developed by Gitly will alert about rain, floods and flooding in the city of Santo André/SP.
+            <p className='mb-3 font-text'>
+            Neste artigo, nosso CEO elabora como a inteligência artificial desenvolvida pela Gitly alertará sobre chuva, inundações e alagamentos na cidade de Santo André/SP.
             </p>
-            <button className="action-button">Read</button>
+            <button className="action-button font-text">Leia</button>
           </div>
         </div>
         <div className="px-2"> {/* Reduzindo a margem horizontal */}
@@ -72,11 +72,11 @@ const Interviews = () => {
             <div className='w-full flex justify-center mb-3'>
               <Image src={CBN} alt="CBN" />
             </div>
-            <h1 className='font-semibold text-xl mb-3'>CBN São Paulo</h1>
-            <p className='mb-3'>
-              How Artificial intelligence can warn about rain, floods and the penetration of barriers in risky areas of cities.
+            <h1 className='font-semibold text-xl mb-3 font-title'>CBN São Paulo</h1>
+            <p className='mb-3 font-text'>
+            Em entrevista à CBN, nosso CEO explica como a inteligência artificial da Gitly pode prever chuvas, inundações e superação de barreiras em zonas de risco urbanas.
             </p>
-            <button className="action-button">Watch</button>
+            <button className="action-button font-text">Veja</button>
           </div>
         </div>
       </Slider>
