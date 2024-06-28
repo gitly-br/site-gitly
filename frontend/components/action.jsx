@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import background from "../../assets/background-1.png"
+import background from "../../assets/background.svg"
 import computer from "../../assets/computer.png"
 import ButtonGreenGet from '../button/buttonGreenGet'
 

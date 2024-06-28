@@ -6,7 +6,6 @@ import leftArrow from "../public/arrow-left.svg";
 import rightArrow from "../public/arrow-right.svg";
 import arrowRead from "../public/arrow-read.svg";
 import React, { useState } from "react";
-import arrowRead from "../assets/arrow-read.svg";
 
 // const partners = [
 //   { name: "Twich", logo: "/Twitch.svg", description: "Twitch is a live streaming platform for gamers and other lifestyle casters. The platform is owned by Amazon and has more than 15 million daily active users.", link: "https://www.twitch.tv/" },

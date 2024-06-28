@@ -1,6 +1,4 @@
-import ButtonTransparentGet from "../button/buttonTransparentGet";
-import Image from "next/image";
-import primaryButton from '../../assets/mouse.svg';
+
 
 function Hero() {
     return (
@@ -18,7 +16,7 @@ function Hero() {
                 <p className="font-text text-lg mt-5 px-9 md:px-60 mb-10">
                     A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.
                 </p>
-                <ButtonTransparentGet/>
+                <button className="border border-white rounded-br-lg w-48 h-12 text-white">Get Started</button>
             </div>
         </div>
     );

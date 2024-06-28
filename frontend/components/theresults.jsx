@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from "next/image";
-import products from "../assets/products.svg";
-import Container1 from '../assets/container1.svg'
+import Container1 from '../assets/GrandPlaza.svg'
 import Container6 from '../assets/container6.svg'
 
 

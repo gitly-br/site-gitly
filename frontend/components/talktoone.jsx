@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Video from '../assets/video.svg';
 import React from "react";
-import ButtonGreenGet from "./button/buttonGreenGet";
+import ButtonGreenGet from "../button/buttonGreenGet";
 
 const Talktoone = () => {
   return (

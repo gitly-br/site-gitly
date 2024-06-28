@@ -1,14 +1,14 @@
-import Contact from '../components/contact';
-import Navbar from '@/components/navbar/navbar';
-import Action from '@/components/call-to-action/action';
-import Footer from '../components/footer';
-import Products from '../components/products';
-import Partners from '../components/partners';
-import Projects from '@/components/projects';
-import Ourclients from '@/components/ourclients';
-import Hero from '@/components/hero/hero';
-import Browse from '@/components/browse';
-
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
+import Hero from "@/components/hero";
+import Services from "@/components/services";
+import Products from "@/components/products";
+import Partners from "@/components/partners";
+import Projects from "@/components/projects";
+import OurCustomers from "@/components/ourCustomers";
+import Midia from "@/components/midia";
+import Testimonial from "@/components/testimonial";
+import CallHome from "@/components/callHome";
 
 const partners = [
   { name: "Twitch", logo: "/Twitch.svg", description: "Twitch is a live streaming platform for gamers and other lifestyle casters. The platform is owned by Amazon and has more than 15 million daily active users.", link: "https://www.twitch.tv/" },
@@ -21,12 +21,10 @@ const partners = [
 export default function Home() {
     return (
         <div>
-            <Navbar></Navbar>
-            {/* <Contact /> */}
+            <Navbar />
             <Hero />
-            <Browse />
-            <Products></Products>
-
+            <Services />
+            <Products />
             <Partners />
             <Projects />
             <OurCustomers partners={partners} />
