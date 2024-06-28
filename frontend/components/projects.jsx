@@ -34,8 +34,8 @@ const Projects = () => {
     };
     return (
       <div className="container mx-auto py-10 px-14 text-center" style={{ background: 'linear-gradient(to right, #021b09, black)', color: 'white' }}>
-        <h2 className="text-3xl font-bold mb-4">Projects</h2>
-        <p className="text-lg mb-8">Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar elementum tempus hac tellus libero accumsan.</p>
+        <h2 className="text-3xl font-bold mb-4">Nossos projetos</h2>
+        <p className="text-lg mb-8">Exploramos a fronteira da tecnologia através de nossos projetos, implementando soluções avançadas de inteligência artificial e análise de dados que revolucionam processos e decisões empresariais em diversas indústrias.</p>
         <Slider {...settings}>
           {images.map((image, index) => (
             <div key={index}>
@@ -43,20 +43,20 @@ const Projects = () => {
             </div>
           ))}
         </Slider>
-        <button className="text-[16px] bg-[#11562F] py-3 mx-auto mt-8 block">Ver todos os projetos</button>
+        <button className="bg-green rounded-br-lg w-48 h-12 text-white py-3 mx-auto mt-8 block">Ver todos os projetos</button>
       </div>
     );
   } else {
     return (
       <div className="bg-[#001D09] text-white container mx-auto py-10 px-14 text-center" style={{ background: 'linear-gradient(to right, #021b09, black)', color: 'white' }}>
-        <h2 className="text-3xl font-bold mb-4">Projects</h2>
-        <p className="text-lg mb-8">Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar elementum tempus hac tellus libero accumsan.</p>
+        <h2 className="text-3xl font-bold mb-4">Nossos projetos</h2>
+        <p className="text-lg mb-8">Exploramos a fronteira da tecnologia através de nossos projetos, implementando soluções avançadas de inteligência artificial e análise de dados que revolucionam processos e decisões empresariais em diversas indústrias.</p>
         <div className="flex justify-center items-center space-x-4">
           {images.map((image, index) => (
             <Image key={index} src={image} alt={`Project ${index + 1}`} width={200} height={150} />
           ))}
         </div>
-        <button className="text-[16px] bg-[#11562F] py-3 mx-auto mt-8 block">Ver todos os projetos</button>
+        <button className="bg-green rounded-br-lg w-48 h-12 text-white py-3 mx-auto mt-8 block">Ver todos os projetos</button>
       </div>
     );
   }

@@ -24,17 +24,16 @@ export default function Footer() {
           <Link href="/">
               <Image src={logo} alt="Logo Gitly" width={50} height={50} />
           </Link>
-          <p className="text-sm">Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam mauris sed ma</p>
+          <p className="text-sm">Vamos Falar sobre Tomada de Decisão Impulsionada por IA?</p>
         </div>
 
         <div className="w-full md:w-3/5 mb-4 md:text-center">
           <div className="flex flex-col md:flex-row md:justify-center md:items-center md:space-x-4 items-center">
-            <a href="/#ourPurpose" onClick={handleLinkClick} className="mx-2 mb-2 md:mb-0">Our Purpose</a>
-            <a href="/#Partners" onClick={handleLinkClick} className="mx-2 mb-2 md:mb-0">Partners</a>
-            <a href="/#Projects" onClick={handleLinkClick} className="mx-2 mb-2 md:mb-0">Projects</a>
-            <a href="/#Products" onClick={handleLinkClick} className="mx-2 mb-2 md:mb-0">Products</a>
-            <a href="/#Media" onClick={handleLinkClick} className="mx-2 mb-2 md:mb-0">Media</a>
-            <a href="/#Contact" onClick={handleLinkClick} className="mx-2 mb-2 md:mb-0">Contact Us</a>
+            <a href="/" onClick={handleLinkClick} className="mx-2 mb-2 md:mb-0">Home</a>
+            <a href="/ourPurpose" onClick={handleLinkClick} className="mx-2 mb-2 md:mb-0">Nosso Propósito</a>
+            <a href="/Partners" onClick={handleLinkClick} className="mx-2 mb-2 md:mb-0">Nosso Processo</a>
+            <a href="/Media" onClick={handleLinkClick} className="mx-2 mb-2 md:mb-0">Mídia</a>
+            <a href="/Contact" onClick={handleLinkClick} className="mx-2 mb-2 md:mb-0">Contato</a>
           </div>
         </div>
 
@@ -45,7 +44,7 @@ export default function Footer() {
           <button className="mr-4" onClick={() => openLink("https://www.linkedin.com/company/gitly/")}>
             <Image src={linkedin} alt="Linkedin" width={30} height={30} />
           </button>
-          <button className="mr-4" onClick={() => openLink("https://www.facebook.com/")}>
+          <button className="mr-4" onClick={() => openLink("https://www.facebook.com/profile.php?id=100064740228253")}>
             <Image src={facebook} alt="Facebook" width={30} height={30} />
           </button>
         </div>
@@ -54,7 +53,7 @@ export default function Footer() {
       <hr className="w-full border-t border-gray-600 mb-4" />
 
       <div className="text-center">
-        <p className="text-xs mb-4">Copyright © 2023 Gitly | All Rights Reserved</p>
+        <p className="text-xs mb-4">Copyright © 2023 Gitly | Direitos Reservados</p>
         <p className="text-xs">Gitly Soluções em Tecnologia da Informação Ltda.</p>
         <p className="text-xs pb-8">CNPJ: 17.425.516/0001-80</p>
       </div>

@@ -111,12 +111,9 @@ const Contact = () => {
       </div>
       <div className="bg-[#202020] text-white p-10 rounded-[32px] xl:w-5/12 xl:z-1 lg:absolute xl:right-[10%] xl:top-1/2 xl:translate-y-[-50%] xl:block">
         <div className="">
-          <h1 className="text-[36px] pb-3">Get in touch today</h1>
+          <h1 className="text-[36px] pb-3">Conecte-se conosco agora!</h1>
           <p className="text-[20px] pb-7">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,
-            eum facere natus enim adipisci delectus alias et nihil ex ipsa
-            ratione, eaque distinctio qui deleniti perspiciatis, temporibus
-            dolores amet vel!
+          Tem uma ideia ou precisa de ajuda? Conte-nos! Envie sua mensagem explicando sua situação ou o que você precisa. Nossos especialistas estão prontos para desenvolver soluções personalizadas para você.
           </p>
         </div>
         <div>
@@ -124,7 +121,7 @@ const Contact = () => {
             <div className="flex flex-col">
               <div className="flex flex-wrap text-[20px] pb-4 justify-between">
                 <div className="flex flex-col w-full 2xl:w-[18.7em]">
-                  <label htmlFor="name" className='pb-[0.35em]'>Name *</label>
+                  <label htmlFor="name" className='pb-[0.35em]'>Nome *</label>
                   <input
                     type="text"
                     id="name"
@@ -135,7 +132,7 @@ const Contact = () => {
                   />
                 </div>
                 <div className="pt-4 2xl:pt-0 flex flex-col w-full 2xl:w-[18.7em]">
-                  <label htmlFor="email" className='pb-[0.35em]'>Email *</label>
+                  <label htmlFor="email" className='pb-[0.35em]'>E-mail *</label>
                   <input
                     type="email"
                     id="email"
@@ -148,7 +145,7 @@ const Contact = () => {
               </div>
               <div className="flex flex-wrap gap-3 text-[20px] pb-4 justify-between">
                 <div className="flex flex-col w-full 2xl:w-[18.75em]">
-                  <label htmlFor="phone" className='pb-[0.35em]'>Phone *</label>
+                  <label htmlFor="phone" className='pb-[0.35em]'>Telefone *</label>
                   <input
                     type="tel"
                     id="phone"
@@ -168,7 +165,7 @@ const Contact = () => {
                   />
                 </div>
                 <div className="flex flex-col w-full 2xl:w-[18.75em]">
-                  <label htmlFor="company" className='pb-[0.35em]'>Company *</label>
+                  <label htmlFor="company" className='pb-[0.35em]'>Empresa *</label>
                   <input
                     type="text"
                     id="company"
@@ -180,7 +177,7 @@ const Contact = () => {
                 </div>
               </div>
               <div className="text-[20px] flex flex-col pb-4">
-                <label htmlFor="message" className='pb-[0.35em]'>Your Message</label>
+                <label htmlFor="message" className='pb-[0.35em]'>Sua Mensagem</label>
                 <input
                   id="message"
                   name="message"

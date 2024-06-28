@@ -8,9 +8,9 @@ import product4 from "../assets/product4.svg";
 const Products = () => {
   return (
     <div className="bg-[#001D09] container mx-auto flex flex-col py-10 px-14 md:flex-row items-center justify-between" style={{ background: 'linear-gradient(to right, #021b09, black)', color: 'white' }}>
-      <div className="w-full md:w-1/4 flex flex-col justify-center items-center md:items-left mb-8 text-white">
-        <h2 className="text-3xl font-bold mb-4">Products</h2>
-        <p className="text-lg mb-8">The visual guide will provide a view to the customer of what their website or project</p>
+      <div className="w-full md:w-1/4 flex flex-col md:items-left mb-8 text-white">
+        <h2 className="text-3xl font-bold mb-4">Nossos Produtos</h2>
+        <p className="text-lg mb-8">Oferecemos uma linha de produtos inovadores baseados em inteligência artificial, projetados para otimizar operações empresariais e melhorar a tomada de decisões. Nossas soluções abrangem desde análise de dados até automação de processos, todas com interfaces intuitivas e de fácil implementação.</p>
       </div>
       <div className="flex flex-col md:flex-row md:justify-center md:items-center md:space-x-4 items-center w-full md:w-3/4">
         <Image src={product1} alt="product1" width={200} height={200} className="mb-4" />

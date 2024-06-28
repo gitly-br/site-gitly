@@ -34,8 +34,8 @@ const Services = () => {
             </div>
 
             <div className="sm:col-span-2 bg-green-200 relative z-20">
-                <h1 className='text-3xl mb-4 font-bold'>Browse our set of services</h1>
-                <p className='mb-4'>Lorem ipsum dolor sit amet consectetur adipiscing elit semper<br /> dalar elementum tempus hac tellus libero accumsan. </p>
+                <h1 className='text-3xl mb-4 font-bold'>Explore nossos serviços</h1>
+                <p className='mb-4'>Descubra o poder da IA na transformação dos seus negócios. <br /> Entre em contato hoje e comece a moldar o futuro.</p>
 
                 <div className='flex space-x-4 mb-6'>
                     <button
