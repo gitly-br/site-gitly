@@ -8,8 +8,12 @@ const LatestWork = () => {
   return (
     <div className="py-10 px-32 text-center flex flex-col bg-gradient-to-r from-[#021b09] to-black text-white paizao">
         <div>
-            <h1 className='text-[3em] font-semibold mb-5'>Our lasted work</h1>
-            <p className='text-lg md:text-xl lg:text-2xl text-center mb-5'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+            <h1 className='text-2xl sm:text-3xl mb-4 font-title'>
+                Nossos Últimos Trabalhos
+            </h1>
+            <p className='text-center mb-4 font-text'>
+            Descubra como as soluções inovadoras da Gitly estão transformando o cenário empresarial. Confira alguns dos nossos projetos mais recentes:
+            </p>
         </div>
         <div className='flex gap-10 justify-center flex-wrap md:flex-nowrap pai'>
         <div className='relative flex-none'>

@@ -51,7 +51,7 @@ const OurCustomers = ({ partners }) => {
   return (
     <div className="text-white bg-black poppins-font truncate font-thin px-5 lg:px-20 xl:px-64" style={{ background: `linear-gradient(to right, #021b09, black)` }} data-carousel="slide">
       <div className="flex flex-col items-center">
-        <h1 className="text-[3em] font-semibold mb-5">Nossos Clientes</h1>
+        <h1 className="font-semibold mb-5 font-title text-5xl sm:text-3xl">Nossos Clientes</h1>
         <div className="w-full flex justify-center items-center">
           <Slider
             className="flex overflow-x-hidden"
@@ -107,8 +107,8 @@ const OurCustomers = ({ partners }) => {
         </div>
       </div>
       <div>
-        <div className="flex justify-center text-wrap text-white lg:px-40 px-10 text-[1.5em]">
-          <p>{partners[currentSlide].description}</p>
+        <div className="flex justify-center text-wrap text-white lg:px-40 px-10">
+          <p className="font-text text-center">{partners[currentSlide].description}</p>
         </div>
         <div className="flex justify-center pt-10 text-[1.6em] font-semibold text-[#3AA06B] mb-14">
           <a href={partners[currentSlide].link} target="_blank" rel="noopener noreferrer" style={{ color: "#3AA06B", textDecoration: "underline", fontWeight: "bold" }}>Read more</a>
