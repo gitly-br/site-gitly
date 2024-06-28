@@ -24,16 +24,16 @@ export default function Footer() {
           <Link href="/">
               <Image src={logo} alt="Logo Gitly" width={50} height={50} />
           </Link>
-          <p className="text-sm">Vamos Falar sobre Tomada de Decisão Impulsionada por IA?</p>
+          <p className="text-sm font-text">Vamos Falar sobre Tomada de Decisão Impulsionada por IA?</p>
         </div>
 
         <div className="w-full md:w-3/5 mb-4 md:text-center">
           <div className="flex flex-col md:flex-row md:justify-center md:items-center md:space-x-4 items-center">
-            <a href="/" onClick={handleLinkClick} className="mx-2 mb-2 md:mb-0">Home</a>
-            <a href="/ourPurpose" onClick={handleLinkClick} className="mx-2 mb-2 md:mb-0">Nosso Propósito</a>
-            <a href="/Partners" onClick={handleLinkClick} className="mx-2 mb-2 md:mb-0">Nosso Processo</a>
-            <a href="/Media" onClick={handleLinkClick} className="mx-2 mb-2 md:mb-0">Mídia</a>
-            <a href="/Contact" onClick={handleLinkClick} className="mx-2 mb-2 md:mb-0">Contato</a>
+            <a href="/" onClick={handleLinkClick} className="mx-2 mb-2 md:mb-0 font-text">Home</a>
+            <a href="/ourPurpose" onClick={handleLinkClick} className="mx-2 mb-2 md:mb-0 font-text">Nosso Propósito</a>
+            <a href="/Partners" onClick={handleLinkClick} className="mx-2 mb-2 md:mb-0 font-text">Nosso Processo</a>
+            <a href="/Media" onClick={handleLinkClick} className="mx-2 mb-2 md:mb-0 font-text">Mídia</a>
+            <a href="/Contact" onClick={handleLinkClick} className="mx-2 mb-2 md:mb-0 font-text">Contato</a>
           </div>
         </div>
 
@@ -53,9 +53,9 @@ export default function Footer() {
       <hr className="w-full border-t border-gray-600 mb-4" />
 
       <div className="text-center">
-        <p className="text-xs mb-4">Copyright © 2023 Gitly | Direitos Reservados</p>
-        <p className="text-xs">Gitly Soluções em Tecnologia da Informação Ltda.</p>
-        <p className="text-xs pb-8">CNPJ: 17.425.516/0001-80</p>
+        <p className="text-xs mb-4 font-text">Copyright © 2023 Gitly | Direitos Reservados</p>
+        <p className="text-xs font-text">Gitly Soluções em Tecnologia da Informação Ltda.</p>
+        <p className="text-xs pb-8 font-text">CNPJ: 17.425.516/0001-80</p>
       </div>
     </footer>
   );

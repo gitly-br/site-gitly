@@ -45,8 +45,8 @@ export function Testimonial() {
     return (
         <div className='py-12 px-8 bg-white' style={{ background: 'linear-gradient(to right, #021b09, black)', color: 'white' }}>
             <div>
-                <h1 className='text-4xl text-white font-semibold'>O que nossos clientes dizem</h1>
-                <p className='mt-3 text-white'>Ouça diretamente de nossos clientes como as soluções da Gitly transformaram seus negócios. <br/> Suas experiências destacam nossa dedicação à inovação e ao suporte excepcional.</p>
+                <h1 className='text-4xl text-white font-title'>O que nossos clientes dizem</h1>
+                <p className='mt-3 text-white font-text'>Ouça diretamente de nossos clientes como as soluções da Gitly transformaram seus negócios. <br/> Suas experiências destacam nossa dedicação à inovação e ao suporte excepcional.</p>
             </div>
             <Slider {...settings} className='mt-8'>
                 <div className="px-4">
@@ -55,11 +55,11 @@ export function Testimonial() {
                             <Image src={Pessoa} alt="Imagem" className='w-full object-cover h-full' />
                         </div>
                         <div className="w-4/5 sm:w-4/5 p-2">
-                            <p className='text-sm sm:text-base md:text-lg text-white font-Montserrat'>Lorem ipsum dolor sit amet consectetur adipiscing elit ultrices scelerisque mi sed interdum lacus tellus in mi orc, netus nisl laoreet.</p>
-                            <p className='text-[#146237] text-sm sm:text-base md:text-lg mt-5'>
+                            <p className='text-sm sm:text-base md:text-lg text-white font-text'>Lorem ipsum dolor sit amet consectetur adipiscing elit ultrices scelerisque mi sed interdum lacus tellus in mi orc, netus nisl laoreet.</p>
+                            <p className='text-[#146237] text-sm sm:text-base md:text-lg mt-5 font-text'>
                                 <b>Emily Blunt</b>
                             </p>
-                            <p className='mt-1 text-sm sm:text-base md:text-lg text-white'>
+                            <p className='mt-1 text-sm sm:text-base md:text-lg text-white font-text'>
                                 CEO at <u>Krasinski</u>
                             </p>
                         </div>
@@ -71,11 +71,11 @@ export function Testimonial() {
                             <Image src={Pessoa} alt="Imagem" className='w-full object-cover h-full' />
                         </div>
                         <div className="w-4/5 sm:w-4/5 p-2">
-                            <p className='text-sm sm:text-base md:text-lg text-white font-Montserrat'>Lorem ipsum dolor sit amet consectetur adipiscing elit ultrices scelerisque mi sed interdum lacus tellus in mi orc, netus nisl laoreet.</p>
-                            <p className='text-[#146237] text-sm sm:text-base md:text-lg mt-5'>
+                            <p className='text-sm sm:text-base md:text-lg text-white font-text'>Lorem ipsum dolor sit amet consectetur adipiscing elit ultrices scelerisque mi sed interdum lacus tellus in mi orc, netus nisl laoreet.</p>
+                            <p className='text-[#146237] text-sm sm:text-base md:text-lg mt-5 font-text'>
                                 <b>Emily Blunt</b>
                             </p>
-                            <p className='mt-1 text-sm sm:text-base md:text-lg text-white'>
+                            <p className='mt-1 text-sm sm:text-base md:text-lg text-white font-text'>
                                 CEO at <u>Krasinski</u>
                             </p>
                         </div>
@@ -87,11 +87,11 @@ export function Testimonial() {
                             <Image src={Pessoa} alt="Imagem" className='w-full object-cover h-full' />
                         </div>
                         <div className="w-4/5 sm:w-4/5 p-2">
-                            <p className='text-sm sm:text-base md:text-lg text-white font-Montserrat'>Lorem ipsum dolor sit amet consectetur adipiscing elit ultrices scelerisque mi sed interdum lacus tellus in mi orc, netus nisl laoreet.</p>
-                            <p className='text-[#146237] text-sm sm:text-base md:text-lg mt-5'>
+                            <p className='text-sm sm:text-base md:text-lg text-white font-text'>Lorem ipsum dolor sit amet consectetur adipiscing elit ultrices scelerisque mi sed interdum lacus tellus in mi orc, netus nisl laoreet.</p>
+                            <p className='text-[#146237] text-sm sm:text-base md:text-lg mt-5 font-text'>
                                 <b>Emily Blunt</b>
                             </p>
-                            <p className='mt-1 text-sm sm:text-base md:text-lg text-white'>
+                            <p className='mt-1 text-sm sm:text-base md:text-lg text-white font-text'>
                                 CEO at <u>Krasinski</u>
                             </p>
                         </div>

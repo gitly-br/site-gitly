@@ -10,7 +10,7 @@ function CallPartners() {
                 <Image src={ipadImage} alt="iPad" className="w-full h-auto" />
             </div>
             <div className="flex flex-col text-left md:w-1/2 p-16">
-                <h2 className="text-3xl font-semibold mb-4 font-title pl-4 pr-6">
+                <h2 className="text-3xl font-title mb-4 font-title pl-4 pr-6">
                 Fale com Nossos Especialistas e Inicie Seu Projeto Hoje
                 </h2>
                 <p className="mb-8 pl-4 font-text">

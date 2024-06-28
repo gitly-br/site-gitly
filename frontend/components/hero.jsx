@@ -19,7 +19,7 @@ function Hero() {
                 <p className="font-text text-lg mt-5 px-9 md:px-60 mb-10">
                 Descubra o poder da IA na transformação dos seus negócios. Entre em contato hoje e comece a moldar o futuro.
                 </p>
-                <button className="border border-white rounded-br-lg w-48 h-12 text-white">Get Started</button>
+                <button className="border border-white rounded-br-lg w-48 h-12 text-white font-text">Inicie seu Projeto</button>
             </div>
         </div>
     );
