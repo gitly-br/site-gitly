@@ -23,7 +23,7 @@ const Navbar = () => {
           <Link href="/">Home</Link>
           <Link href="/ourpurpose">Nosso Propósito</Link>
           <Link href="/partners">Nosso Processo</Link>
-          <Link href="/media">Media</Link>
+          <Link href="/media">Mídia</Link>
           <Link href="/contactus">Contato</Link>
         </div>
         <div className="flex-1 flex justify-end">
