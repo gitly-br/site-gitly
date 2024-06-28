@@ -2,6 +2,7 @@ import Contact from '../components/contact';
 import Navbar from '@/components/navbar';
 // import Action from '@/components/action';
 import Footer from '../components/footer';
+import CallContact from '@/components/callContact';
 
 
 export default function Contactus() {
@@ -12,6 +13,7 @@ export default function Contactus() {
                 <Contact />
             </div>
             {/* <Action /> */}
+            <CallContact />
             <Footer />
         </div>
     );

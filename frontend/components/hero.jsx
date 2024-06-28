@@ -12,9 +12,12 @@ function Hero() {
             ></iframe>
             <div className="absolute inset-0 bg-black opacity-60"></div> {/* Camada de sobreposição preta */}
             <div className="absolute inset-0 flex flex-col justify-center items-center text-center">
-                <h1 className="font-title text-6xl md:text-4xl">Let’s talk about AI-<br />Driven decision Making?</h1>
+                <h1 className="font-title text-6xl md:text-4xl">Vamos falar sobre tomada de<br />decisão impulsionadas por IA?</h1>
                 <p className="font-text text-lg mt-5 px-9 md:px-60 mb-10">
-                    A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.
+                Na Gitly, impulsionamos o futuro das decisões empresariais com soluções de inteligência artificial avançadas. Nossa tecnologia não apenas simplifica complexidades, mas antecipa desafios, garantindo que você esteja sempre à frente. Com a Gitly, cada decisão é uma oportunidade para inovar e liderar no seu mercado.
+                </p>
+                <p className="font-text text-lg mt-5 px-9 md:px-60 mb-10">
+                Descubra o poder da IA na transformação dos seus negócios. Entre em contato hoje e comece a moldar o futuro.
                 </p>
                 <button className="border border-white rounded-br-lg w-48 h-12 text-white">Get Started</button>
             </div>

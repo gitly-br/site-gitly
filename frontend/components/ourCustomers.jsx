@@ -51,7 +51,7 @@ const OurCustomers = ({ partners }) => {
   return (
     <div className="text-white bg-black poppins-font truncate font-thin px-5 lg:px-20 xl:px-64" style={{ background: `linear-gradient(to right, #021b09, black)` }} data-carousel="slide">
       <div className="flex flex-col items-center">
-        <h1 className="text-[3em] font-semibold mb-5">Our customers</h1>
+        <h1 className="text-[3em] font-semibold mb-5">Nossos Clientes</h1>
         <div className="w-full flex justify-center items-center">
           <Slider
             className="flex overflow-x-hidden"

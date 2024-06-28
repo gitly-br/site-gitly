@@ -21,14 +21,14 @@ const Navbar = () => {
         </div>
         <div className="md:flex hidden flex-1 justify-around text-white font-light">
           <Link href="/">Home</Link>
-          <Link href="/ourpurpose">Our purpose</Link>
-          <Link href="/partners">Partners</Link>
+          <Link href="/ourpurpose">Nosso Propósito</Link>
+          <Link href="/partners">Nosso Processo</Link>
           <Link href="/media">Media</Link>
-          <Link href="/contactus">Contact us</Link>
+          <Link href="/contactus">Contato</Link>
         </div>
         <div className="flex-1 flex justify-end">
-          <button className="bg-green-500 text-white p-2 rounded md:block hidden">
-            Start your project
+          <button className="bg-green rounded-br-lg w-48 h-12 text-white">
+            Inicie seu Projeto
           </button>
         </div>
         <button className="text-white md:hidden" onClick={() => setIsOpen(!isOpen)}>
