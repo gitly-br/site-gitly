@@ -35,7 +35,7 @@ const Interviews = () => {
   };
 
   return (
-    <div className="py-10 lg:px-36 xl:px-80 md:px-0 text-center flex flex-col bg-gradient-to-r from-[#021b09] to-black text-white paizao">
+    <div className="py-10 lg:px-36 xl:px-80 md:px-0 text-center flex flex-col bg-black text-white paizao">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 md:px-10 lg:px-16 xl:px-20">
         <h1 className='text-[3em] font-semibold mb-5'>Our latest interviews</h1>
         <p className='text-lg md:text-xl lg:text-2xl text-center mb-5'>
