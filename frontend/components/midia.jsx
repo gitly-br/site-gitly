@@ -8,8 +8,8 @@ const Midia = () => {
     return (
         <div className="px-4 md:px-24 lg:px-48 py-10 md:py-20 lg:py-40" style={{ background: `linear-gradient(to right, #021b09, black)` }}>
             <div className="text-white flex flex-col">
-                <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-center">What's Happening at Gitly</h1>
-                <p className="text-lg md:text-xl lg:text-2xl text-center">Check out our last events attended, prizes conferences and more:</p>
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-center">Novidades na Gitly</h1>
+                <p className="text-lg md:text-xl lg:text-2xl text-center">Descubra as últimas atualizações da Gitly, incluindo eventos, premiações e conferências. Estamos sempre avançando e inovando!</p>
             </div>
             <div>
                 <Slider

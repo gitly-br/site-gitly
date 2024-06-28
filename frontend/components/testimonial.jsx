@@ -45,8 +45,8 @@ export function Testimonial() {
     return (
         <div className='py-12 px-8 bg-white' style={{ background: 'linear-gradient(to right, #021b09, black)', color: 'white' }}>
             <div>
-                <h1 className='text-4xl text-white font-semibold'>What our clients say</h1>
-                <p className='mt-3 text-white'>Lorem ipsum dolor sit amet consectetur adipiscing elit semper<br /> dalar elementum tempus hac tellus libero accumsan.</p>
+                <h1 className='text-4xl text-white font-semibold'>O que nossos clientes dizem</h1>
+                <p className='mt-3 text-white'>Ouça diretamente de nossos clientes como as soluções da Gitly transformaram seus negócios. <br/> Suas experiências destacam nossa dedicação à inovação e ao suporte excepcional.</p>
             </div>
             <Slider {...settings} className='mt-8'>
                 <div className="px-4">
