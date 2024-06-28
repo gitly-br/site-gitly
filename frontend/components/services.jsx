@@ -6,9 +6,9 @@ import Cards2responsivo from '../assets/cards2Responsivo.svg';
 import Cards3responsivo from '../assets/cards3Responsivo.svg';
 import Cards4responsivo from '../assets/cards4Responsivo.svg';
 
-import Cards2 from '../assets/cards2.svg';
-import Cards3 from '../assets/cards3.svg';
-import Cards4 from '../assets/cards4.svg';
+import Cards2 from '../assets/Cards2.svg';
+import Cards3 from '../assets/Cards3.svg';
+import Cards4 from '../assets/Cards4.svg';
 import Grupo3 from '../assets/grupo3.svg';
 import Grupo2 from '../assets/grupo2.svg';
 import Grupo1 from '../assets/grupo1.svg';
