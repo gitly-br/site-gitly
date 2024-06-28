@@ -1,26 +1,3 @@
-// import React from "react";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
-// import Image from "next/image";
-// import leftArrow from "../public/arrow-left.svg";
-// import rightArrow from "../public/arrow-right.svg";
-
-// const Articles = () => {
-//     return (
-//         <div class = "flex flex-col justify-center items-center sm:text-center py-20 bg-black">
-//             <h1 className="text-center font-bold text-white text-3xl mb-4">
-//             Artigos
-//             </h1>
-//             <p className="text-center text-white text-lg mb-8">
-//             Descubra como a Gitly é percebida e discutida em diversos veículos de comunicação com nossos artigos destacados na mídia. Estes textos exploram o impacto das nossas inovações em inteligência artificial e ciência de dados e destacam como estamos moldando o futuro de várias indústrias.
-//             </p>
-//         </div>
-
-//     );
-// };
-
-// export default Articles;
-
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -31,11 +8,11 @@ const Articles = () => {
     return (
         <div className="px-4 md:px-24 lg:px-48 py-10 md:py-20 lg:py-40 bg-black">
             <div className="text-white flex flex-col">
-                <h1 className="text-3xl font-bold text-center">
-                    Artigos
+                <h1 className="text-3xl font-bold text-center font-title">
+                Artigos
                 </h1>
-                <p className="text-lg md:text-xl text-center py-3 px-20">
-                    Descubra como a Gitly é percebida e discutida em diversos veículos de comunicação com nossos artigos destacados na mídia. Estes textos exploram o impacto das nossas inovações em inteligência artificial e ciência de dados e destacam como estamos moldando o futuro de várias indústrias.
+                <p className="text-lg md:text-xl text-center py-3 px-20 font-text">
+                Descubra como a Gitly é percebida e discutida em diversos veículos de comunicação com nossos artigos destacados na mídia. Estes textos exploram o impacto das nossas inovações em inteligência artificial e ciência de dados e destacam como estamos moldando o futuro de várias indústrias.
                 </p>
             </div>
             <div>
@@ -66,26 +43,26 @@ const Articles = () => {
                     ]}
                 >
                     <div>
-                        <div className="flex flex-col items-center font-semibold text-[1.3em] text-wrap">
+                        <div className="flex flex-col items-center text-[1.3em] text-wrap">
                             <Image src="/article1.png" alt="First" width={300} height={300} />
-                            <div style={{ maxWidth: "300px" }} className="bg-[#001D09] py-14 px-2 text-center flex justify-center rounded-b-2xl">
-                                <h1 className="text-white">At Grand Plaza Mall, GPS take clients to stores with Gitly</h1>
+                            <div style={{ maxWidth: "300px" }} className="bg-[#202020] py-14 px-2 text-center flex justify-center rounded-b-2xl">
+                                <h1 className="text-white font-text">At Grand Plaza Mall, GPS take clients to stores with Gitly</h1>
                             </div>
                         </div>
                     </div>
                     <div>
                         <div className="flex flex-col items-center font-semibold text-[1.3em] text-wrap">
                             <Image src="/article2.png" alt="Second" width={300} height={300} />
-                            <div style={{ maxWidth: "300px" }} className="bg-[#001D09] py-10 px-3 text-center flex justify-center rounded-b-2xl">
-                                <h1 className="text-white text-center">Innovation Leaders platform of the Royal Academy of Engineering in England</h1>
+                            <div style={{ maxWidth: "300px" }} className="bg-[#202020] py-10 px-3 text-center flex justify-center rounded-b-2xl">
+                                <h1 className="text-white text-center font-text">Innovation Leaders platform of the Royal Academy of Engineering in England</h1>
                             </div>
                         </div>
                     </div>
                     <div>
                         <div className="flex flex-col items-center font-semibold text-[1.3em] text-wrap">
                             <Image src="/article3.png" alt="Third" width={300} height={300} />
-                            <div style={{ maxWidth: "300px" }} className="bg-[#001D09] py-10 px-3 text-center flex justify-center rounded-b-2xl">
-                                <h1 className="text-white text-center">Greater ABC Industrial Development Committee and the selection of startups</h1>
+                            <div style={{ maxWidth: "300px" }} className="bg-[#202020] py-10 px-3 text-center flex justify-center rounded-b-2xl">
+                                <h1 className="text-white text-center font-bold font-text">Greater ABC Industrial Development Committee and the selection of startups</h1>
                             </div>
                         </div>
                     </div>
