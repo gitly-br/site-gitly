@@ -11,7 +11,7 @@ const Articles = () => {
                 <h1 className="text-3xl font-bold text-center font-title">
                 Artigos
                 </h1>
-                <p className="text-lg md:text-xl text-center py-3 px-20 font-text">
+                <p className="text-center py-3 px-20 font-text">
                 Descubra como a Gitly é percebida e discutida em diversos veículos de comunicação com nossos artigos destacados na mídia. Estes textos exploram o impacto das nossas inovações em inteligência artificial e ciência de dados e destacam como estamos moldando o futuro de várias indústrias.
                 </p>
             </div>
