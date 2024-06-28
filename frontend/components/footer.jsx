@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import facebook from "../public/Facebook.svg";
 import instagram from "../public/Instagram.svg";
-import linkedin from "../public/Linkedin.svg";
+import linkedin from "../public/LinkedIn.svg";
 import Image from "next/image";
 import Link from 'next/link';
 import logo from "../assets/logo.svg";
