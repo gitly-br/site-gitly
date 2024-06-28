@@ -3,7 +3,7 @@ import ButtonGreenGet from "./button/buttonGreenGet";
 
 const CallHome = () => {
   return (
-    <div className="flex flex-col items-center justify-center p-10 sm:p-16 sm:grid sm:grid-cols-3 sm:gap-20 bg-[#121C16] text-white">
+    <div className="flex flex-col items-center justify-center p-10 sm:p-16 sm:grid sm:grid-cols-3 sm:gap-20 bg-[#121C16] text-white" style={{ backgroundImage: 'url(/backgroundMidia.svg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <div className="mb-20 sm:mb-0 sm:col-span-1 flex flex-col items-center sm:items-start">
         <h1 className="text-3xl mb-10 font-bold text-center sm:text-left">
           Talk to one of our specialists and start your project today

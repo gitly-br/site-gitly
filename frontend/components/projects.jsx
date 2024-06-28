@@ -48,7 +48,7 @@ const Projects = () => {
     );
   } else {
     return (
-      <div className="bg-[#001D09] text-white container mx-auto py-10 px-14 text-center">
+      <div className="bg-[#001D09] text-white container mx-auto py-10 px-14 text-center" style={{ background: 'linear-gradient(to right, #021b09, black)', color: 'white' }}>
         <h2 className="text-3xl font-bold mb-4">Projects</h2>
         <p className="text-lg mb-8">Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar elementum tempus hac tellus libero accumsan.</p>
         <div className="flex justify-center items-center space-x-4">

@@ -1,12 +1,15 @@
-import Navbar from '@/components/navbar/navbar';
-import Adedicated from '@/components/adedicated';
+import Navbar from '@/components/navbar';
 import Footer from '../components/footer';
+import HeroMedia from '@/components/heroMedia';
+import Interviews from '@/components/interviews';
 
 export default function Media() {
     return (
         <div>
-            <Adedicated></Adedicated>
-            <Footer></Footer>
+            <Navbar />
+            <HeroMedia />
+            <Interviews />
+            <Footer />
         </div>
     );
 }

@@ -1,8 +1,11 @@
-import Contact from '../components/contact';
-import Navbar from '@/components/navbar/navbar';
+import Navbar from '@/components/navbar';
 import Footer from '../components/footer';
+import HeroPartners from '@/components/heroPartrners';
+import LatestWork from '@/components/latestWork';
 import Theresults from '@/components/theresults';
-import ComponenteF from '@/components/componente-F';
+import OurCustomers from '@/components/ourCustomers';
+import Project1 from '@/components/project1';
+import CallPartners from '@/components/callPartners';
 
 export default function Partners() {
 
@@ -16,9 +19,15 @@ const partners = [
 
     return (
         <div style={{ background: `linear-gradient(to right, #021b09, black)` }}>
-            <ComponenteF partners={partners} />
+            <Navbar />
+            <HeroPartners />
+            <OurCustomers partners={partners} />
             <div className=''> </div>
             <Theresults></Theresults>
+            <LatestWork></LatestWork>
+            <Project1></Project1>
+            <CallPartners></CallPartners>
+            <Footer />
         </div>
     );
 }
