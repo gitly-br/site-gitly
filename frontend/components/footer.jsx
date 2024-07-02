@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import facebook from "../public/Facebook.svg";
 import instagram from "../public/Instagram.svg";
-import linkedin from "../public/linkedin.svg";
+import linkedin from "../public/LinkedIn.svg";
 import Image from "next/image";
 import Link from 'next/link';
 import logo from "../assets/logo.svg";
@@ -22,18 +22,18 @@ export default function Footer() {
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between mb-4 pt-10">
         <div className="w-full md:w-1/5 flex flex-col items-left mb-8">
           <Link href="/">
-              <Image src={logo} alt="Logo Gitly" width={50} height={50} />
+            <Image src={logo} alt="Logo Gitly" width={50} height={50} />
           </Link>
           <p className="text-sm font-text">Vamos Falar sobre Tomada de Decisão Impulsionada por IA?</p>
         </div>
 
         <div className="w-full md:w-3/5 mb-4 md:text-center">
           <div className="flex flex-col md:flex-row md:justify-center md:items-center md:space-x-4 items-center">
-            <a href="/" onClick={handleLinkClick} className="mx-2 mb-2 md:mb-0 font-text">Home</a>
-            <a href="/ourPurpose" onClick={handleLinkClick} className="mx-2 mb-2 md:mb-0 font-text">Nosso Propósito</a>
-            <a href="/Partners" onClick={handleLinkClick} className="mx-2 mb-2 md:mb-0 font-text">Nosso Processo</a>
-            <a href="/Media" onClick={handleLinkClick} className="mx-2 mb-2 md:mb-0 font-text">Mídia</a>
-            <a href="/Contact" onClick={handleLinkClick} className="mx-2 mb-2 md:mb-0 font-text">Contato</a>
+            <Link href="/" className="mx-2 mb-2 md:mb-0 font-text" onClick={handleLinkClick}>Home</Link>
+            <Link href="/ourPurpose" className="mx-2 mb-2 md:mb-0 font-text" onClick={handleLinkClick}>Nosso Propósito</Link>
+            <Link href="/Partners" className="mx-2 mb-2 md:mb-0 font-text" onClick={handleLinkClick}>Nosso Processo</Link>
+            <Link href="/Media" className="mx-2 mb-2 md:mb-0 font-text" onClick={handleLinkClick}>Mídia</Link>
+            <Link href="/Contact" className="mx-2 mb-2 md:mb-0 font-text" onClick={handleLinkClick}>Contato</Link>
           </div>
         </div>
 

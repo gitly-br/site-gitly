@@ -1,38 +1,35 @@
-@font-face {
-  font-family: 'Montserrat';
-  src: url('/fonts/montserrat/Montserrat-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  src: url('/fonts/montserrat/Montserrat-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  /* Settings Title */
-  --font-title: 'Montserrat', sans-serif;
-  --title-color: #FFFFFF;
-  --size-title: 60px;
-  --font-weight-title: 700;
-
-  /* Settings text */
-  --font-text: 'Montserrat', sans-serif;
-  --text-color: #DDDDDD;
-  --size-text: 20px;
-  --font-weight-text: 400;
-
-  /* Colors */
-  --green-color: #11562F;
-
+@font-face {
+  font-family: montserrat;
+  src: url(./font/Montserrat-Regular.ttf);
 }
+
+@font-face {
+  font-family: montserrat-thin;
+  src: url(./font/Montserrat-Thin.ttf);
+}
+
+@font-face {
+  font-family: montserrat-bold;
+  src: url(./font/Montserrat-Bold.ttf);
+}
+
+.montserrat-font-bold {
+  font-family: montserrat-bold;
+}
+
+.montserrat-font-thin {
+  font-family: montserrat-thin;
+}
+
+.montserrat-font {
+  font-family: montserrat;
+}
+
+
 
 /* @media (prefers-color-scheme: dark) {
   :root {
