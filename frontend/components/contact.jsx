@@ -110,90 +110,89 @@ const Contact = () => {
         />
       </div>
       <div className="bg-[#202020] text-white p-10 rounded-[32px] xl:w-5/12 xl:z-1 lg:absolute xl:right-[10%] xl:top-1/2 xl:translate-y-[-50%] xl:block">
-        <div className="">
-          <h1 className="text-[36px] pb-3 font-title">Conecte-se conosco agora!</h1>
-          <p className="text-[20px] pb-7 font-text">
-          Tem uma ideia ou precisa de ajuda? Conte-nos! Envie sua mensagem explicando sua situação ou o que você precisa. Nossos especialistas estão prontos para desenvolver soluções personalizadas para você.
-          </p>
-        </div>
-        <div>
-          <form onSubmit={handleSubmit}>
+    <div>
+        <h1 className="text-[36px] pb-3 font-title">Conecte-se conosco agora!</h1>
+        <p className="text-[20px] pb-7 font-text">
+            Tem uma ideia ou precisa de ajuda? Conte-nos! Envie sua mensagem explicando sua situação ou o que você precisa. Nossos especialistas estão prontos para desenvolver soluções personalizadas para você.
+        </p>
+    </div>
+    <div>
+        <form onSubmit={handleSubmit}>
             <div className="flex flex-col">
-              <div className="flex flex-wrap text-[20px] pb-4 justify-between">
-                <div className="flex flex-col w-full 2xl:w-[18.7em]">
-                  <label htmlFor="name" className='pb-[0.35em] font-text'>Nome *</label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    className="w-full rounded-lg bg-[#3E3E3E] border border-white py-[0.32em] px-5"
-                  />
+                <div className="flex flex-col md:flex-row flex-wrap text-[20px] pb-4 justify-between">
+                    <div className="flex flex-col w-full md:w-[48%]">
+                        <label htmlFor="name" className='pb-[0.35em] font-text'>Nome *</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            value={formData.name}
+                            onChange={handleChange}
+                            className="w-full rounded-lg bg-[#3E3E3E] border border-white py-[0.32em] px-5"
+                        />
+                    </div>
+                    <div className="pt-4 md:pt-0 flex flex-col w-full md:w-[48%]">
+                        <label htmlFor="email" className='pb-[0.35em] font-text'>E-mail *</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            value={formData.email}
+                            onChange={handleChange}
+                            className="w-full rounded-lg bg-[#3E3E3E] border border-white py-[0.32em] px-5"
+                        />
+                    </div>
                 </div>
-                <div className="pt-4 2xl:pt-0 flex flex-col w-full 2xl:w-[18.7em]">
-                  <label htmlFor="email" className='pb-[0.35em] font-text'>E-mail *</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    className="w-full rounded-lg bg-[#3E3E3E] border border-white py-[0.32em] px-5"
-                  />
+                <div className="flex flex-col md:flex-row flex-wrap gap-3 text-[20px] pb-4 justify-between">
+                    <div className="flex flex-col w-full md:w-[48%]">
+                        <label htmlFor="phone" className='pb-[0.35em] font-text'>Telefone *</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            pattern="[0-9 ()-]*"
+                            value={formData.phone}
+                            onChange={handleChange}
+                            onKeyPress={(e) => {
+                                const pattern = /[0-9 ()-]/;
+                                const inputChar = String.fromCharCode(e.charCode);
+                                if (!pattern.test(inputChar)) {
+                                    e.preventDefault();
+                                }
+                            }}
+                            className="w-full rounded-lg bg-[#3E3E3E] border border-white py-[0.32em] px-5"
+                        />
+                    </div>
+                    <div className="flex flex-col w-full md:w-[48%]">
+                        <label htmlFor="company" className='pb-[0.35em] font-text'>Empresa *</label>
+                        <input
+                            type="text"
+                            id="company"
+                            name="company"
+                            value={formData.company}
+                            onChange={handleChange}
+                            className="w-full rounded-lg bg-[#3E3E3E] border border-white py-[0.32em] px-5"
+                        />
+                    </div>
                 </div>
-              </div>
-              <div className="flex flex-wrap gap-3 text-[20px] pb-4 justify-between">
-                <div className="flex flex-col w-full 2xl:w-[18.75em]">
-                  <label htmlFor="phone" className='pb-[0.35em] font-text'>Telefone *</label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    pattern="[0-9 ()-]*"
-                    value={formData.phone} // Adicionado value
-                    onChange={handleChange} // Adicionado onChange
-                    onKeyPress={(e) => {
-                      // Impede a entrada de letras
-                      const pattern = /[0-9 ()-]/;
-                      const inputChar = String.fromCharCode(e.charCode);
-                      if (!pattern.test(inputChar)) {
-                        e.preventDefault();
-                      }
-                    }}
-                    className="w-full rounded-lg bg-[#3E3E3E] border border-white py-[0.32em] px-5"
-                  />
+                <div className="text-[20px] flex flex-col pb-4">
+                    <label htmlFor="message" className='pb-[0.35em] font-text'>Sua Mensagem</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        value={formData.message}
+                        onChange={handleChange}
+                        className="rounded-lg w-full bg-[#3E3E3E] border border-white py-12 px-5"
+                    />
                 </div>
-                <div className="flex flex-col w-full 2xl:w-[18.75em]">
-                  <label htmlFor="company" className='pb-[0.35em] font-text'>Empresa *</label>
-                  <input
-                    type="text"
-                    id="company"
-                    name="company"
-                    value={formData.company}
-                    onChange={handleChange}
-                    className="w-full rounded-lg bg-[#3E3E3E] border border-white py-[0.32em] px-5"
-                  />
+                <div className="flex justify-center items-center mt-6">
+                    <ButtonGreenSend />
                 </div>
-              </div>
-              <div className="text-[20px] flex flex-col pb-4">
-                <label htmlFor="message" className='pb-[0.35em] font-text'>Sua Mensagem</label>
-                <input
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  className="rounded-lg w-full bg-[#3E3E3E] border border-white py-12 px-5"
-                />
-              </div>
-              <div className="flex justify-center items-center mt-6">
-                <ButtonGreenSend />
-              </div>
-
             </div>
-          </form>
-        </div>
-      </div>
+        </form>
+    </div>
+</div>
+
       <ToastContainer /> 
     </div>
   );
