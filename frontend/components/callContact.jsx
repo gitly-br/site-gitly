@@ -16,18 +16,20 @@ function CallContact() {
             </div>
             {/* Content */}
             <div className="flex flex-col items-center lg:items-start text-center lg:text-left z-10 text-white response">
-                <div>
-                    <h1 className="text-3xl font-semibold">Talk to one of our specialists and start your project today</h1>
-                </div>
-                <div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit dolor semper at ac tempus enim laoreet massa non.</p>
-                </div>
-                <div>
-                    <button className="bg-[#1DB954] text-white py-2 px-4 rounded mt-4">Get a free quote</button>
+                <div className='px-20'>
+                    <div>
+                        <h1 className="text-3xl font-semibold">Fale com um dos nossos especialistas e inicie o projeto hoje!</h1>
+                    </div>
+                    <div className='pt-10'>
+                        <p>Na Gitly, estamos prontos para ajudar sua empresa a transformar dados em decisões inteligentes. Se você deseja mais informações sobre nossos serviços, precisa de ajuda para começar um projeto ou simplesmente quer explorar possibilidades de parceria, entre em contato conosco!</p>
+                    </div>
+                    <div>
+                        <button className="bg-[#1DB954] text-white py-2 px-4 rounded mt-4">Inicie seu projeto</button>
+                    </div>
                 </div>
             </div>
-            <div className="flex flex-col items-center justify-center z-10">
-                <Image src={Computer} alt="Computer" width={759.29} height={889.84} />
+            <div className="flex flex-col items-center justify-center z-10 hidden-on-small2">
+                <Image src={Computer} alt="Computer" width={959.29} height={1089.84} />
             </div>
             <style jsx>{`
             @media (max-width: 1560px) {

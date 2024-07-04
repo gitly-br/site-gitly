@@ -7,7 +7,7 @@ export default function Contactus() {
     return (
         <div>
             <Navbar />
-            <div className='px-5 xl:px-0 pb-36 xl:pb-36 top' style={{ background: 'linear-gradient(to bottom, #00002D, #000015)' }}>
+            <div className='px-5 xl:px-0 pb-36 xl:pb-36 top' style={{ background: 'linear-gradient(to bottom, #00002D, #000013)' }}>
                 <Contact />
             </div>
             <div className='pb-24 back'><CallContact /></div>
