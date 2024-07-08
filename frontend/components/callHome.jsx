@@ -8,8 +8,10 @@ const CallHome = () => {
         <h1 className="text-3xl mb-10 font-bold text-center sm:text-left font-title">
           Fale com um de nossos especialistas e inicie seu projeto hoje!
         </h1>
-        <ButtonGreenGet />
-      </div>
+          <button className="border border-white rounded-br-lg px-4 py-2 font-text bg-gray-800 text-white hover:bg-gray-700">
+              Get a free quote
+          </button>      
+        </div>
 
       <div className="sm:col-span-2 w-full flex justify-center sm:block">
         <video autoPlay loop muted className="w-full h-full">

@@ -23,6 +23,7 @@ import React, { useState } from "react";
 import Ballleft from '../assets/ballleft.svg';
 import Ballright from '../assets/ballright.svg';
 
+
 const Services = () => {
     const [hoveredButton, setHoveredButton] = useState(null);
     const [clickedButton, setClickedButton] = useState(1); 
@@ -30,7 +31,12 @@ const Services = () => {
         <div className="relative flex flex-col items-center justify-center p-10 sm:p-16 sm:grid sm:grid-cols-3 sm:gap-20 bg-white text-white" style={{ background: 'linear-gradient(to right, #021b09, black)', color: 'white' }}>
 
             <div className="sm:col-span-1 mb-20 sm:mb-0 relative z-20">
-                <Image src={Card} alt="Imagem" className='w-full h-full' />
+                <Image src={Card} alt="Imagem" className='w-full h-full object-cover' />
+                <div className="absolute bottom-0 left-0 mb-4 ml-4">
+                    <button className="border border-white rounded-br-lg px-4 py-2 font-text bg-gray-800 text-white hover:bg-gray-700">
+                        Get a free quote
+                    </button>
+                </div>
             </div>
 
             <div className="sm:col-span-2 bg-green-200 relative z-20">
