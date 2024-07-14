@@ -79,6 +79,13 @@ const Midia = () => {
                     </div>
                 </Slider>
             </div>
+            <div className="flex justify-center items-center h-full mt-4">
+                <button className="border border-white rounded-br-lg px-4 py-2 font-text bg-green-500 text-white hover:bg-gray-700">
+                    Ver mais
+                </button>
+            </div>
+
+            
         </div>
     );
 };

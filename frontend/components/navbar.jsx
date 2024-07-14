@@ -42,9 +42,9 @@ const Navbar = () => {
           <Link href="/partners"><p className="text-white py-2">Partners</p></Link>
           <Link href="/media"><p className="text-white py-2">Media</p></Link>
           <Link href="/contactus"><p className="text-white py-2">Contact us</p></Link>
-          <button className="bg-green-500 text-white p-2 rounded my-2">
-            Start your project
-          </button>
+            <button className="bg-green-500 text-white p-2 rounded my-2">
+              Start your project
+            </button>
         </div>
       )}
     </nav>

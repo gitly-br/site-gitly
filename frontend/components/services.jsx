@@ -33,7 +33,7 @@ const Services = () => {
             <div className="sm:col-span-1 mb-20 sm:mb-0 relative z-20">
                 <Image src={Card} alt="Imagem" className='w-full h-full object-cover' />
                 <div className="absolute bottom-0 left-0 mb-4 ml-4">
-                    <button className="border border-white rounded-br-lg px-4 py-2 font-text bg-gray-800 text-white hover:bg-gray-700">
+                    <button className="rounded-br-lg px-4 py-2 font-text bg-green text-white hover:bg-gray-700">
                         Get a free quote
                     </button>
                 </div>
