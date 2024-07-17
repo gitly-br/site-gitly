@@ -1,9 +1,6 @@
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
-import leftArrow from "../public/arrow-left.svg";
-import rightArrow from "../public/arrow-right.svg";
 import trofeu from '../assets/trofeu.svg'
 import galeria from '../assets/galeria.png'
 import imagem2 from '../assets/imagem2.svg'
@@ -42,7 +39,7 @@ const WhyWeDo = () => {
             <div>
               <Image src={trofeu} alt="Trofeu" className="mx-auto justify-center sm:mx-0 sm:justify-start"/>
               <h2 className="mt-5 text-2xl font-bold font-title">
-                Razão Um
+                Sempre a frente
               </h2>
               <p className= "mt-5 text-xl sm:text-lg font-text">
                 A integração entre design e engenharia nos permite criar soluções que antecipam e atendem às necessidades do mercado.
@@ -51,7 +48,7 @@ const WhyWeDo = () => {
             <div className="mt-10 sm:mt-0">
               <Image src={trofeu} alt="Trofeu" className="mx-auto justify-center sm:mx-0 sm:justify-start"/>
               <h2 className="mt-5 text-2xl font-bold font-title">
-                Razão Dois
+                Sempre Prontos
               </h2>
               <p className= "mt-5 sm:text-lg text-xl font-text">
                 Utilizamos protótipos para refinar rapidamente nossas inovações, garantindo soluções precisas e adaptáveis.
