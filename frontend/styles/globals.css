@@ -93,3 +93,24 @@ body {
     text-wrap: balance;
   }
 } */
+
+/* Estilos para navegadores que suportam WebKit */
+::-webkit-scrollbar {
+  width: 20px; /* Aumentando a largura da scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #103621;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 20px;
+  border: 4px solid #103621; /* Ajustando a borda para um pouco mais grossa */
+}
+
+/* Estilos para navegadores que suportam scrollbars personalizadas via scrollbar-width e scrollbar-color */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: black #103621;
+}
