@@ -1,26 +1,60 @@
-import Image from 'next/image'
-import computador from '../assets/computador.svg'
+import Image from 'next/image';
+import Computer from '../assets/computer.svg';
+import Bgleft from '../assets/bg-left.svg';
+import Ballright from '../assets/ball-center.svg';
+
 
 function CallContact() {
     return (
-        <div className="relative flex items-center justify-between h-screen bg-gradient-to-r from-[#021b09] to-black">
-            <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-            <div className="relative z-10 flex flex-col md:flex-row-reverse items-center justify-between w-full px-8 md:px-16 lg:px-32">
-                <div className="w-full md:w-1/2 flex flex-col items-start text-white space-y-6">
-                    <h1 className="text-3xl md:text-4xl font-title">Fale com um de nossos especialistas e inicie seu projeto hoje!</h1>
-                    <p className="text-base md:text-lg font-text">
-                    Na Gitly, estamos prontos para ajudar sua empresa a transformar dados em decisões inteligentes. Se você deseja mais informações sobre nossos serviços, precisa de ajuda para começar um projeto ou simplesmente quer explorar possibilidades de parceria, entre em contato conosco. Nossa equipe de especialistas está mais do que feliz em atendê-lo e fornecer todas as informações que você precisa.
-                    </p>
-                    <button className="bg-green rounded-br-lg w-48 h-12 text-white font-text">
-                    Inicie seu Projeto
-                    </button>
-                </div>
-                <div className="w-full md:w-1/2 flex justify-center md:justify-end mb-8 md:mb-0">
-                    <Image src={computador} alt="Computador" width={500} height={500} className="object-contain" />
+        <div className="relative flex flex-col lg:flex-row items-center justify-center h-screen gap-20 px-5 xl:px-20 py-20 bg-black beckgraund">
+            {/* Background SVGs */}
+            <div className="absolute top-0 left-0 hidden-on-small2">
+                <Image src={Bgleft} alt="Background Left" layout="fixed" width={620} height={700} />
+            </div>
+            <div className="absolute top-0 right-0 hidden-on-small">
+                <Image src={Ballright} alt="Background Top Right" layout="fixed" width={1000} height={1200} />
+            </div>
+            {/* Content */}
+            <div className="flex flex-col items-center lg:items-start text-center lg:text-left z-10 text-white response">
+                <div className='px-20'>
+                    <div>
+                        <h1 className="text-3xl font-semibold">Fale com um dos nossos especialistas e inicie o projeto hoje!</h1>
+                    </div>
+                    <div className='pt-10'>
+                        <p>Na Gitly, estamos prontos para ajudar sua empresa a transformar dados em decisões inteligentes. Se você deseja mais informações sobre nossos serviços, precisa de ajuda para começar um projeto ou simplesmente quer explorar possibilidades de parceria, entre em contato conosco!</p>
+                    </div>
+                    <div>
+                        <button className="bg-[#1DB954] text-white py-2 px-4 rounded mt-4">Inicie seu projeto</button>
+                    </div>
                 </div>
             </div>
+            <div className="flex flex-col items-center justify-center z-10 hidden-on-small2">
+                <Image src={Computer} alt="Computer" width={959.29} height={1089.84} />
+            </div>
+            <style jsx>{`
+            @media (max-width: 1560px) {
+            .hidden-on-small {
+                display: none;
+            }
+            
+            @media (max-width: 1024px) {
+            .hidden-on-small2 {
+                display: none;
+            }
+            
+            .beckgraund {
+                background: linear-gradient(to right, #021b09, black);
+            }
+
+            .response {
+                padding-top: 100px;
+            }
+
+            `}
+
+            </style>
         </div>
-    )
+    );
 }
 
-export default CallContact
+export default CallContact;
