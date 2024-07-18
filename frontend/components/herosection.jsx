@@ -2,6 +2,10 @@ import React from 'react';
 import Image from "next/image";
 import premiopt from "../assets/premiopt.svg";
 
+const openLink = (url) => {
+  window.open(url, "_blank");
+};
+
 const HeroSection = () => {
   return (
     <div className="bg-cover bg-center px-4 py-28 flex flex-col items-center sm:flex-row sm:justify-between bg-black w-full overflow-hidden" style={{ backgroundImage: 'url(/background.svg)' }}>
@@ -14,7 +18,7 @@ const HeroSection = () => {
           Nossa equipe é especializada em impulsionar o crescimento empresarial com soluções inovadoras e suporte personalizado, garantindo resultados
           eficazes e sustentáveis para sua empresa.
         </p>
-        <button className="border border-white rounded-br-lg w-48 h-12 font-text">Learn More</button>
+        <button className="btn-transparente" onClick={() => openLink("https://www.linkedin.com/company/gitly/")}>Ler Mais</button>
       </div>
     </div>
   );

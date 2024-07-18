@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
-import ButtonGreenSend from './button/buttonGreenSend';
 import emailjs from 'emailjs-com';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -185,9 +184,9 @@ const Contact = () => {
                         className="rounded-lg w-full bg-[#3E3E3E] border border-white py-12 px-5"
                     />
                 </div>
-                <div className="flex justify-center items-center mt-6">
-                    <ButtonGreenSend />
-                </div>
+                <button className="btn-verde">
+                  Enviar Mensagem
+                </button>
             </div>
         </form>
     </div>

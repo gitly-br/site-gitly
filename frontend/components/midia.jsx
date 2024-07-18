@@ -4,6 +4,10 @@ import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 import React from "react";
 
+const openLink = (url) => {
+    window.open(url, "_blank");
+};
+
 const Midia = () => {
     return (
         <div className="px-4 md:px-24 lg:px-48 py-10 md:py-20 lg:py-40" style={{ background: `linear-gradient(to right, #021b09, black)` }}>
@@ -80,7 +84,7 @@ const Midia = () => {
                 </Slider>
             </div>
             <div className="flex justify-center items-center h-full mt-4">
-                <button className="border border-white rounded-br-lg px-4 py-2 font-text bg-green-500 text-white hover:bg-gray-700">
+                <button className="btn-transparente" onClick={() => openLink("https://google.com")}>
                     Ver mais
                 </button>
             </div>

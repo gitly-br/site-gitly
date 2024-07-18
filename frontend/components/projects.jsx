@@ -21,6 +21,10 @@ const Projects = () => {
 
   const images = [project1, project2, project3, project4];
 
+  const openLink = (url) => {
+    window.open(url, "_blank");
+  };
+
   if (isSmallScreen) {
     const settings = {
       dots: false,
@@ -43,7 +47,7 @@ const Projects = () => {
             </div>
           ))}
         </Slider>
-        <button className="bg-green rounded-br-lg w-48 h-12 text-white py-3 mx-auto mt-8 block">Ver todos os projetos</button>
+        <button className="btn-verde">Ver todos os projetos</button>
       </div>
     );
   } else {
@@ -51,12 +55,12 @@ const Projects = () => {
       <div className="bg-[#001D09] text-white mx-auto py-14 px-24 text-center" style={{ background: 'linear-gradient(to right, #021b09, black)', color: 'white' }}>
         <h2 className="text-3xl font-bold mb-4 font-title">Nossos projetos</h2>
         <p className="text-lg mb-8 font-text">Exploramos a fronteira da tecnologia através de nossos projetos, implementando soluções <br></br>avançadas de inteligência artificial e análise de dados que revolucionam processos e <br></br>decisões empresariais em diversas indústrias.</p>
-        <div className="flex justify-center items-center space-x-4">
+        <div className="flex justify-center items-center space-x-4 mb-10">
           {images.map((image, index) => (
             <Image key={index} src={image} alt={`Project ${index + 1}`} width={200} height={150} />
           ))}
         </div>
-        <button className="bg-green rounded-br-lg w-48 h-12 text-white py-3 mx-auto mt-8 block font-text">Ver todos os projetos</button>
+        <button className="btn-verde" onClick={() => openLink("https://google.com")}>Ver todos os projetos</button>
       </div>
     );
   }

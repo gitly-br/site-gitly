@@ -25,6 +25,9 @@ import Bolaverde from '../assets/bolaVerde.svg';
 const Services = () => {
     const [hoveredButton, setHoveredButton] = useState(null);
     const [clickedButton, setClickedButton] = useState(1);
+    const openLink = (url) => {
+        window.open(url, "_blank");
+      };
 
     return (
         <div className="relative flex flex-col items-center justify-center p-10 sm:p-16 sm:grid sm:grid-cols-3 sm:gap-20 bg-white text-white" style={{ background: 'linear-gradient(to right, #021b09, black)', color: 'white' }}>
@@ -35,8 +38,8 @@ const Services = () => {
             <div className="sm:col-span-1 mb-20 sm:mb-0 relative z-20">
                 <Image src={Card} alt="Imagem" className='w-full h-full object-cover' />
                 <div className="absolute bottom-0 left-0 mb-4 ml-4">
-                    <button className="rounded-br-lg px-4 py-2 font-text bg-green text-white hover:bg-gray-700">
-                        Get a free quote
+                    <button className="btn-verde" onClick={() => openLink("https://api.whatsapp.com/send/?phone=5511994563491&text&type=phone_number&app_absent=0")}>
+                        Faça um orçamento
                     </button>
                 </div>
             </div>

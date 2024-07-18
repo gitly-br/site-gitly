@@ -24,7 +24,7 @@ function CallContact() {
                         <p>Na Gitly, estamos prontos para ajudar sua empresa a transformar dados em decisões inteligentes. Se você deseja mais informações sobre nossos serviços, precisa de ajuda para começar um projeto ou simplesmente quer explorar possibilidades de parceria, entre em contato conosco!</p>
                     </div>
                     <div>
-                        <button className="bg-[#1DB954] text-white py-2 px-4 rounded mt-4">Inicie seu projeto</button>
+                        <button className="btn-verde mt-4">Inicie seu projeto</button>
                     </div>
                 </div>
             </div>

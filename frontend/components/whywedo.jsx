@@ -6,8 +6,8 @@ import galeria from '../assets/galeria.png'
 import imagem2 from '../assets/imagem2.svg'
 import imagem3 from '../assets/imagem3.svg'
 import fundoRoxo from '../assets/fundoRoxo.png'
-import ButtonGreenGet from "./button/buttonGreenGet";
 import React, { useState, useEffect } from 'react';
+import Link from "next/link";
 
 const WhyWeDo = () => {
   const images = [galeria, imagem2, imagem3];
@@ -67,9 +67,11 @@ const WhyWeDo = () => {
           <h1 className="p-2 sm:p-0 mt-10 sm:mt-0 text-lg sm:text-3xl font-bold font-title">
             Fale com um de nossos especialistas e inicie seu projeto hoje!
           </h1>
-          <div className="mt-5 sm:mt-20 sm:ml-5">
-            <ButtonGreenGet />
-          </div>
+          <Link href="/contactus">
+            <button className="btn-verde ml-4">
+              Inicie seu Projeto
+            </button>
+          </Link>
         </div>
       </div>
     </div>

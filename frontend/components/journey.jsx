@@ -8,13 +8,13 @@ import backGroundVideo from "../public/backGroundVideo.webm";
 export default function Journey() {
   return (
     <div style={{ background: 'linear-gradient(to bottom, #021b09, black)' }} className="relative text-white lg:px-48 px-10 lg:py-40 py-10 justify-center min-h-screen">
-      <div className="text-center mb-10 z-10">
+      <div className="relative z-20 text-center mb-10">
         <p className="text-[1.25em] font-text">NOSSA JORNADA</p>
         <h1 className="text-[2.2em] font-semibold font-title">Como a Gitly foi Criada</h1>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-20 z-10">
-        <div className="w-full lg:w-1/4 z-10">
+      <div className="flex flex-wrap justify-center gap-20 relative z-20">
+        <div className="w-full lg:w-1/4">
           <div className="flex lg:justify-start justify-center">
             <Image src={planta} alt="Corazaum" width={72} height={72} />
           </div>
@@ -24,7 +24,7 @@ export default function Journey() {
           </div>
         </div>
 
-        <div className="w-full lg:w-1/4 z-10">
+        <div className="w-full lg:w-1/4">
           <div className="flex lg:justify-start justify-center">
             <Image src={trofeu} alt="Planta" width={72} height={72} />
           </div>
@@ -34,7 +34,7 @@ export default function Journey() {
           </div>
         </div>
 
-        <div className="w-full lg:w-1/4 z-10">
+        <div className="w-full lg:w-1/4">
           <div className="flex lg:justify-start justify-center">
             <Image src={corazaum} alt="Trofeu" width={72} height={72} />
           </div>
@@ -46,13 +46,13 @@ export default function Journey() {
       </div>
 
       {/* Divisão para o vídeo de fundo e imagem */}
-      <div className="absolute inset-0 z-0 overflow-hidden lg:block hidden">
+      <div className="absolute inset-0 z-10 overflow-hidden lg:block hidden">
         <video className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full object-cover" autoPlay loop muted>
           <source src={backGroundVideo} type="video/mp4" />
         </video>
       </div>
 
-      <div className="relative z-10 flex justify-center items-center mt-14">
+      <div className="relative z-20 flex justify-center items-center mt-14">
         <Image src={us} alt="Us" width={1150} height={580.27} />
       </div>
     </div>

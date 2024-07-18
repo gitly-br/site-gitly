@@ -7,33 +7,24 @@ import Link from 'next/link';
 import logo from "../assets/logo.svg";
 
 export default function Footer() {
-  const [sidebar, setSidebar] = useState(false);
-
-  const handleLinkClick = () => {
-    setSidebar(false);
-  };
-
-  const openLink = (url) => {
-    window.open(url, "_blank");
-  };
 
   return (
     <footer className="bg-[#001D09] text-white px-14 mb-0 ">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between mb-4 pt-10">
         <div className="w-full md:w-1/5 flex flex-col items-left mb-8">
           <Link href="/">
-            <Image src={logo} alt="Logo Gitly" width={50} height={50} />
+            <Image src={logo} alt="Logo Gitly" width={70} height={70} />
           </Link>
-          <p className="text-sm font-text">Vamos Falar sobre Tomada de Decisão Impulsionada por IA?</p>
+          <p className="text-sm font-text mt-2">Vamos falar sobre tomada de decisão impulsionada por IA?</p>
         </div>
 
         <div className="w-full md:w-3/5 mb-4 md:text-center">
           <div className="flex flex-col md:flex-row md:justify-center md:items-center md:space-x-4 items-center">
-            <Link href="/" className="mx-2 mb-2 md:mb-0 font-text" onClick={handleLinkClick}>Home</Link>
-            <Link href="/ourPurpose" className="mx-2 mb-2 md:mb-0 font-text" onClick={handleLinkClick}>Nosso Propósito</Link>
-            <Link href="/Partners" className="mx-2 mb-2 md:mb-0 font-text" onClick={handleLinkClick}>Nosso Processo</Link>
-            <Link href="/Media" className="mx-2 mb-2 md:mb-0 font-text" onClick={handleLinkClick}>Mídia</Link>
-            <Link href="/Contact" className="mx-2 mb-2 md:mb-0 font-text" onClick={handleLinkClick}>Contato</Link>
+            <Link href="/"><p className="text-white py-2">Home</p></Link>
+            <Link href="/ourpurpose"><p className="text-white py-2">Nosso Propósito</p></Link>
+            <Link href="/partners"><p className="text-white py-2">Nosso Processo</p></Link>
+            <Link href="/media"><p className="text-white py-2">Mídia</p></Link>
+            <Link href="/contactus"><p className="text-white py-2">Contato</p></Link>
           </div>
         </div>
 

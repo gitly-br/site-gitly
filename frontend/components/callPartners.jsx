@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useRouter } from 'next/router';
 import Image from 'next/image'
 import ipadImage from '../assets/ipad.svg'
+import Link from 'next/link';
 
 function CallPartners() {
     const [isOpen, setIsOpen] = useState(false);
@@ -23,15 +24,12 @@ function CallPartners() {
                 <p className="mb-8 pl-4 font-text">
                     Entre em contato agora mesmo e dê o primeiro passo para transformar sua visão em realidade. Nossos especialistas estão prontos para ajudá-lo a desenvolver soluções personalizadas que atendam exatamente às suas necessidades.
                 </p>
-                <div className="flex-1 flex ml-4 justify-start">
-                    <button className="bg-green rounded-br-lg w-48 h-12 text-white font-text" onClick={handleButtonClick}>
+                <Link href="/contactus">
+                    <button className="btn-verde ml-4">
                         Inicie seu Projeto
                     </button>
-                    </div>
-                    <button className="text-white md:hidden" onClick={() => setIsOpen(!isOpen)}>
-                        {isOpen ? '✖' : '☰'}
-                    </button>
-                </div>
+                </Link>
+            </div>
         </div>
     )
 }
