@@ -6,7 +6,7 @@ import logo from "../assets/logo.svg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
+  
   return (
     <nav className="bg-black bg-opacity-80 p-4 fixed w-full z-50 font-text">
       <div className="flex justify-between items-center">
@@ -27,7 +27,7 @@ const Navbar = () => {
           <Link href="/contactus">Contato</Link>
         </div>
         <div className="flex-1 flex justify-end">
-          <button className="bg-green rounded-br-lg w-48 h-12 text-white">
+          <button className="btn-verde">
             Inicie seu Projeto
           </button>
         </div>
@@ -42,8 +42,8 @@ const Navbar = () => {
           <Link href="/partners"><p className="text-white py-2">Partners</p></Link>
           <Link href="/media"><p className="text-white py-2">Media</p></Link>
           <Link href="/contactus"><p className="text-white py-2">Contact us</p></Link>
-          <button className="bg-green-500 text-white p-2 rounded my-2">
-            Start your project
+          <button className="btn-verde">
+            Inicie seu Projeto
           </button>
         </div>
       )}

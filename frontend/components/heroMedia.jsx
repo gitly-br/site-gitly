@@ -1,4 +1,5 @@
 import videoHero from '../assets/videoHero.svg'
+import Link from 'next/link'
 
 function HeroMedia() {
     return (
@@ -8,11 +9,11 @@ function HeroMedia() {
                 Uma Equipe Dedicada ao Crescimento da Sua Empresa
                 </h1>
                 <p className="text-base md:text-lg text-white mb-4 font-text">
-                Na Gitly, combinamos expertise técnica e visão estratégica para impulsionar o crescimento da sua empresa. Nossa equipe de especialistas em dados e IA está pronta para desenvolver soluções personalizadas que superam suas expectativas e garantem resultados excepcionais.
+                Na Gitly, combinamos expertise técnica e visão estratégica para impulsionar o crescimento da sua empresa. Nossa equipe de especialistas em dados e IA está pronta para desenvolver soluções personalizadas que superam suas expectativas e garantem resultados excepcionais.​
                 </p>
-                <p className="text-base md:text-lg text-white mb-8 font-text">
-                • Expertise especializada e comprovada • Soluções sob medida para seus desafios • Compromisso absoluto com a excelência • Vamos transformar seus desafios em oportunidades juntos.                    </p>
-                <button className="border border-white rounded-br-lg w-48 h-12 text-white font-text">Saiba mais</button>
+                <button className="btn-transparente">
+                    <Link href="/partners">Saiba Mais</Link>
+                </button>
             </div>
         </div>
     )
