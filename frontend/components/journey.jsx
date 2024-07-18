@@ -3,7 +3,7 @@ import corazaum from "../public/corazaum.svg";
 import planta from "../public/planta.svg";
 import trofeu from "../public/trofeu.svg";
 import us from "../public/ourjorney.svg";
-import backGroundVideo from "../public/backGroundVideo.mp4";
+import backGroundVideo from "../public/backGroundVideo.webm";
 
 export default function Journey() {
   return (
@@ -13,7 +13,7 @@ export default function Journey() {
         <h1 className="text-[2.2em] font-semibold font-title">Como a Gitly foi Criada</h1>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-10 z-10">
+      <div className="flex flex-wrap justify-center gap-20 z-10">
         <div className="w-full lg:w-1/4 z-10">
           <div className="flex lg:justify-start justify-center">
             <Image src={planta} alt="Corazaum" width={72} height={72} />
@@ -53,7 +53,7 @@ export default function Journey() {
       </div>
 
       <div className="relative z-10 flex justify-center items-center mt-14">
-        <Image src={us} alt="Us" width={1218} height={580.27} />
+        <Image src={us} alt="Us" width={1150} height={580.27} />
       </div>
     </div>
   );
