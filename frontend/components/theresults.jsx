@@ -8,13 +8,13 @@ import Container6 from '../assets/container6.svg'
 const Theresults = () => {
   
   return (
-    <div className='p-5 sm:p-10 flex flex-col items-center justify-center  text-white'>
+    <div className='p-5 sm:p-10 flex flex-col items-center justify-center text-white'>
       <div className='text-center'>
-        <h1 className='mb-4 text-2xl sm:text-3xl font-title'>
-        Os Resultados em Números
+        <h1 className='mt-8 mb-4 text-2xl sm:text-3xl font-title'>
+        Nossos Resultados em Números
         </h1>
         <p className='mb-4 font-text'>
-        Descubra como nossas soluções transformadoras estão impulsionando o sucesso através de dados concretos e resultados mensuráveis.
+        Descubra como nossas soluções transformadoras estão impulsionando<br/>o sucesso através de dados concretos e resultados mensuráveis.
         </p>
       </div>
 
