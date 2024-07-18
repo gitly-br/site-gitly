@@ -3,7 +3,7 @@ import corazaum from "../public/corazaum.svg";
 import planta from "../public/planta.svg";
 import trofeu from "../public/trofeu.svg";
 import us from "../public/ourjorney.svg";
-import backgroundMidia from "../public/backgroundmidia.svg";
+import backGroundVideo from "../public/backGroundVideo.mp4";
 
 export default function Journey() {
   return (
@@ -46,13 +46,15 @@ export default function Journey() {
       </div>
 
       {/* Divisão para o vídeo de fundo e imagem */}
-      <div className="absolute inset-0 z-0 overflow-hidden flex justify-center items-center">
-        <Image src={backgroundMidia} alt="Background Image" className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full" height={580.27} />
+      <div className="absolute inset-0 z-0 overflow-hidden lg:block hidden">
+        <video className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full object-cover" autoPlay loop muted>
+          <source src={backGroundVideo} type="video/mp4" />
+        </video>
       </div>
 
       <div className="relative z-10 flex justify-center items-center mt-14">
         <Image src={us} alt="Us" width={1218} height={580.27} />
       </div>
-    </div>
-  );
+    </div>
+  );
 }
