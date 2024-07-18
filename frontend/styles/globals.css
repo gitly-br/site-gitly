@@ -30,6 +30,45 @@
 }
 
 
+.btn-verde {
+  position: relative;
+  background-color: #11562F; 
+  color: white;
+  width: 12rem; 
+  height: 3rem; 
+  border: none;
+  cursor: pointer;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 0.5rem), calc(100% - 0.5rem) 100%, 0 100%);
+}
+
+.btn-transparente {
+  position: relative;
+  background-color: transparent; 
+  color: white;
+  width: 12rem; 
+  height: 3rem; 
+  border: 1.3px solid white; 
+  cursor: pointer;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 0.5rem), calc(100% - 0.5rem) 100%, 0 100%);
+}
+
+.btn-transparente::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: transparent;
+  border-right: 5px solid white;
+  border-bottom: 5px solid white;
+  clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
+
+
+
+
+
 
 /* @media (prefers-color-scheme: dark) {
   :root {
