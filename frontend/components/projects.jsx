@@ -33,7 +33,7 @@ const Projects = () => {
       arrows: false,
     };
     return (
-      <div className="py-10 px-14 text-center" style={{ background: 'linear-gradient(to right, #021b09, black)', color: 'white' }}>
+      <div className="py-10 px-24 text-center" style={{ background: 'linear-gradient(to right, #021b09, black)', color: 'white' }}>
         <h2 className="text-3xl mb-4 font-title">Nossos projetos</h2>
         <p className="text-lg mb-8 font-text">Exploramos a fronteira da tecnologia através de nossos projetos, implementando soluções avançadas de inteligência artificial e análise de dados que revolucionam processos e decisões empresariais em diversas indústrias.</p>
         <Slider {...settings}>
@@ -48,9 +48,9 @@ const Projects = () => {
     );
   } else {
     return (
-      <div className="bg-[#001D09] text-white mx-auto py-14 px-14 text-center" style={{ background: 'linear-gradient(to right, #021b09, black)', color: 'white' }}>
+      <div className="bg-[#001D09] text-white mx-auto py-14 px-24 text-center" style={{ background: 'linear-gradient(to right, #021b09, black)', color: 'white' }}>
         <h2 className="text-3xl font-bold mb-4 font-title">Nossos projetos</h2>
-        <p className="text-lg mb-8 font-text">Exploramos a fronteira da tecnologia através de nossos projetos, implementando soluções <br></br>avançadas de inteligência artificial e análise de dados que revolucionam processos e decisões empresariais em diversas indústrias.</p>
+        <p className="text-lg mb-8 font-text">Exploramos a fronteira da tecnologia através de nossos projetos, implementando soluções <br></br>avançadas de inteligência artificial e análise de dados que revolucionam processos e <br></br>decisões empresariais em diversas indústrias.</p>
         <div className="flex justify-center items-center space-x-4">
           {images.map((image, index) => (
             <Image key={index} src={image} alt={`Project ${index + 1}`} width={200} height={150} />

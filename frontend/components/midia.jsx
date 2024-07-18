@@ -42,7 +42,7 @@ const Midia = () => {
                             <div className="flex flex-col items-center font-semibold text-[1.3em] text-wrap">
                                 <Image src="./cx1.svg" alt="First" width={300} height={300} />
                                 <div className="bg-[#001D09] py-4 px-2 text-center flex justify-center rounded-b-2xl">
-                                    <h1 className="text-white text-justify font-text">Prêmio Excelência na Inovação</h1>
+                                    <h1 className="text-white text-left font-text">Prêmio Excelência na Inovação</h1>
                                 </div>
                             </div>
                         </a>
@@ -52,7 +52,7 @@ const Midia = () => {
                             <div className="flex flex-col items-center font-semibold text-[1.3em] text-wrap">
                                 <Image src="/cx2.svg" alt="Second" width={300} height={300} />
                                 <div className="bg-[#001D09] py-4 px-2 text-center flex justify-center rounded-b-2xl">
-                                    <h1 className="text-white text-justify font-text">Futuro Expo 2023 | Dictomia e IA: O que IA não pode fazer por você</h1>
+                                    <h1 className="text-white text-left font-text">Futuro Expo 2023 | Dictomia e IA: O que IA não pode fazer por você</h1>
                                 </div>
                             </div>
                         </a>
@@ -62,7 +62,7 @@ const Midia = () => {
                             <div className="flex flex-col items-center font-semibold text-[1.3em] text-wrap">
                                 <Image src="/cx3.svg" alt="Third" width={300} height={300} />
                                 <div className="bg-[#001D09] py-4 px-2 text-center flex justify-center rounded-b-2xl">
-                                    <h1 className="text-white text-justify font-text">IPT Open Experience | Marketing for Startups</h1>
+                                    <h1 className="text-white text-left font-text">IPT Open Experience | Marketing for Startups</h1>
                                 </div>
                             </div>
                         </a>
@@ -72,7 +72,7 @@ const Midia = () => {
                             <div className="flex flex-col items-center font-semibold text-[1.3em] text-wrap">
                                 <Image src="/cx4.svg" alt="Fourth" width={300} height={300} />
                                 <div className="bg-[#001D09] py-4 px-2 text-center flex justify-center rounded-b-2xl">
-                                    <h1 className="text-white text-justify font-text">Projeto Além | Ambev & BioSmart Nanotechnology LTDA</h1>
+                                    <h1 className="text-white text-left font-text">Projeto Além | Ambev & BioSmart Nanotechnology LTDA</h1>
                                 </div>
                             </div>
                         </a>
