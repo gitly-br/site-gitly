@@ -11,7 +11,7 @@ const Interviews = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     responsive: [
       {
@@ -34,51 +34,54 @@ const Interviews = () => {
     ]
   };
 
+  const openLink = (url) => {
+    window.open(url, "_blank");
+  };
+
+  const cards = [
+    {
+      id: 1,
+      image: CBN,
+      alt: "Interviews",
+      title: "CBN São Paulo",
+      text: "Em entrevista à CBN, nosso CEO explica como a inteligência artificial da Gitly pode prever chuvas, inundações e superação de barreiras em zonas de risco urbanas.",
+      buttonText: "Veja",
+      link: "https://www.youtube.com/live/-EisU65RJJQ?t=2054s"
+    },
+    {
+      id: 2,
+      image: Inter,
+      alt: "CBN",
+      title: "Valor Econômico | Globo",
+      text: "Neste artigo, nosso CEO elabora como a inteligência artificial desenvolvida pela Gitly alertará sobre chuva, inundações e alagamentos na cidade de Santo André/SP.",
+      buttonText: "Leia",
+      link: "https://valor.globo.com/empresas/noticia/2023/09/26/em-santo-andre-um-robo-fara-a-previsao-do-tempo.ghtml"
+    },
+  ];
+
   return (
-    <div className="py-10 lg:px-36 xl:px-80 md:px-0 text-center flex flex-col bg-black text-white paizao">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 md:px-10 lg:px-16 xl:px-20">
+    <div className="py-10 lg:px-36 xl:px-80 md:px-0 text-center flex flex-col bg-black text-white">
+      <div className="max-w-4xl mx-auto px-6 sm:px-8 md:px-10 lg:px-16 xl:px-20"> {/* Ajustando a largura máxima */}
         <h1 className='text-3xl font-semibold mb-5 font-title'>A Gitly na Mídia</h1>
         <p className='text-center mb-5 font-text'>
         Descubra como a Gitly está na vanguarda da inovação tecnológica por meio de nossas entrevistas mais recentes. Nossos líderes compartilham insights sobre o desenvolvimento de soluções de IA e como essas tecnologias estão transformando o setor.
         </p>
       </div>
       <Slider {...settings} className='mt-8'>
-        <div className="px-2"> {/* Reduzindo a margem horizontal */}
-          <div className="bg-[#202020] rounded-lg flex flex-col items-center p-4 card"> {/* Adicionando a classe card */}
-            <div className='w-full flex justify-center mb-3'>
-              <Image src={CBN} alt="Interviews" />
+        {cards.map((card) => (
+          <div key={card.id} className="px-2"> {/* Reduzindo a margem horizontal */}
+            <div className="bg-[#202020] rounded-lg flex flex-col items-center p-4 card"> {/* Adicionando a classe card */}
+              <div className='w-full flex justify-center mb-3'>
+                <Image src={card.image} alt={card.alt} />
+              </div>
+              <h1 className='font-semibold text-xl mb-3 font-title'>{card.title}</h1>
+              <p className='mb-3 font-text text-center px-4'> {/* Centralizando o texto com borda lateral */}
+                {card.text}
+              </p>
+              <button className="btn-verde" onClick={() => openLink(card.link)}>{card.buttonText}</button> {/* Adicionando link */}
             </div>
-            <h1 className='font-semibold text-xl mb-3 font-title'>CBN São Paulo</h1>
-            <p className='mb-3 font-text'>
-            Em entrevista à CBN, nosso CEO explica como a inteligência artificial da Gitly pode prever chuvas, inundações e superação de barreiras em zonas de risco urbanas.
-            </p>
-            <button className="action-button font-text">Veja</button>
           </div>
-        </div>
-        <div className="px-2"> {/* Reduzindo a margem horizontal */}
-          <div className="bg-[#202020] rounded-lg flex flex-col items-center p-4 card"> {/* Adicionando a classe card */}
-            <div className='w-full flex justify-center mb-3'>
-              <Image src={Inter} alt="CBN" />
-            </div>
-            <h1 className='font-semibold text-xl mb-3'>Valor Econômico | Globo</h1>
-            <p className='mb-3 font-text'>
-            Neste artigo, nosso CEO elabora como a inteligência artificial desenvolvida pela Gitly alertará sobre chuva, inundações e alagamentos na cidade de Santo André/SP.
-            </p>
-            <button className="action-button font-text">Leia</button>
-          </div>
-        </div>
-        <div className="px-2"> {/* Reduzindo a margem horizontal */}
-          <div className="bg-[#202020] rounded-lg flex flex-col items-center p-4 card"> {/* Adicionando a classe card */}
-            <div className='w-full flex justify-center mb-3'>
-              <Image src={CBN} alt="CBN" />
-            </div>
-            <h1 className='font-semibold text-xl mb-3 font-title'>CBN São Paulo</h1>
-            <p className='mb-3 font-text'>
-            Em entrevista à CBN, nosso CEO explica como a inteligência artificial da Gitly pode prever chuvas, inundações e superação de barreiras em zonas de risco urbanas.
-            </p>
-            <button className="action-button font-text">Veja</button>
-          </div>
-        </div>
+        ))}
       </Slider>
       <style jsx>{`
         .card {
@@ -86,10 +89,10 @@ const Interviews = () => {
           margin: 0 auto; /* Centralizando os cards */
         }
         .slick-slide > div {
-          margin: 0 10px; /* Adiciona margem horizontal entre os slides */
+          margin: 0 5px; /* Reduzindo a margem horizontal entre os slides */
         }
         .slick-list {
-          margin: 0 -10px; /* Ajusta a margem negativa para compensar a margem dos cards */
+          margin: 0 -5px; /* Ajusta a margem negativa para compensar a margem dos cards */
         }
         .image-container {
           display: flex;
