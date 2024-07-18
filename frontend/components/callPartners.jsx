@@ -1,9 +1,17 @@
+import { useState } from 'react';
+import { useRouter } from 'next/router';
 import Image from 'next/image'
 import ipadImage from '../assets/ipad.svg'
-import ButtonGreenGet from "./button/buttonGreenGet";
-
+import Link from 'next/link';
 
 function CallPartners() {
+    const [isOpen, setIsOpen] = useState(false);
+    const router = useRouter();
+
+    const handleButtonClick = () => {
+        router.push('https://www.google.com/');
+    };
+
     return (
         <div className="flex flex-col md:flex-row items-center justify-between p-8" style={{ background: 'linear-gradient(to right, #021b09, black)', color: 'white' }}>
             <div className="md:w-1/2 flex justify-center mb-4 md:mb-0">
@@ -16,7 +24,11 @@ function CallPartners() {
                 <p className="mb-8 pl-4 font-text">
                     Entre em contato agora mesmo e dê o primeiro passo para transformar sua visão em realidade. Nossos especialistas estão prontos para ajudá-lo a desenvolver soluções personalizadas que atendam exatamente às suas necessidades.
                 </p>
-                <ButtonGreenGet />
+                <Link href="/contactus">
+                    <button className="btn-verde ml-4">
+                        Inicie seu Projeto
+                    </button>
+                </Link>
             </div>
         </div>
     )

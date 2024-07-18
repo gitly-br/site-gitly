@@ -20,17 +20,28 @@ import Grupo4hover from '../assets/grupo4hover.svg';
 import Grupo5hover from '../assets/grupo5hover.svg';
 import Grupo6hover from '../assets/grupo6hover.svg';
 import React, { useState } from "react";
-import Ballleft from '../assets/ballleft.svg';
-import Ballright from '../assets/ballright.svg';
+import Bolaverde from '../assets/bolaVerde.svg';
 
 const Services = () => {
     const [hoveredButton, setHoveredButton] = useState(null);
-    const [clickedButton, setClickedButton] = useState(1); 
+    const [clickedButton, setClickedButton] = useState(1);
+    const openLink = (url) => {
+        window.open(url, "_blank");
+      };
+
     return (
         <div className="relative flex flex-col items-center justify-center p-10 sm:p-16 sm:grid sm:grid-cols-3 sm:gap-20 bg-white text-white" style={{ background: 'linear-gradient(to right, #021b09, black)', color: 'white' }}>
+            <div className="absolute top-0 left-0 w-40 h-40 sm:w-80 sm:h-80">
+                <Image src={Bolaverde} alt="Bola Verde" className="w-full h-full object-cover" />
+            </div>
 
             <div className="sm:col-span-1 mb-20 sm:mb-0 relative z-20">
-                <Image src={Card} alt="Imagem" className='w-full h-full' />
+                <Image src={Card} alt="Imagem" className='w-full h-full object-cover' />
+                <div className="absolute bottom-0 left-0 mb-4 ml-4">
+                    <button className="btn-verde" onClick={() => openLink("https://api.whatsapp.com/send/?phone=5511994563491&text&type=phone_number&app_absent=0")}>
+                        Faça um orçamento
+                    </button>
+                </div>
             </div>
 
             <div className="sm:col-span-2 bg-green-200 relative z-20">
@@ -93,7 +104,6 @@ const Services = () => {
                             className='w-32 h-32 sm:w-16 sm:h-16'
                         />
                     </button>
-
                 </div>
                 <div className="mb-10 sm:mb-0 flex justify-center sm:block">
                     {clickedButton === 1 && <Image src={Cards} alt="Imagem" className="hidden sm:block" />}
