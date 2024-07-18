@@ -33,7 +33,7 @@ const SamplePrevArrow = (props) => {
 };
 
 const OurCustomers = ({ partners }) => {
-  const [currentSlide, setCurrentSlide] = useState(Math.floor(partners.length / 2)); // Define o slide do meio como inicial
+  const [currentSlide, setCurrentSlide] = useState(Math.floor(partners.length / 2)); // Slide do meio é o inicial
 
   const goToSlide = (index) => {
     setCurrentSlide(index);
@@ -46,7 +46,7 @@ const OurCustomers = ({ partners }) => {
         <div className="w-full flex justify-center items-center">
           <Slider
             className="flex overflow-x-hidden"
-            slidesToShow={3}
+            slidesToShow={5}
             slidesToScroll={1}
             infinite={true}
             autoplay={true}
@@ -55,6 +55,7 @@ const OurCustomers = ({ partners }) => {
             nextArrow={<SampleNextArrow />}
             prevArrow={<SamplePrevArrow />}
             centerMode={true}
+            arrows={false}
             centerPadding="0px"
             responsive={[
               {
@@ -82,19 +83,17 @@ const OurCustomers = ({ partners }) => {
             afterChange={goToSlide}
           >
             {partners.map((partner, index) => (
-              <div key={index} className="w-[200px] px-14">
-                <div key={index} className={`w-[200px] transition-transform transform mx-5 ${index === currentSlide ? 'selected' : ''}`} onClick={() => goToSlide(index)}>
-                  <div className={`w-80 h-fit py-4 flex-col justify-items-center gap-3 pr-20 flex justify-center items-center ${index === currentSlide ? 'selected-container' : ''}`}>
-                    <div className="w-full h-[200px] relative flex justify-center items-center">
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <Image
-                          src={partner.logo}
-                          alt={`Logo do ${partner.name}`}
-                          width={index === currentSlide ? 350 : 150}
-                          height={index === currentSlide ? 350 : 150}
-                          objectFit="cover"
-                        />
-                      </div>
+              <div key={index} className="w-full px-2">
+                <div key={index} className={`transition-transform transform ${index === currentSlide ? 'selected' : ''}`} onClick={() => goToSlide(index)}>
+                  <div className={`flex-col justify-items-center gap-3 flex justify-center items-center ${index === currentSlide ? 'selected-container' : ''}`}>
+                    <div className="relative flex justify-center items-center" style={{ width: index === currentSlide ? 250 : 150, height: index === currentSlide ? 200 : 150 }}>
+                      <Image
+                        src={partner.logo}
+                        alt={`Logo do ${partner.name}`}
+                        width={index === currentSlide ? 250 : 150}
+                        height={index === currentSlide ? 250 : 150}
+                        objectFit="cover"
+                      />
                     </div>
                   </div>
                 </div>
