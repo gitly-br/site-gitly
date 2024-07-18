@@ -39,6 +39,10 @@ const OurCustomers = ({ partners }) => {
     setCurrentSlide(index);
   };
 
+  const handleLogoClick = (link) => {
+    window.open(link, "_blank");
+  };
+
   return (
     <div className="text-white bg-black poppins-font truncate font-thin px-5 lg:px-20 xl:px-64" style={{ background: `linear-gradient(to right, #021b09, black)` }} data-carousel="slide">
       <div className="flex flex-col items-center">
@@ -84,14 +88,19 @@ const OurCustomers = ({ partners }) => {
           >
             {partners.map((partner, index) => (
               <div key={index} className="w-full px-2">
-                <div key={index} className={`transition-transform transform ${index === currentSlide ? 'selected' : ''}`} onClick={() => goToSlide(index)}>
+                <div 
+                  key={index} 
+                  className={`transition-transform transform ${index === currentSlide ? 'selected' : ''}`} 
+                  onClick={() => handleLogoClick(partner.link)}
+                  style={{ cursor: "pointer" }}
+                >
                   <div className={`flex-col justify-items-center gap-3 flex justify-center items-center ${index === currentSlide ? 'selected-container' : ''}`}>
-                    <div className="relative flex justify-center items-center" style={{ width: index === currentSlide ? 250 : 150, height: index === currentSlide ? 200 : 150 }}>
+                    <div className="relative flex justify-center items-center" style={{ width: 150, height: 150 }}>
                       <Image
                         src={partner.logo}
                         alt={`Logo do ${partner.name}`}
-                        width={index === currentSlide ? 250 : 150}
-                        height={index === currentSlide ? 250 : 150}
+                        width={150}
+                        height={150}
                         objectFit="cover"
                       />
                     </div>
