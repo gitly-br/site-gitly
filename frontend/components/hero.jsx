@@ -35,7 +35,7 @@ function Hero() {
           Vamos falar sobre tomada de<br />decisão impulsionadas por IA?
         </h1>
         <p className="font-text text-lg mb-10 px-4 md:px-60">
-          Na Gitly, impulsionamos o futuro das decisões empresariais com soluções de inteligência artificial avançadas. Nossa tecnologia não apenas simplifica complexidades, mas antecipa desafios, garantindo que você esteja sempre à frente. Com a Gitly, cada decisão é uma oportunidade para inovar e liderar no seu mercado. Descubra o poder da IA na transformação dos seus negócios. Entre em contato hoje e comece a moldar o futuro.
+        Descubra o poder da IA na transformação dos seus negócios. Entre em contato hoje e comece a moldar o futuro!
         </p>
         <Link href="/contactus">
             <button className="btn-transparente">
