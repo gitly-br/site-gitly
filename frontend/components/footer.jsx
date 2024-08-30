@@ -19,10 +19,10 @@ export default function Footer() {
         </div>
 
         <div className="w-full md:w-3/5 mb-4 md:text-center">
-          <div className="flex flex-col md:flex-row md:justify-center md:items-center md:space-x-4 items-center">
+          <div className="flex flex-col md:flex-row md:justify-center md:items-center md:space-x-4 items-center font-text">
             <Link href="/"><p className="text-white py-2">Home</p></Link>
-            <Link href="/ourpurpose"><p className="text-white py-2">Nosso Propósito</p></Link>
-            <Link href="/partners"><p className="text-white py-2">Nosso Processo</p></Link>
+            <Link href="/ourpurpose"><p className="text-white py-2">Propósito</p></Link>
+            <Link href="/partners"><p className="text-white py-2">Processo</p></Link>
             <Link href="/media"><p className="text-white py-2">Mídia</p></Link>
             <Link href="/contactus"><p className="text-white py-2">Contato</p></Link>
           </div>
