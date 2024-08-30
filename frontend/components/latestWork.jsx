@@ -27,8 +27,8 @@ const LatestWork = () => {
 
         <div className='flex flex-col gap-5 w-full h-full lg:w-1/2'>
 
-          <div className='flex flex-col md:flex-row items-stretch object-cover w-full h-1/2'>
-            <div className='bg-[#202020] rounded-xl flex flex-col md:flex-row text-wrap text-start md:pl-5 py- w-full h-full'>
+          <div className='flex flex-col md:flex-row object-cover w-full h-1/2'>
+            <div className='bg-[#202020] rounded-xl flex flex-col md:flex-row text-wrap text-start md:pl-5 py- w-full h-full items-center'>
               <div className='w-full md:w-1/2 py-6 px-2'>
                 <h1 className='font-title text-s mb-3'>ChatBot baseado em IA</h1>
                 <p className='font-text text-xs text-[#9795B5]'>Nosso ChatBot inteligente utiliza aprendizado de máquina para fornecer atendimento ao cliente em tempo real. Capaz de lidar com várias consultas simultaneamente, a ferramenta aprende com as interações para melhorar continuamente sua eficácia.</p>
@@ -36,7 +36,7 @@ const LatestWork = () => {
               <Image className='object-cover w-full md:w-1/2 h-full' src={latest2} alt="latest2" />
             </div>
           </div>
-          <div className='flex flex-col md:flex-row items-stretch object-cover w-full h-1/2'>
+          <div className='flex flex-col md:flex-row object-cover w-full h-1/2'>
             <div className='bg-[#202020] rounded-xl flex flex-col md:flex-row text-wrap text-start md:pl-5 py- w-full h-full items-center'>
               <div className='w-full md:w-1/2 py-6 px-2'>
                 <h1 className='font-title text-s mb-3'>Serviços Customizados de IA</h1>
