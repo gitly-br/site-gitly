@@ -16,8 +16,8 @@ const Navbar = () => {
         </div>
         <div className="md:flex hidden flex-1 justify-around text-white font-light">
           <Link href="/">Home</Link>
-          <Link href="/ourpurpose">Nosso Propósito</Link>
-          <Link href="/partners">Nosso Processo</Link>
+          <Link href="/ourpurpose">Propósito</Link>
+          <Link href="/partners">Processo</Link>
           <Link href="/media">Mídia</Link>
           <Link href="/contactus">Contato</Link>
         </div>

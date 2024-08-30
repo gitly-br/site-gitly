@@ -13,11 +13,11 @@ const LatestWork = () => {
           Nossos Últimos Trabalhos
         </h1>
         <p className='text-center mb-8 font-text'>
-          Descubra como as soluções inovadoras da Gitly estão transformando o cenário<br />empresarial. Confira alguns dos nossos projetos mais recentes:
+          Descubra como as soluções inovadoras da Gitly estão transformando o cenário empresarial. Confira alguns dos nossos projetos mais recentes:
         </p>
       </div>
       <div className='flex flex-wrap md:flex-nowrap justify-center items-center gap-5'>
-        <div className='relative w-full md:w-1/2 lg:w-1/2'>
+        <div className='relative w-full h-full md:w-1/2 lg:w-1/2'>
           <Image className='object-cover w-full h-full' src={latest1} alt="latest1"/>
           <div className='absolute inset-0 flex flex-col items-center justify-end text-center text-white p-8'>
             <h1 className='text-lg font-title mb-2'>Solução de Dados para Varejo</h1>
