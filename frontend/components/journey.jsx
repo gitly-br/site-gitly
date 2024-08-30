@@ -3,7 +3,7 @@ import corazaum from "../public/corazaum.svg";
 import planta from "../public/planta.svg";
 import trofeu from "../public/trofeu.svg";
 import us from "../public/ourjorney.svg";
-import backGroundVideo from "../public/backGroundVideo.webm";
+import backGroundVideo from "../public/video_animacao.mp4";
 
 export default function Journey() {
   return (

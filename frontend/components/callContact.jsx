@@ -11,9 +11,6 @@ function CallContact() {
             <div className="absolute top-0 left-0 hidden-on-small2">
                 <Image src={Bgleft} alt="Background Left" layout="fixed" width={620} height={700} />
             </div>
-            <div className="absolute top-0 right-0 hidden-on-small">
-                <Image src={Ballright} alt="Background Top Right" layout="fixed" width={1000} height={1200} />
-            </div>
             {/* Content */}
             <div className="flex flex-col items-center lg:items-start text-center lg:text-left z-10 text-white response">
                 <div className='px-20'>

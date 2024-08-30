@@ -39,8 +39,8 @@ function Hero() {
         <h1 className="font-title text-3xl md:text-5xl mb-5 md:mb-10 leading-tight">
           Vamos falar sobre tomada de<br />decisão impulsionadas por IA?
         </h1>
-        <p className="font-text text-base md:text-lg mb-10 max-w-lg md:max-w-3xl mx-auto">
-          Descubra o poder da IA na transformação dos seus negócios. Entre em contato hoje e comece a moldar o futuro!
+        <p className="font-text text-lg mb-10 px-4 md:px-60">
+        Descubra o poder da IA na transformação dos seus negócios. Entre em contato hoje e comece a moldar o futuro!
         </p>
         <Link href="/contactus">
             <button className="btn-transparente">

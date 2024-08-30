@@ -5,7 +5,7 @@ import logo from "../assets/logo.svg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  
+
   return (
     <nav className="bg-black bg-opacity-80 p-4 fixed w-full z-50 font-text">
       <div className="flex justify-between items-center">
@@ -15,11 +15,11 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="md:flex hidden flex-1 justify-around text-white font-light">
-          <Link href="/">Home</Link>
-          <Link href="/ourpurpose">Propósito</Link>
-          <Link href="/partners">Processo</Link>
-          <Link href="/media">Mídia</Link>
-          <Link href="/contactus">Contato</Link>
+          <Link href="/" className="mr-4">Home</Link>
+          <Link href="/ourpurpose" className="mr-4">Propósito</Link>
+          <Link href="/partners" className="mr-4">Processo</Link>
+          <Link href="/media" className="mr-4">Mídia</Link>
+          <Link href="/contactus" className="mr-4">Contato</Link>
         </div>
         <div className="hidden md:flex flex-1 justify-end">
           <Link href="/contactus">
