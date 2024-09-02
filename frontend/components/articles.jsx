@@ -27,10 +27,36 @@ const Articles = () => {
       title: "Comitê de Desenvolvimento Industrial do Grande ABC e a seleção de startups",
       link: "https://valor.globo.com/empresas/noticia/2023/03/06/para-quimica-e-petroquimica-drones-e-energia-limpa.ghtml"
     },
+    // Adicione mais cards se necessário
   ];
 
   const openLink = (url) => {
     window.open(url, "_blank");
+  };
+
+  const sliderSettings = {
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
@@ -42,36 +68,12 @@ const Articles = () => {
         </p>
       </div>
       <div>
-        <Slider
-          className="flex p-5 overflow-x-hidden"
-          slidesToShow={3}
-          slidesToScroll={1}
-          infinite={true}
-          autoplay={true}
-          autoplaySpeed={3000}
-          arrows={true}
-          responsive={[
-            {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-              },
-            },
-            {
-              breakpoint: 600,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-              },
-            },
-          ]}
-        >
+        <Slider {...sliderSettings} className="flex p-5 overflow-x-hidden">
           {cards.map((card) => (
-            <div key={card.id}>
+            <div key={card.id} className="p-2">
               <div className="flex flex-col items-center text-left text-[1.3em] text-wrap">
                 <Image src={card.image} alt={card.alt} width={300} height={300} />
-                <div style={{ maxWidth: "300px"}} className="bg-[#202020] pt-2 px-3 text-left flex flex-col rounded-b-2xl">
+                <div style={{ maxWidth: "300px" }} className="bg-[#202020] pt-2 px-3 text-left flex flex-col rounded-b-2xl">
                   <h1 className="text-white text-left font-text">{card.title}</h1>
                   <button 
                     className="my-5 text-[#3AA06B] text-left underline font-bold"
