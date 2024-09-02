@@ -6,7 +6,7 @@ import Ballright from '../assets/ball-center.svg';
 
 function CallContact() {
     return (
-        <div className="relative flex flex-col lg:flex-row items-center justify-center h-screen gap-20 px-5 xl:px-20 py-20 bg-black beckgraund">
+        <div className="relative flex flex-col lg:flex-row items-center justify-center h-screen gap-20 px-5 xl:px-20 py-20 bg-black beckgraund font-text">
             {/* Background SVGs */}
             <div className="absolute top-0 left-0 hidden-on-small2">
                 <Image src={Bgleft} alt="Background Left" layout="fixed" width={620} height={700} />
@@ -14,7 +14,7 @@ function CallContact() {
             {/* Content */}
             <div className="flex flex-col items-center lg:items-start text-center lg:text-left z-10 text-white response">
                 <div className='px-20'>
-                    <div>
+                    <div className='font-title'>
                         <h1 className="text-3xl font-semibold">Fale com um dos nossos especialistas e inicie o projeto hoje!</h1>
                     </div>
                     <div className='pt-10'>

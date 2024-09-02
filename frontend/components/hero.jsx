@@ -43,7 +43,7 @@ function Hero() {
         Descubra o poder da IA na transformação dos seus negócios. Entre em contato hoje e comece a moldar o futuro!
         </p>
         <Link href="/contactus">
-            <button className="btn-transparente">
+            <button className="btn-transparente font-text">
               Inicie seu Projeto
             </button>
           </Link>
