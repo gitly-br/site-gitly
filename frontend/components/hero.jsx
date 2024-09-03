@@ -1,21 +1,41 @@
 import React from "react";
-import Image from "next/image";
+import Lottie from "react-lottie";  // Alterado para react-lottie
+import * as animationData from '../public/animationhome.json';
 import Backgroundanima from '../public/backgroundanima.png';
-import Banner from '../assets/banner.png';
+import Image from 'next/image';
 import Link from 'next/link';
 
-function Hero() {
+class LottieControl extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { isStopped: false, isPaused: false };
+  }
+
+  render() {
+    const defaultOptions = {
+      loop: true,
+      autoplay: true,
+      animationData: animationData,
+      rendererSettings: {
+        preserveAspectRatio: 'xMidYMid slice'
+      }
+    };
+
+    return (
+      <Hero defaultOptions={defaultOptions} />
+    );
+  }
+}
+
+function Hero({ defaultOptions }) {
   return (
     <div className="relative flex flex-col justify-center items-center text-white min-h-screen">
-      {/* Imagem de fundo para telas grandes */}
+      {/* Animação Lottie para telas grandes */}
       <div className="hidden md:block absolute inset-0 z-0">
-        <Image
-          src={Banner}
-          alt="Background"
-          layout="fill" // Preencher toda a tela
-          objectFit="cover" // Garantir que a imagem cubra o espaço sem distorções
-          quality={100}
-          className="absolute inset-0"
+        <Lottie
+          options={defaultOptions}
+          height={400}
+          width={400}
         />
       </div>
 
@@ -40,16 +60,16 @@ function Hero() {
           Vamos falar sobre tomada de<br />decisão impulsionadas por IA?
         </h1>
         <p className="font-text text-lg mb-10 px-4 md:px-60">
-        Descubra o poder da IA na transformação dos seus negócios. Entre em contato hoje e comece a moldar o futuro!
+          Descubra o poder da IA na transformação dos seus negócios. Entre em contato hoje e comece a moldar o futuro!
         </p>
         <Link href="/contactus">
-            <button className="btn-transparente font-text">
-              Inicie seu Projeto
-            </button>
-          </Link>
+          <button className="btn-transparente font-text">
+            Inicie seu Projeto
+          </button>
+        </Link>
       </div>
     </div>
   );
 }
 
-export default Hero;
+export default LottieControl;
