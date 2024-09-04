@@ -1,5 +1,5 @@
 import React from "react";
-import Lottie from "react-lottie";  // Alterado para react-lottie
+import Lottie from "react-lottie";
 import * as animationData from '../public/animationhome.json';
 import Backgroundanima from '../public/backgroundanima.png';
 import Image from 'next/image';
@@ -17,26 +17,26 @@ class LottieControl extends React.Component {
       autoplay: true,
       animationData: animationData,
       rendererSettings: {
-        preserveAspectRatio: 'xMidYMid slice'
-      }
+        preserveAspectRatio: 'xMidYMid slice',
+      },
     };
 
-    return (
-      <Hero defaultOptions={defaultOptions} />
-    );
+    return <Hero defaultOptions={defaultOptions} />;
   }
 }
 
 function Hero({ defaultOptions }) {
   return (
-    <div className="relative flex flex-col justify-center items-center text-white min-h-screen">
+    <div
+      className="relative flex flex-col justify-center items-center text-white min-h-screen"
+      style={{ background: 'linear-gradient(to right, #14532d, black)', color: 'white' }} 
+    >
       {/* Animação Lottie para telas grandes */}
-      <div className="hidden md:block absolute inset-0 z-0">
-        <Lottie
-          options={defaultOptions}
-          height={400}
-          width={400}
-        />
+      <div
+        className="hidden md:flex justify-center items-center absolute inset-0 z-0"
+        style={{ transform: 'translateY(-50px)' }}  // Ajuste para subir a animação
+      >
+        <Lottie options={defaultOptions} height={400} width={400} />
       </div>
 
       {/* Imagem de fundo para telas pequenas */}
@@ -51,11 +51,11 @@ function Hero({ defaultOptions }) {
         />
       </div>
 
-      {/* Camada de sobreposição preta */}
-      <div className="absolute inset-0 bg-black opacity-60 z-10"></div>
+      {/* Camada de sobreposição preta com opacidade aumentada */}
+      <div className="absolute inset-0 bg-black opacity-75 z-10"></div>
 
       {/* Conteúdo central */}
-      <div className="relative z-20 p-4 md:p-0 text-center flex flex-col justify-center items-center h-full">
+      <div className="relative z-20 p-4 md:p-0 text-center flex flex-col justify-center items-center h-full md:mt-32">
         <h1 className="font-title text-3xl md:text-5xl mb-5 md:mb-10 leading-tight">
           Vamos falar sobre tomada de<br />decisão impulsionadas por IA?
         </h1>
