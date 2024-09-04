@@ -16,9 +16,9 @@ const Contact = () => {
   });
 
   useEffect(() => {
-    emailjs.init('Tw8ngKBs_rBEXpZQ-');
+    emailjs.init('4fgdW_f5nEDE3QXbd'); // Public Key
   }, []);
-
+  
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -76,24 +76,14 @@ const Contact = () => {
       email: formData.email,
     };
   
-    emailjs.sendForm('gitly_service_public_key', 'template_78yoxqc', e.target, 'Tw8ngKBs_rBEXpZQ-')
-      .then((result) => {
-        console.log('E-mail enviado com sucesso!', result.text);
-        // Limpa os campos de input
-        setFormData({
-          name: '',
-          email: '',
-          phone: '',
-          company: '',
-          message: ''
-        });
-        // Exibe uma notificação de sucesso
-        toast.success('Mensagem enviada com sucesso!');
-      }, (error) => {
-        console.error('Erro ao enviar o e-mail:', error);
-        // Exibe uma notificação de erro
-        toast.error('Erro ao enviar a mensagem.');
-      });
+    emailjs.sendForm('service_zqecyoh', 'template_vws4c1r', e.target, '4fgdW_f5nEDE3QXbd') // nessa ordem: serviceID, templateID, userID
+    .then((result) => {
+      toast.success('Mensagem enviada com sucesso!');
+      console.log('E-mail enviado com sucesso!', result.text);
+    }, (error) => {
+      console.error('Erro ao enviar o e-mail:', error);
+      toast.error('Erro ao enviar a mensagem.');
+    });  
   };  
 
   return (
