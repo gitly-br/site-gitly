@@ -1,8 +1,6 @@
 import React from "react";
 import Lottie from "react-lottie";
 import * as animationData from '../public/animationhome.json';
-import Backgroundanima from '../public/backgroundanima.png';
-import Image from 'next/image';
 import Link from 'next/link';
 
 class LottieControl extends React.Component {
@@ -37,18 +35,6 @@ function Hero({ defaultOptions }) {
         style={{ transform: 'translateY(-50px)' }}  // Ajuste para subir a animação
       >
         <Lottie options={defaultOptions} height={400} width={400} />
-      </div>
-
-      {/* Imagem de fundo para telas pequenas */}
-      <div className="block md:hidden absolute inset-0 z-0">
-        <Image
-          src={Backgroundanima}
-          alt="Background"
-          layout="fill"
-          objectFit="cover"
-          quality={100}
-          className="absolute inset-0"
-        />
       </div>
 
       {/* Camada de sobreposição preta com opacidade aumentada */}
