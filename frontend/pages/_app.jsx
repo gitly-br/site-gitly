@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
   return (
-    <div>
+    <div> 
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
