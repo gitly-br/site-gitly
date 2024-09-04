@@ -52,7 +52,7 @@ function Hero({ defaultOptions }) {
       </div>
 
       {/* Camada de sobreposição preta com opacidade aumentada */}
-      <div className="absolute inset-0 bg-black opacity-75 z-10"></div>
+      <div className="absolute inset-0 bg-black opacity-60 z-10"></div>
 
       {/* Conteúdo central */}
       <div className="relative z-20 p-4 md:p-0 text-center flex flex-col justify-center items-center h-full md:mt-32">
