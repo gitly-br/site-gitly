@@ -44,7 +44,7 @@ const OurCustomers = ({ partners }) => {
   };
 
   return (
-    <div className="text-white bg-black poppins-font truncate font-thin px-5 lg:px-20 xl:px-64" style={{ background: `linear-gradient(to right, #021b09, black)` }} data-carousel="slide">
+    <div className="text-white bg-black poppins-font truncate font-thin px-5 lg:px-20 xl:px-64 pb-10" style={{ background: `linear-gradient(to right, #021b09, black)` }} data-carousel="slide">
       <div className="flex flex-col items-center">
         <h1 className="font-semibold mb-2 mt-10 font-title text-3xl sm:text-3xl">Nossos Clientes</h1>
         <div className="w-full flex justify-center items-center">

@@ -1,4 +1,4 @@
-import videoHero from '../assets/videoHero.svg'
+import videoHero from '../assets/MIDIA01.jpg'
 import Link from 'next/link'
 
 function HeroMedia() {
@@ -12,7 +12,7 @@ function HeroMedia() {
                 Na Gitly, combinamos expertise técnica e visão estratégica para impulsionar o crescimento da sua empresa. Nossa equipe de especialistas em dados e IA está pronta para desenvolver soluções personalizadas que superam suas expectativas e garantem resultados excepcionais.​
                 </p>
                 <button className="btn-transparente">
-                    <Link href="/partners">Saiba Mais</Link>
+                    <Link href="/contactus">Nossas Soluções</Link>
                 </button>
             </div>
         </div>

@@ -38,7 +38,7 @@ const Services = () => {
             <div className="sm:col-span-1 mb-20 sm:mb-0 relative z-20">
                 <Image src={Card} alt="Imagem" className='w-full h-full object-cover' />
                 <div className="absolute bottom-0 left-0 mb-4 ml-4">
-                    <button className="btn-verde" onClick={() => openLink("https://api.whatsapp.com/send/?phone=5511994563491&text&type=phone_number&app_absent=0")}>
+                    <button className="btn-verde" onClick={() => openLink("https://api.whatsapp.com/send/?phone=5511919447777&text&type=phone_number&app_absent=0")}>
                         Faça um orçamento
                     </button>
                 </div>

@@ -5,13 +5,14 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import CBN from "../public/cbn.svg";
 import Inter from "../public/interviews.svg";
+import Podcast from "../public/Cast.jpg";
 
 const Interviews = () => {
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
       {
@@ -57,6 +58,15 @@ const Interviews = () => {
       buttonText: "Leia",
       link: "https://valor.globo.com/empresas/noticia/2023/09/26/em-santo-andre-um-robo-fara-a-previsao-do-tempo.ghtml"
     },
+    {
+      id: 3,
+      image: Podcast,
+      alt: "Podcast",
+      title: "NetworkingCast",
+      text: "No podcast NetworkingCast #59, nosso CEO Tiago Sanches fala sobre a Inteligência Aritifical, suas aplicações e suas tendências.",
+      buttonText: "Assista",
+      link: "https://www.youtube.com/watch?v=uIaNZ-QFpzg"
+    },
   ];
 
   return (
@@ -86,6 +96,8 @@ const Interviews = () => {
       <style jsx>{`
         .card {
           max-width: 300px; /* Reduzindo a largura máxima dos cards */
+          height: 500px; /* Definindo uma altura fixa para os cards */
+          justify-content: space-between;
           margin: 0 auto; /* Centralizando os cards */
         }
         .slick-slide > div {

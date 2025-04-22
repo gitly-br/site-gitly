@@ -1,35 +1,35 @@
 import React from 'react';
 import Image from "next/image";
-import prize1 from "../assets/prize1.svg";
-import prize2 from "../assets/prize2.svg";
-import prize3 from "../assets/prize3.svg";
-import prize4 from "../assets/prize4.svg";
+import prize1 from "../assets/Midia_Exce_0.webp";
+import prize2 from "../assets/Midia_Exce_1.jpg";
+import prize3 from "../assets/Midia_Exce_2.jpeg";
+import prize4 from "../assets/Midia_Exce_3.jpg";
 
 const Prizes = () => {
   const prizes = [
     {
       id: 1,
       image: prize1,
-      alt: "Prize 1",
-      link: "https://www.linkedin.com/company/gitly/posts/"
+      alt: "Excêlencia 2022",
+      link: "https://www.saocaetanodigital.com.br/vii-premio-de-excelencia-em-gestao-e-realizado-em-sao-caetano/"
     },
     {
       id: 2,
       image: prize2,
-      alt: "Prize 2",
-      link: "https://www.linkedin.com/company/gitly/posts/"
+      alt: "Excêlencia 2023",
+      link: "https://web.santoandre.sp.gov.br/portal/noticias/0/3/17249/santo-andre-entrega-premio-excelencia-em-gestao/"
     },
     {
       id: 3,
       image: prize3,
-      alt: "Prize 3",
-      link: "https://www.linkedin.com/company/gitly/posts/"
+      alt: "Excêlencia 2024",
+      link: "https://frankamenteabc.com.br/2024/11/09/santo-andre-entrega-premio-excelencia-em-gestao-2024/"
     },
     {
       id: 4,
       image: prize4,
-      alt: "Prize 4",
-      link: "https://www.linkedin.com/company/gitly/posts/"
+      alt: "Futuro Expo 2023",
+      link: "https://futuroeventos.com.br/wp-content/uploads/2023/03/ProgramacaoFuturoExpo2023_v1.pdf"
     },
   ];
 

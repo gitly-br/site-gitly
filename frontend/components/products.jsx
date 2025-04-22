@@ -1,9 +1,8 @@
 import React from 'react';
 import Image from "next/image";
-import product1 from "../assets/product1.svg";
-import product2 from "../assets/product2.svg";
-import product3 from "../assets/product3.svg";
-import product4 from "../assets/product4.svg";
+import product1 from "../assets/NossosProd_1.png";
+import product2 from "../assets/NossosProd_2.jpg";
+import product3 from "../assets/NossosProd_3.jpg";
 
 const Products = () => {
   return (
@@ -12,11 +11,10 @@ const Products = () => {
         <h2 className="text-3xl font-bold mb-4 font-title">Nossos Produtos</h2>
         <p className="text-sm mb-8 font-text">Oferecemos uma linha de produtos inovadores baseados em inteligência artificial, projetados para otimizar operações empresariais e melhorar a tomada de decisões. Nossas soluções abrangem desde análise de dados até automação de processos, todas com interfaces intuitivas e de fácil implementação.</p>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-4 w-full md:w-3/4 gap-2">
+      <div className="grid grid-cols-2 md:grid-cols-3 w-full md:w-3/4 gap-3 items-center justify-items-center">
         <Image src={product1} alt="product1" layout="responsive" width={200} height={200} className="mb-4" />
         <Image src={product2} alt="product2" layout="responsive" width={200} height={200} className="mb-4" />
         <Image src={product3} alt="product3" layout="responsive" width={200} height={200} className="mb-4" />
-        <Image src={product4} alt="product4" layout="responsive" width={200} height={200} className="mb-4" />
       </div>
     </div>
   );

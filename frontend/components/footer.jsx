@@ -6,6 +6,10 @@ import Image from "next/image";
 import Link from 'next/link';
 import logo from "../assets/logo.svg";
 
+const openLink = (url) => {
+  window.open(url, "_blank");
+};
+
 export default function Footer() {
 
   return (
@@ -21,8 +25,8 @@ export default function Footer() {
         <div className="w-full md:w-3/5 mb-4 md:text-center">
           <div className="flex flex-col md:flex-row md:justify-center md:items-center md:space-x-4 items-center font-text">
             <Link href="/"><p className="text-white py-2">Home</p></Link>
-            <Link href="/ourpurpose"><p className="text-white py-2">Propósito</p></Link>
-            <Link href="/partners"><p className="text-white py-2">Processo</p></Link>
+            {/* <Link href="/ourpurpose"><p className="text-white py-2">Propósito</p></Link>
+            <Link href="/partners"><p className="text-white py-2">Processo</p></Link> */}
             <Link href="/media"><p className="text-white py-2">Mídia</p></Link>
             <Link href="/contactus"><p className="text-white py-2">Contato</p></Link>
           </div>
@@ -32,10 +36,10 @@ export default function Footer() {
           <button className="mr-4" onClick={() => openLink("https://www.instagram.com/gitly_company/")}>
             <Image src={instagram} alt="Instagram" width={30} height={30} />
           </button>
-          <button className="mr-4" onClick={() => openLink("https://www.linkedin.com/company/gitly/")}>
+          <button className="mr-4" onClick={() => openLink("https://br.linkedin.com/company/gitly")}>
             <Image src={linkedin} alt="Linkedin" width={30} height={30} />
           </button>
-          <button className="mr-4" onClick={() => openLink("https://www.facebook.com/profile.php?id=100064740228253")}>
+          <button className="mr-4" onClick={() => openLink("https://www.facebook.com/iagitly/")}>
             <Image src={facebook} alt="Facebook" width={30} height={30} />
           </button>
         </div>

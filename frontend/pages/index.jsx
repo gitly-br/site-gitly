@@ -45,10 +45,10 @@ const partners = [
             <Services />
             <Products />
             <Partners />
-            <Projects />
+            {/* <Projects /> */}
             <OurCustomers partners={partners} />
-            <Midia />
-            <Testimonial />
+            {/* <Midia /> */}
+            {/* <Testimonial /> */}
             <CallHome />
             <Footer />
         </div>

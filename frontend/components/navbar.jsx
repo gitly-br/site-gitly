@@ -16,8 +16,8 @@ const Navbar = () => {
         </div>
         <div className="md:flex hidden flex-1 justify-around text-white font-light">
           <Link href="/" className="mr-4">Home</Link>
-          <Link href="/ourpurpose" className="mr-4">Propósito</Link>
-          <Link href="/partners" className="mr-4">Processo</Link>
+          {/* <Link href="/ourpurpose" className="mr-4">Propósito</Link>
+          <Link href="/partners" className="mr-4">Processo</Link> */}
           <Link href="/media" className="mr-4">Mídia</Link>
           <Link href="/contactus" className="mr-4">Contato</Link>
         </div>
@@ -35,8 +35,8 @@ const Navbar = () => {
       {isOpen && (
         <div className="flex flex-col items-center md:hidden bg-black bg-opacity-80">
           <Link href="/"><p className="text-white py-2">Home</p></Link>
-          <Link href="/ourpurpose"><p className="text-white py-2">Nosso Propósito</p></Link>
-          <Link href="/partners"><p className="text-white py-2">Nosso Processo</p></Link>
+          {/* <Link href="/ourpurpose"><p className="text-white py-2">Nosso Propósito</p></Link>
+          <Link href="/partners"><p className="text-white py-2">Nosso Processo</p></Link> */}
           <Link href="/media"><p className="text-white py-2">Mídia</p></Link>
           <Link href="/contactus"><p className="text-white py-2">Contato</p></Link>
           <Link href="/contactus">
